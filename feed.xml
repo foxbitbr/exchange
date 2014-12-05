@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description></description>
+        <link>//localhost:4000/</link>
+        <atom:link href="//localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+
+        
+        <item>
+            <title>Bem vindo a Blinktrade!</title>
+            <description>&lt;p&gt;Uma exchange de bitcoins de código abert. Inicie a sua exchange de bitcoins hoje.&lt;/p&gt;
+</description>
+            <pubDate>Tue, 04 Nov 2014 19:00:00 -0500</pubDate>
+            <link>//localhost:4000/post/bem-vindo-a-blinktrade/</link>
+            <guid isPermaLink="true">//localhost:4000/post/bem-vindo-a-blinktrade/</guid>
+        </item>
+        
+
+    </channel>
+</rss>
