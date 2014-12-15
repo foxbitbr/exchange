@@ -41,8 +41,8 @@
     <link href="https://foxbit.exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=497b52f" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=497b52f" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=6cbbeb5" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=6cbbeb5" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -145,7 +145,7 @@
 
   <div id="faq" class="page row-fluid bitex-view">
     <div class="page-header">
-      <h1 class="bitex-view-title">FAQ - Pergunstas Frequentes</h1>
+      <h1 class="bitex-view-title">FAQ - Perguntas Frequentes</h1>
     </div>
 
     <div class="bitex-view-content">
@@ -155,7 +155,7 @@
 
       <h3>
       <a href="" class="bitex-support-link" target="_blank">
-        <i class="icon-envelope"></i> Entre em contato caso que você não tenha conseguido encontrar a resposta para a sua pergunta</a>
+        <i class="icon-envelope"></i> Entre em contato caso você não tenha conseguido encontrar a resposta para a sua pergunta</a>
       </h3>
     </div>
   </div>
@@ -333,23 +333,39 @@
     </div>
   </div>
 
+  <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="verification"> Verifique a sua conta enviando seus documentos. </a>
+  </div>
+
+  <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="profile"> Você pode aumentar a segurança da sua conta apenas habilitando a autenticação em dois passos </a>
+  </div>
+
+  <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <a href="" data-switch-view="faq"> A sua conta foi congelada pelo administrador, por favor contate o suporte. </a>
+  </div>
+
+
   <div class="page row-fluid bitex-display-if-logged">
     <div class="span9">
       <div id="profile" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">Meu Perfil</h3>
         </div>
-        <div id="profile_content" class="bitex-view-content">
+        <div id="profile_content" class="">
           <div id="account_overview_user_id"></div>
-        </div>
-
-        <div class="section-title">
-          <h3 class="bitex-view-title">Enable or Disable Two steps authentication</h3>
         </div>
 
         <div class="content bitex-view-content">
 
           <div class="well span6">
+            <div class="section-title">
+              <h3 class="bitex-view-title">Autenticação em 2 passos (2FA)</h3>
+            </div>
+
             <div id="id_enable_two_factor_div" class="form-horizontal ">
 
               <div class="control-group">
@@ -381,6 +397,7 @@
             <button id="id_btn_enable_two_factor" class="btn btn-primary">Habilitar</button>
             <button id="id_btn_disable_two_factor" class="btn btn-danger">Desabilitar</button>
           </div>
+
         </div>
       </div>
 
@@ -677,7 +694,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 497b52f |
+          Version: 6cbbeb5 |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
