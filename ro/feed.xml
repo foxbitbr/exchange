@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description></description>
+        <link>https://foxbit.exchange/ro/</link>
+        <atom:link href="https://foxbit.exchange/ro/feed.xml" rel="self" type="application/rss+xml" />
+
+        
+        <item>
+            <title>Cum depozitez bani(fiat) în contul meu?</title>
+            <description>&lt;p&gt;În meniul principal, apăsați pe “Depozit monedă locală” și va apărea o fereastră nouă. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Va trebui să specificați cantitatea de FIAT pe care doriți să o depozitați, pentru a cumpără Bitcoin. Țineți cont că există taxă de depozitare. Pentru o depozitare de 800 lei cu o taxa de 1.5%, veți avea 788 lei creditați către contul dumneavoastră.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:08:00 -0500</pubDate>
+            <link>https://foxbit.exchange/ro/post/faq-cum-depozitez-bani-in-contul-meu/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-cum-depozitez-bani-in-contul-meu/</guid>
+        </item>
+        
+        <item>
+            <title>Cum pot devenii trader?</title>
+            <description>&lt;p&gt;Deschiderea unui cont de tranzactionare la Exchange este ușor, rapid și gratuit. Faceți clic pe “Înregistrează-te”, completați formularul și conectați-vă.  După ce vă conectați, operatorul Exchange-ul vă va cere numele, adresa și documente. După ce documentele au fost verificate de operator, veți putea cumpără/vinde Bitcoin.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:07:00 -0500</pubDate>
+            <link>https://foxbit.exchange/ro/post/faq-cum-pot-devenii-trader/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-cum-pot-devenii-trader/</guid>
+        </item>
+        
+        <item>
+            <title>Exchange-ul cumpără/vinde Bitcoin direct?</title>
+            <description>&lt;p&gt;Nu. Noi oferim un serviciu. Gândiți-va la exchange ca eBay, noi doar oferim un serviciu unde puteți găsii vânzători sau cumpărători.&lt;/p&gt;
+
+&lt;p&gt;Tot ceea ce facem este să oferim un mediu sigur și simplu pentru a tranzacționa cu alți utilizatori.&lt;/p&gt;
+
+&lt;p&gt;Noi garantăm că cumpărătorul primește Bitcoini și vânzătorul banii, la prețul stabilit.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 31 Oct 2014 20:04:00 -0400</pubDate>
+            <link>https://foxbit.exchange/ro/post/faq-exchange-ul-cumpara-vinde-bitcoin-direct/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-exchange-ul-cumpara-vinde-bitcoin-direct/</guid>
+        </item>
+        
+        <item>
+            <title>Ce este Bitcoin?</title>
+            <description>&lt;p&gt;Bitcoin este o rețea open source, peer2peer, digitală creată în 2009 de către autorul pseudoanonim Satoshi Nakamoto. Protocolul permite utilizatorilor să trimită, păstreze și primească valoare, la costuri semnificativ mai mici și într-un interval de timp scurt. Bitcoin elimină nevoia de o autoritate centrală.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 31 Oct 2014 20:01:00 -0400</pubDate>
+            <link>https://foxbit.exchange/ro/post/faq-ce-este-bitcoin/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-ce-este-bitcoin/</guid>
+        </item>
+        
+
+    </channel>
+</rss>
