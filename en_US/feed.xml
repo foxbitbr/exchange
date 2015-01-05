@@ -13,7 +13,7 @@
 &lt;p&gt;layout: post
 title:  “Can I keep track of all my past activity in the platform?”
 date:   2014-11-07 00:26:00
-categories: en_US blog&lt;/p&gt;
+categories: en_US faq&lt;/p&gt;
 
 &lt;p&gt;Yes. On the main menu go to “ledger” where a record of all the transactions is kept. You can also check your history of deposits and withdrawals by going to the main menu and clicking either on “deposits” or “withdrawals”.&lt;/p&gt;
 </description>
@@ -28,7 +28,7 @@ categories: en_US blog&lt;/p&gt;
 &lt;p&gt;layout: post
 title:  “Can I audit the balance of the wallets of the exchange?”
 date:   2014-11-07 00:25:00
-categories: en_US blog&lt;/p&gt;
+categories: en_US faq&lt;/p&gt;
 
 &lt;p&gt;Yes. Both public keys for the hot and cold wallets are available for auditing. All you have to do is go to blockchain.info and enter the adress you want to check out.&lt;/p&gt;
 

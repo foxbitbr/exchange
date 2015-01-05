@@ -41,8 +41,8 @@
     <link href="https://foxbit.exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=23cd5f9" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=23cd5f9" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=f7f8bb4" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=f7f8bb4" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -336,6 +336,23 @@
           <input id="id_btn_set_new_password" class="btn btn-primary" name="commit" type="submit" value="Redefinir senha">
         </div>
       </form>
+    </div>
+  </div>
+
+  <div class="bitex-display-if-logged">
+    <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="verification"> Verifique a sua conta enviando seus documentos. </a>
+    </div>
+
+    <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="profile"> Você pode aumentar a segurança da sua conta apenas habilitando a autenticação em dois passos </a>
+    </div>
+
+    <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="faq"> A sua conta foi congelada pelo administrador, por favor contate o suporte. </a>
     </div>
   </div>
 
@@ -683,7 +700,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 23cd5f9 |
+          Version: f7f8bb4 |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>

@@ -41,8 +41,8 @@
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/ro/assets/themes/default/css/style.css?v=23cd5f9" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=23cd5f9" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/ro/assets/themes/default/css/style.css?v=f7f8bb4" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=f7f8bb4" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -212,6 +212,48 @@
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
               <p>În meniul principal, apăsați pe “Depozit monedă locală” și va apărea o fereastră nouă. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Va trebui să specificați cantitatea de FIAT pe care doriți să o depozitați, pentru a cumpără Bitcoin. Țineți cont că există taxă de depozitare. Pentru o depozitare de 800 lei cu o taxa de 1.5%, veți avea 788 lei creditați către contul dumneavoastră.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Sunt Bitcoinii mei în siguranță?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Scopul nostru principal este de a oferii trader-ilor un mediu sigur în care să interacționeze. Bitcoinii sunt stocani într-un portofel rece cu semnături multiple (multisignature cold storage wallet). Chiar dacă server-ul sau exchange-ul ar fi compromise Bitcoinii nu pot ajunge la băieții răi.</p>
+
+<p>Portofelul cu semnături multiple(multisignature) necesită 2 din 3 semnături pentru a muta Bitcoinii. Operatorul exchange-ului deține una din cele 3 chei. Celelalte două sunt deținute de BlinkTrade și un mediator, care va lua parte la proces, în cazul în care ar exista o dispută între operator și BlinkTrade.</p>
+
+<p>Chiar dacă un hack-er ar compromite serverele exchange-ului, ar trebui să compromită și serverele BlinkTrade pentru a-și putea însuși Bitcoinii. Șansele ca așa ceva să se întâmple sunt infime.</p>
+
+<p>De ficare dată când Bitcoini sunt mutați din portofelul cu semnături multiple pe un portofel cald(care este conectat la internet pentru a procesa retrageri rapid) BlinkTrade verifică sistemul și efectuează o dovadă de solvabilitate a bitcoinilor. 
+ Cu alte cuvinte de fiecare data când Bitcoinii sunt mutați din portofelul cu semnături multiple rece(neconectat la internet) în portofelul cald(conectat la internet), efectuăm o verificare completă a sistemului.</p>
+
+<p>Portofelele calde sunt stocate pe serverele blockchain.info și păstrăm doar cantități mici de bitcoin pentru a efectuă operațiuni de zi cu zi. 
+Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info </p>
+
+<p>Nici un exchange din lume nu este 100% sigur. Cu toate măsurile noastre de siguranță nu vrem să creăm o comoară de bitcoin, care ar provoca hack-eri să încerce să compromită exchange-ul.</p>
+
+<p>Încurajăm toți utilizatori să își depoziteze Bitcoinii doar când au de gând să îi schimbe, și să nu folosească exchange-ul că o bancă. Cea mai sigură metodă este să va țineți Bitcoini în portofelul personal până când aveți de gând să îi schimbați.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              De ce nu am o cheie privată a portofelului meu din exchange?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Principiul nostru este că Bitcoinii sunt depozitați în exchange pentru a fi schimbați în monedă locală. În consecință pentru a garanta siguranța și viteza tranzacționării, operatorul exchange-ului are posesia depozitărilor fie în Fiat sau BTC.</p>
 
             </div>
           </div>
@@ -399,21 +441,22 @@
     </div>
   </div>
 
-  <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <a href="" data-switch-view="verification"> You have not submitted your documents. Vă rugăm să confirmați indentitatea. </a>
-  </div>
+  <div class="bitex-display-if-logged">
+    <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="verification"> You have not submitted your documents. Vă rugăm să confirmați indentitatea. </a>
+    </div>
 
-  <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <a href="" data-switch-view="profile"> Puteți crește securitatea contului dvs. prin activarea autentificare în doi pasi. </a>
-  </div>
+    <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="profile"> Puteți crește securitatea contului dvs. prin activarea autentificare în doi pasi. </a>
+    </div>
 
-  <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <a href="" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+    <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+    </div>
   </div>
-
 
   <div class="page row-fluid bitex-display-if-logged">
     <div class="span9">
@@ -760,7 +803,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 23cd5f9 |
+          Version: f7f8bb4 |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
