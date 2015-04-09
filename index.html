@@ -41,8 +41,8 @@
     <link href="https://foxbit.exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=ab76cb2" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=ab76cb2" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=7f36e89" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=7f36e89" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -540,7 +540,17 @@
       </div>
 
 
+      <div id="api" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">API Keys</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_api_button_group" class="row-fluid text-right" style="margin-bottom:20px">
+            <a id="id_btn_new_api_key" class="btn btn-primary"><i class="icon-plus "> Nova API Key</i></a>
+          </div>
 
+        </div>
+      </div>
 
       <div id="settings" class="bitex-view">
         <div class="section-title">
@@ -602,6 +612,7 @@
                                                 bitex-view-ledger
                                                 bitex-view-settings
                                                 bitex-view-algotrading
+                                                bitex-view-api
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
       <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3>
@@ -686,6 +697,11 @@
               <i data-switch-view="faq" class="icon-question"></i> Suporte e Sugestões</a>
           </li>
 
+          <li style="">
+            <a href="" data-switch-view="api">
+              <i data-switch-view="api" class="icon-globe"></i> API</a>
+          </li>
+
           <li>
             <a href="javascript:location.reload()">
               <i class="icon-signout"></i> Sair</a>
@@ -714,13 +730,19 @@
     <hr>
     <div class="bitex-view-content">
         <div class="row" style="text-align:center">
-            <div class="span6">
+            <div class="span4">
                 <a href="https://foxbit.exchange/themes/default/">
                     <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme">
                     <h3>Default Theme</h3>
                 </a>
             </div>
-            <div class="span6">
+            <div class="span4">
+                <a href="https://foxbit.exchange/themes/ander/">
+                    <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme">
+                    <h3>Ander</h3>
+                </a>
+            </div>
+            <div class="span4">
                 <a href="https://foxbit.exchange/themes/whitedev/">
                     <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme">
                     <h3>Whitedev</h3>
@@ -739,7 +761,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: ab76cb2 |
+          Version: 7f36e89 |
           
           <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>

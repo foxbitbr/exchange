@@ -38,9 +38,9 @@
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
   <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://foxbit.exchange/assets/themes/default/css/style-new.css?v=ab76cb2" rel="stylesheet">
-  <link href="https://foxbit.exchange/assets/themes/ander/css/blinktrade.css?v=ab76cb2" rel="stylesheet">
-  <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=ab76cb2" type="text/javascript"></script>
+  <link href="https://foxbit.exchange/assets/themes/default/css/style-new.css?v=7f36e89" rel="stylesheet">
+  <link href="https://foxbit.exchange/assets/themes/ander/css/blinktrade.css?v=7f36e89" rel="stylesheet">
+  <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.ander.js?v=7f36e89" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -359,6 +359,12 @@
   </div>
   <!-- /#market -->
 
+  <!-- /#themes -->
+  <div id="themes" class="bitex-view">
+  
+  </div>
+  <!-- #themes -->
+
   <!-- #signin -->
   <div id="signin" class="page bitex-view">
     <!-- .page__head -->
@@ -543,6 +549,7 @@
                                               bitex-view-settings
                                               bitex-view-algotrading
                                               bitex-view-my_broker
+                                              bitex-view-api
                                               bitex-view-verification">
                 <!-- .sidebar__head -->
                 <div class="sidebar__head">
@@ -591,6 +598,12 @@
                                 <i class="icon-check"></i> Verificar a sua conta
                               </a>
                             </li>
+                            <li id="api_menu_id">
+                              <a href="api" data-switch-view="api">
+                                <i class="icon-globe"></i> API
+                              </a>
+                            </li>
+
                             <li>
                               <a href="" data-switch-view="faq">
                                 <i data-switch-view="faq" class="icon-question"></i> Suporte e Sugestões</a>
@@ -757,6 +770,25 @@
               <div id="id_ledger_balances_container"></div>
 
               <div id="id_ledger_list"></div>
+            </div>
+            <!-- /.page__body -->
+          </div>
+          <!-- /#ledger -->
+
+
+          <!-- #ledger -->
+          <div id="api" class="bitex-view">
+            <!-- .page__head -->
+            <header class="page__head section-title">
+              <h3 class="page__title beta bitex-view-title">API Keys</h3>
+            </header>
+            <!-- /.page__head -->
+
+            <!-- .page__body -->
+            <div class="page__body bitex-view-content">
+              <div id="id_api_button_group"></div>
+
+              <div id="id_api_list"></div>
             </div>
             <!-- /.page__body -->
           </div>
@@ -1004,7 +1036,7 @@
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: ab76cb2 |
+        Version: 7f36e89 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
