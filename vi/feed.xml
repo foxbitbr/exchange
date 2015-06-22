@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description></description>
+        <link>https://foxbit.exchange/vi/</link>
+        <atom:link href="https://foxbit.exchange/vi/feed.xml" rel="self" type="application/rss+xml" />
+
+        
+        <item>
+            <title>Faq Can I Keep Track Of All My Past Activity On The Platform</title>
+            <description>&lt;hr /&gt;
+&lt;p&gt;layout: post
+title:  “Tôi có thể xem lại tất cả các hoạt động trong quá khứ của tôi trên sàn giao dịch chứ?”
+date:   2014-11-07 00:26:00
+categories: vi faq&lt;/p&gt;
+
+&lt;p&gt;Có chứ. Trên menu chính, bạn ấn vào “Sổ Cái” - nơi ghi lại của tất cả các giao dịch của bạn. Bạn cũng có thể kiểm tra lịch sử các khoản tiền gửi và rút bằng cách vào menu chính và nhấp vào “Các lệnh gửi tiền” hay “Các lệnh rút tiền”.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
+        </item>
+        
+        <item>
+            <title>Faq Can I Audit The Balance Of The Wallets Of The Exchange</title>
+            <description>&lt;hr /&gt;
+&lt;p&gt;layout: post
+title:  “Tôi có thể kiểm tra số dư Ví của sàn giao dịch không?”
+date:   2014-11-07 00:25:00
+categories: vi faq&lt;/p&gt;
+
+&lt;p&gt;Có chứ. Khoá public cho Ví lạnh và nóng đều có sẵn cho việc kiểm toán. Bạn chỉ cần vào trang web blockchain.info và nhập vào địa chỉ Bitcoin bạn muốn kiểm tra.&lt;/p&gt;
+</description>
+            <pubDate>Fri, 07 Nov 2014 00:00:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
+        </item>
+        
+        <item>
+            <title>Giờ làm việc</title>
+            <description>&lt;p&gt;Giao dịch: 24 giờ / 7 ngày
+Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tối (GMT +7)&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:29:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-hours-of-operation/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-hours-of-operation/</guid>
+        </item>
+        
+        <item>
+            <title>Tại sao tên người dùng lại xuất hiện trên sổ giao dịch?</title>
+            <description>&lt;p&gt;Chúng tôi sẽ chỉ định một tên ngẫu nhiên cho mỗi tài khoản. Thay vì sử dụng tên thật của người dùng, chúng tôi sẽ đặt cho họ 1 tên ngẫu nhiên.Tên có thể đặt như: Rhino_899009.&lt;/p&gt;
+
+&lt;p&gt;Tính bảo mật của người dùng sẽ được bảo đảm miễn là người dùng không tiết lộ mối liên quan giữa tên thật và tên được đặt ngẫu nhiên đó. Đây là trách nhiệm của người dùng để bảo vệ chính sự riêng tư của họ.&lt;/p&gt;
+
+&lt;p&gt;Tại sao chúng tôi không giấu mọi thông tin của người dùng, bao gồm cả tên được đặt ngẫu nhiên?&lt;/p&gt;
+
+&lt;p&gt;Có rất nhiều lý do giải thích cho việc này nhưng chúng tôi sẽ nêu ra những lý do quan trọng nhất: &lt;/p&gt;
+
+&lt;p&gt;1 - Điều này tránh việc thao túng thị trường, như Chạy Trước (Front-running), Bơm và Đẩy (Pump And Dump), và các loại thao túng khác. Bạn có thể thử, nhưng mọi người sẽ biết ngay lập tức và sẽ không thực hiện theo việc thao túng đó. Về cơ bản, việc thao túng thị trường sẽ làm mất tiền của họ, vì vậy mọi người sẽ không để cho việc lũng đoạn thị trường xảy ra.&lt;/p&gt;
+
+&lt;p&gt;2 - Điều này giúp cho việc xây dựng danh tiếng của người dùng. Trong trường hợp chính phủ cấm đoán Bitcoin, chúng tôi sẽ chuyển đổi VBTC thành một sàn giao dịch P2P, vì vậy danh tiếng của người dùng sẽ vô cùng quan trọng.&lt;/p&gt;
+
+&lt;p&gt;3 - Nó cho phép người dùng có thể kiểm tra sàn giao dịch. Điều này sẽ sẽ giúp cho VBTC chứng minh khả năng thanh toán của mình một cách công khai  mà không cần đến một kiểm toán viên có thể dễ dàng bị mua chuộc.&lt;/p&gt;
+
+&lt;p&gt;Chúng tôi hiểu rằng hầu hết các sàn giao dịch ngày nay không công bố điều này, đó là lý do tại sao chúng ta thấy rất nhiều hành vi lũng đoạn thị trường, và cũng có rất nhiều kẻ lừa đảo chỉ muốn cướp Bitcoin từ khách hàng của họ (Chúng tôi không nói về những sàn giao dịch lớn. Chúng tôi đang nói về rất nhiều sàn giao dịch Bitcoin nhỏ mà đã bị đóng cửa của sau khi tuyên bố họ đã bị hack)&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:28:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-why-are-the-user-names-shown-in-the-order-book/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-why-are-the-user-names-shown-in-the-order-book/</guid>
+        </item>
+        
+        <item>
+            <title>Thông tin ngân hàng của sàn giao dịch nằm ở đâu?</title>
+            <description>&lt;p&gt;Để có thể gửi tiền tới sàn giao dịch, nhóm vận hành phải xác minh tài khoản ngân hàng của bạn. Một khi quá trình đó hoàn thành, bạn có thể nạp tiền.&lt;/p&gt;
+
+&lt;p&gt;Tất cả thông tin về tài khoản ngân hàng của chúng tôi sẽ bật lên trong một cửa sổ mới khi bạn đặt lệnh nạp tiền trên menu chính.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:24:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-where-is-your-bank-account-information/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-where-is-your-bank-account-information/</guid>
+        </item>
+        
+        <item>
+            <title>Ai là người trả phí rút tiền?</title>
+            <description>&lt;p&gt;Trong cả 2 trường hợp rút tiền (Bitcoin và VNĐ), người giao dịch phải trả phí. Phí rút VNĐ được tính bởi sàn giao dịch. Phí rút Bitcoin được tính bởi blockchain.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:23:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-who-pays-the-withdrawal-fee/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-who-pays-the-withdrawal-fee/</guid>
+        </item>
+        
+        <item>
+            <title>Mất bao lâu để rút BTC ra khỏi tài khoản?</title>
+            <description>&lt;p&gt;Cũng giống như trường hợp nạp BTC, thời gian rút tiền sẽ phụ thuộc vào tốt độ của mạng lưới blockchain để xác nhận giao dịch đó. Thông thường, bạn sẽ nhận được Bitcoin của mình trong vòng 10 phút.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:22:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-how-long-does-a-BTC-withdrawal-take/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-how-long-does-a-BTC-withdrawal-take/</guid>
+        </item>
+        
+        <item>
+            <title>Mất bao lâu để rút tiền VNĐ?</title>
+            <description>&lt;p&gt;Nếu giao dịch bao gồm chuyển khoản liên ngân hàng thì thời gian để nhận tiền sẽ là từ 1-3 ngày làm việc. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:21:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-how-long-does-a-FIAT-withdrawal-take/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-how-long-does-a-FIAT-withdrawal-take/</guid>
+        </item>
+        
+        <item>
+            <title>Tôi có thể gửi tiền từ tài khoản ngân hàng không phải của tôi không?</title>
+            <description>&lt;p&gt;Có. Người dùng có thể gửi tiền từ tài khoản ngân hàng của bên thứ ba miễn là họ đã cung cấp tài liệu xác minh.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:20:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-can-I-deposit-funds-from-a-bank-account-other-than-my-own/</guid>
+        </item>
+        
+        <item>
+            <title>Chế độ nạp tiền ngay tức thì hoạt động ra sao?</title>
+            <description>&lt;p&gt;Đó là một tính năng của sàn giao dịch cho phép những người dùng đáng tin và đã được xác minh được phép giao dịch ngay cả khi khoản tiền gửi còn đang đợi xác minh. Tài khoản của người dùng được ghi số dư trước khi việc xác minh tiền gửi được hoàn tất.&lt;/p&gt;
+</description>
+            <pubDate>Thu, 06 Nov 2014 19:19:00 -0500</pubDate>
+            <link>https://foxbit.exchange/vi/post/faq-what-is-the-instant-deposit-mode/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/vi/post/faq-what-is-the-instant-deposit-mode/</guid>
+        </item>
+        
+
+    </channel>
+</rss>

@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta charset="utf-8">
+    
+        <title>FoxBit - Buy or sell bitcoins in Brazil</title>
+      
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BlinkTrade">
+
+    
+        <meta name="description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
+        <meta name="keywords" content="Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil">
+        <meta property="og:title" content="FoxBit - Buy or sell bitcoins in Brazil">
+        <meta property="og:description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
+      
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foxbit.exchange/vi/themes/default/index.html">
+    <meta property="og:image" content="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_social_network_share.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_favicon.ico">
+    <link rel="icon" href="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_favicon.ico" type="image/x-icon">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" href="https://foxbit.exchange/vi/feed.xml">
+
+    <meta charset="utf-8">
+
+    <link rel="canonical" href="https://foxbit.exchange/vi/themes/default/index.html"/>
+    <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+
+    <!--Bootstrap-->
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/font-awesome.min.css" rel="stylesheet">
+
+    
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/Dialog.css" rel="stylesheet">
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/fuelux.css" rel="stylesheet">
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/style.css?v=d9ca5d0" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.default.js?v=d9ca5d0" type="text/javascript"></script>
+    
+  </head>
+  <body class=" ws-not-connected bitex-not-logged active-view-start ">
+
+    <div id="id_toolbar" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          
+          <a href="#" class="brand" data-switch-view="offerbook">
+            <img data-switch-view="offerbook" src="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_toolbar_logo.png" style="
+                height: 30px;
+                margin-top: -10px;
+                margin-bottom: -10px;
+            ">
+          </a>
+          
+
+          <ul class="nav navbar-nav pull-right">
+            
+            <li><a href="" data-switch-view="faq">Hỏi & Đáp</a></li>
+            <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Giao dịch</a></li>
+            <li><a href="" data-switch-view="market">Thị trường</a></li>
+            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Đăng ký</a></li>
+            <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Đăng nhập</a></li>
+            
+
+            <li class="dropdown">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">VI <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/">PT_BR</a></li>
+                  
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/en_US">EN_US</a></li>
+                  
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/es">ES</a></li>
+                  
+                
+              
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/ro">RO</a></li>
+                  
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/zn_CN">ZN_CN</a></li>
+                  
+                
+              
+              </ul>
+            </li>
+
+            
+            <li>
+              <button id="id_button_connect_ws" class="bitex-hide-if-ws-connected btn-link"
+                      style="padding: 6px 15px 10px;">Kết nối <i class="icon-white icon-repeat"></i></button>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix" style="padding: 30px;"></div>
+
+    <div id="id_notifications" class="notifications top-right" style="z-index: 9000;"></div>
+
+
+
+
+<!-- div.container -->
+<div class="container">
+  <!-- landing page-->
+  <div id="start" class="page  row-fluid bitex-view bitex-view-admin">
+    <header class="jumbotron">
+      <img src="/vi/assets/exchange_logos/foxbit_landing_page_logo.png" style="">
+      <p class="lead bitex-view-title bitex-view-title">
+        
+            Compre ou venda seus Bitcoins no Brasil
+          
+      </p>
+    </header>
+
+    <div class="bitex-view-content">
+      <div class="row bitex-hide-if-logged bitex-view-content" style="text-align: center;">
+        <form action="" class="form-inline">
+          <div class="row-fluid">
+            <label for="id_landing_username">Tên đăng nhập:</label>
+            <input class="focus" id="id_landing_username" placeholder="" size="30" type="text">
+            <label for="id_landing_password">Mật khẩu:</label>
+            <input id="id_landing_password" placeholder="" size="30"  type="password">
+            <button id="id_landing_signin" class="btn btn-primary">Đăng nhập</button>
+          </div>
+          <div class="clearfix" style="height: 20px"></div>
+          <div class="row-fluid">
+            <span class="text-center">
+              <a href="" class="btn btn-success btn-large" data-switch-view="signup">Đăng ký</a>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="faq" class="page row-fluid bitex-view" style="display: none">
+    <div class="page-header">
+      <h1 class="bitex-view-title">Hỏi & Đáp - Những câu hỏi thường gặp</h1>
+    </div>
+
+    <div class="bitex-view-content">
+      <div class="accordion">
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Bitcoin là gì?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Bitcoin là một mạng lưới kỹ thuật số Peer-to-Peer dựa trên phần mềm nguồn mở được tạo ra từ năm 2009 bởi một cá thể lấy biệt danh là Satoshi Nakamoto. Giao thức này cho phép người dùng gửi, lưu trữ, nhận Bitcoin nhanh với chi phí thấp. Bitcoin không cần sự tồn tại của các cơ quan trung ương và tổ chức phát hành.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Sàn giao dịch Bitcoin là gì?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Nó chỉ là một cái “chợ”, nơi mà mọi người quan tâm đến việc mua Bitcoin tìm người bán Bitcoin của họ và ngược lại.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Sàn giao dịch Bitcoin hoạt động thế nào?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Sàn giao dịch cho phép người mua gửi tiền Đồng và người bán gửi Bitcoin. Sau đó sàn giao dịch sẽ cho phép người mua giao dịch với người bán.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Sàn có cho mua bán Bitcoin trực tiếp không?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Không, chúng tôi chỉ cung cấp một dịch vụ. Hãy suy nghĩ về một sàn giao dịch giống như eBay, chúng tôi chỉ cung cấp một dịch vụ mà bạn có thể tìm được người mua hoặc người bán.</p>
+
+<p>Tất cả chúng tôi làm là cung cấp một môi trường an toàn và đơn giản để giao dịch với người khác, đó là tất cả.</p>
+
+<p>Chúng tôi đảm bảo rằng người mua có được Bitcoin của họ và người bán nhận được tiền của họ ở mức giá như đã thoả thuận.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Mối quan hệ giữa sàn giao dịch và Blinktrade là như thế nào?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Blinktrade is the technology provider.</p>
+
+<p>The exchange operator hire the service of blinktrade.</p>
+
+<p>Blinktrade only provides IT services for the exchange operator.</p>
+
+<p>The exchange operator is de facto the company operating the exchange. By operating we means: Accepting deposits, Processing withdrawals, verifiying customers identities and allowing customers to trade safely.</p>
+
+<p>Blinktrade là một nhà cung cấp công nghệ.</p>
+
+<p>Nhà điều hành sàn giao dịch thuê các dịch vụ của Blinktrade.</p>
+
+<p>Blinktrade chỉ cung cấp dịch vụ CNTT cho các nhà điều hành sàn giao dịch.</p>
+
+<p>Nhà điều hành sàn giao dịch là những người điều hành chính sàn giao dịch. Điều hành sàn giao dịch bao gồm: chấp nhận tiền gửi, xử lý rút tiền, xác nhận danh tính khách hàng và cho phép khách hàng giao dịch một cách an toàn.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để tôi trở thành đối tác với sàn?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Hãy liên lạc với bộ phận Hỗ Trợ Khách Hàng.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để tôi khóa được tài khoản giao dịch của mình?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Để khóa tài khoản giao dịch của bạn, vào “Tài khoản” và chọn “Cài đặt” từ menu. Bấm “Khóa tài khoản” và tiến hành.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để tôi có thể bắt đầu giao dịch?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Mở một tài khoản giao dịch tại sàn giao dịch cực kỳ dễ dàng, nhanh chóng và miễn phí. Bạn nhấp vào “Đăng ký”, điền vào mẫu và đăng nhập. Sau khi đăng nhập, chúng tôi sẽ yêu cầu bạn cung cấp tên, địa chỉ và tài liệu xác minh. Sau khi tài liệu của bạn được xác minh bởi chúng tôi, tài khoản của bạn sẽ được tặng một khoản tiền thưởng nhỏ. Từ thời điểm đó bạn có thể bắt đầu đặt mua những Bitcoin đầu tiên của bạn!</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm thế nào để gửi tiền nội tệ vào tài khoản của tôi?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Trên menu chính, sau khi bấm vào “Gửi tiền”, một cửa sổ mới sẽ xuất hiện. Bạn sẽ phải xác định số lượng tiền mặt bạn muốn gửi để mua Bitcoin. Lưu ý rằng chúng tôi sẽ thu phí mỗi lần bạn muốn thực hiện một khoản tiền gửi. Ví dụ: Nếu bạn gửi 1,000,000 VNĐ và phí gửi tiền là 1%, bạn sẽ thấy số dư 990,000 VNĐ trong tài khoản của bạn.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để nạp BTC?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Trên menu chính, bấm vào “Gửi BTC” và một cửa sổ mới sẽ xuất hiện. Hệ thống sẽ tạo ra một địa chỉ duy nhất mà sẽ chỉ có giá trị cho 1 giao dịch cụ thể với một giới hạn thời gian để thực hiện lệnh gửi tiền. Quét mã QR và gửi BTC. Sau khi được Blockchain xác nhận, bạn sẽ thấy số Bitcoin của bạn gửi được ghi có vào tài khoản giao dịch của bạn. Không có phí nào khác cho việc gửi BTC trừ một khoản rất nhỏ của blockchain để xác nhận giao dịch. QUAN TRỌNG: Không bao giờ lưu lại địa chỉ tiền gửi, không bao giờ sử dụng lại cùng một địa chỉ hoặc tiền gửi của bạn sẽ không được xác nhận.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để rút VNĐ?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Việc rút tiền VNĐ cũng đơn giản như quá trình gửi tiền. Bạn đặt lệnh rút tiền trong menu chính và một cửa sổ mới sẽ xuất hiện hướng dẫn bạn các bước tiếp theo. Sau khi nhập số lượng tiền và điền vào các thông tin cần thiết khác (số tài khoản, thông tin ngân hàng, …), số tiền sẽ được gửi tới tài khoản của bạn. Xin lưu ý rằng chúng tôi có áp dụng phí rút tiền VNĐ cho mỗi lần rút.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để rút BTC?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Khi bạn muốn nhận Bitcoin, bạn chỉ cần đặt lệnh rút tiền trên menu chính. Bạn sẽ phải điền số lượng Bitcoin cần chuyển và cung cấp địa chỉ gửi Bitcoin gửi. Hãy dành thời gian của bạn để điền địa chỉ Bitcoin một cách chính xác vì các giao dịch Bitcoin là không thể đảo ngược.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Gửi Bitcoin tới sàn giao dịch này có an toàn không?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Chúng tôi muốn tạo ra một môi trường giao dịch an toàn nhất cho người dùng. Bitcoin được lưu trữ trong một chiếc Ví lạnh multi-signature từ máy chủ của sàn. Vì vậy, kể cả trong trường hợp xấu nhất khi máy chủ bị tấn công, số Bitcoin vẫn không bị rơi vào tay kẻ xấu.</p>
+
+<p>Các Ví multi-signature đòi hỏi 2 trong 3 khoá để có thể di chuyển các Bitcoin. Nhà điều hành sàn giao dịch lưu giữ một trong 3 khoá. Hai khoá khác được lưu giữ bởi BlinkTrade và một bên trung gian hòa giải mà sẽ tác động vào trong trường hợp có tranh chấp giữa nhà điều hành sàn giao dịch và BlinkTrade.</p>
+
+<p>Điều này có nghĩa rằng ngay cả khi một hacker lấy được quyền truy cập vào máy chủ, họ cũng sẽ phải tấn công được các máy chủ của BlinkTrade để có thể lấy Bitcoin. Khả năng này xảy ra cực kỳ thấp vì mỗi bên đều áp dụng rất nhiều cách để chống tấn công cho riêng mình, bao gồm việc xác thực 2 lớp.</p>
+
+<p>Mỗi lần Bitcoin phải được di chuyển từ Ví multi-signature qua Ví nóng (được kết nối với Internet để cho phép rút tiền nhanh), BlinkTrade trước đó sẽ xác minh hệ thống và thực hiện kiểm tra khả năng tính thanh khoản của sàn giao dịch. Nói cách khác, mỗi lần Bitcoins được chuyển từ lưu trữ lạnh multi-signature qua Ví nóng, chúng tôi thực hiện một lượt kiểm tra hệ thống hoàn chỉnh.</p>
+
+<p>Các Ví nóng được giữ trong các máy chủ của blockchain.info và chúng tôi chỉ giữ lại một số lượng nhỏ Bitcoin trong Ví này để có thể trang trải các hoạt động trong ngày.Ngoài ra, tất cả các biện pháp an ninh của chiếc Ví nóng được điều hành bởi blockchain.info.</p>
+
+<p>Không có hệ thống nào trên thế giới là 100% an toàn. Vì vậy, mặc dù chúng tôi thực hiện tất cả các biện pháp an ninh có thể, chúng tôi không muốn tạo ra một mỏ vàng Bitcoin để thách thức các hacker tấn công.</p>
+
+<p>Chúng tôi khuyến khích người sử dụng chỉ gửi Bitcoin của họ khi họ đang sắp bán, và không sử dụng sàn VBTC như một ngân hàng Bitcoin của họ. Cách an toàn nhất để giữ Bitcoin là giữ trong Ví riêng của bạn cho đến khi bạn muốn sử dụng chúng. Nếu bạn đang có rất nhiều Bitcoin, bạn nên thiết lập một ví multi-signature cho riêng mình hoặc dùng những thiết bị như Bitcoin Trezor hoặc Ledger Wallet (giống như két sắt của riêng bạn vậy) để lưu trữ Bitcoin.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Tại sao tôi không có khóa riêng cho Ví của tôi tại sàn giao dịch?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Nguyên tắc của chúng tôi là số Bitcoin được nạp vào sàn giao dịch là để trao đổi với đồng nội tệ. Vì vậy, để đảm bảo an toàn và tốc độ trong giao dịch, sàn giao dịch sẽ lưu giữ các khoản tiền gửi VNĐ và BTC.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm sao để giao dịch?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Bạn cần phải chọn số lượng Bitcoin bạn muốn mua và xác định tỷ giá bạn sẵn sàng trả tiền cho mỗi Bitcoin. Tỷ lệ luôn luôn được tính bằng giá của 1 Bitcoin.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Tôi có phải trả phí không?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Có, lệ phí áp dụng đối với việc rút và gửi tiền VNĐ và giao dịch. Bạn không cần phải trả phí để gửi và rút BTC. Phí Bitcoin áp dụng đối với các blockchain là rất nhỏ.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Làm thế nào để hủy bỏ một đơn hàng?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Để hủy bỏ một đơn đặt hàng chưa thực thi, bạn vào “Mua và Bán” trên menu chính. Chọn đơn hàng cần hủy bỏ từ danh sách trong “Đơn hàng của tôi” và nhấn “Hủy” bên cạnh. Một lựa chọn khác là nhấp vào “Sổ lệnh” và tìm kiếm thứ tự được đánh dấu với tên truy cập của bạn và một chữ “x” màu đỏ bên cạnh nó. Click vào để hủy bỏ nó.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Mất bao lâu để sàn nhận được VNĐ sau khi tôi gửi?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Nếu giao dịch bao gồm chuyển khoản liên ngân hàng thì thời gian để nhận tiền sẽ là từ 1-3 ngày làm việc.</p>
+
+<p>Ví dụ: Bạn gửi tiền từ thứ 5 thì có thể tới thứ 2 tuần sau ngân hàng chúng tôi mới ghi có. Ngược lại, nếu chúng tôi gửi tiền từ ngày 30 tháng 8, thì có thể tới ngày 4 tháng 9 bạn mới nhận được vì ngày 2 tháng 9 là ngày Lễ. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.</p>
+
+<p>Việc tốn 1-3 ngày cho chuyển khoản liên ngân hàng là do sự chậm trễ của hệ thống tài chính cổ điển, nằm ngoài sự kiểm soát của chúng tôi. Bạn có thể đẩy nhanh giao dịch bằng cách chuyển khoản trực tiếp tại Eximbank.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Bao lâu sau khi gửi Bitcoin thì sàn nhận được?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Chúng tôi sẽ cần đợi mạng lưới Blockchain xác nhận giao dịch. Thông thường quá trình này diễn ra dưới 10 phút. Đối với những khoản nạp có giá trị cao hơn 2 BTC, chúng tôi sẽ cần 3 lớp xác nhận và việc này có thể mất tới 30 phút. Nếu bạn nạp nhiều hơn 10 BTC, chúng tôi cần đợi 6 lớp xác nhận và có thể mất tới 60 phút.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Chế độ nạp tiền ngay tức thì hoạt động ra sao?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Đó là một tính năng của sàn giao dịch cho phép những người dùng đáng tin và đã được xác minh được phép giao dịch ngay cả khi khoản tiền gửi còn đang đợi xác minh. Tài khoản của người dùng được ghi số dư trước khi việc xác minh tiền gửi được hoàn tất.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Tôi có thể gửi tiền từ tài khoản ngân hàng không phải của tôi không?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Có. Người dùng có thể gửi tiền từ tài khoản ngân hàng của bên thứ ba miễn là họ đã cung cấp tài liệu xác minh.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Mất bao lâu để rút tiền VNĐ?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Nếu giao dịch bao gồm chuyển khoản liên ngân hàng thì thời gian để nhận tiền sẽ là từ 1-3 ngày làm việc. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Mất bao lâu để rút BTC ra khỏi tài khoản?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Cũng giống như trường hợp nạp BTC, thời gian rút tiền sẽ phụ thuộc vào tốt độ của mạng lưới blockchain để xác nhận giao dịch đó. Thông thường, bạn sẽ nhận được Bitcoin của mình trong vòng 10 phút.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Ai là người trả phí rút tiền?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Trong cả 2 trường hợp rút tiền (Bitcoin và VNĐ), người giao dịch phải trả phí. Phí rút VNĐ được tính bởi sàn giao dịch. Phí rút Bitcoin được tính bởi blockchain.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Thông tin ngân hàng của sàn giao dịch nằm ở đâu?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Để có thể gửi tiền tới sàn giao dịch, nhóm vận hành phải xác minh tài khoản ngân hàng của bạn. Một khi quá trình đó hoàn thành, bạn có thể nạp tiền.</p>
+
+<p>Tất cả thông tin về tài khoản ngân hàng của chúng tôi sẽ bật lên trong một cửa sổ mới khi bạn đặt lệnh nạp tiền trên menu chính.</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Tại sao tên người dùng lại xuất hiện trên sổ giao dịch?
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Chúng tôi sẽ chỉ định một tên ngẫu nhiên cho mỗi tài khoản. Thay vì sử dụng tên thật của người dùng, chúng tôi sẽ đặt cho họ 1 tên ngẫu nhiên.Tên có thể đặt như: Rhino_899009.</p>
+
+<p>Tính bảo mật của người dùng sẽ được bảo đảm miễn là người dùng không tiết lộ mối liên quan giữa tên thật và tên được đặt ngẫu nhiên đó. Đây là trách nhiệm của người dùng để bảo vệ chính sự riêng tư của họ.</p>
+
+<p>Tại sao chúng tôi không giấu mọi thông tin của người dùng, bao gồm cả tên được đặt ngẫu nhiên?</p>
+
+<p>Có rất nhiều lý do giải thích cho việc này nhưng chúng tôi sẽ nêu ra những lý do quan trọng nhất: </p>
+
+<p>1 - Điều này tránh việc thao túng thị trường, như Chạy Trước (Front-running), Bơm và Đẩy (Pump And Dump), và các loại thao túng khác. Bạn có thể thử, nhưng mọi người sẽ biết ngay lập tức và sẽ không thực hiện theo việc thao túng đó. Về cơ bản, việc thao túng thị trường sẽ làm mất tiền của họ, vì vậy mọi người sẽ không để cho việc lũng đoạn thị trường xảy ra.</p>
+
+<p>2 - Điều này giúp cho việc xây dựng danh tiếng của người dùng. Trong trường hợp chính phủ cấm đoán Bitcoin, chúng tôi sẽ chuyển đổi VBTC thành một sàn giao dịch P2P, vì vậy danh tiếng của người dùng sẽ vô cùng quan trọng.</p>
+
+<p>3 - Nó cho phép người dùng có thể kiểm tra sàn giao dịch. Điều này sẽ sẽ giúp cho VBTC chứng minh khả năng thanh toán của mình một cách công khai  mà không cần đến một kiểm toán viên có thể dễ dàng bị mua chuộc.</p>
+
+<p>Chúng tôi hiểu rằng hầu hết các sàn giao dịch ngày nay không công bố điều này, đó là lý do tại sao chúng ta thấy rất nhiều hành vi lũng đoạn thị trường, và cũng có rất nhiều kẻ lừa đảo chỉ muốn cướp Bitcoin từ khách hàng của họ (Chúng tôi không nói về những sàn giao dịch lớn. Chúng tôi đang nói về rất nhiều sàn giao dịch Bitcoin nhỏ mà đã bị đóng cửa của sau khi tuyên bố họ đã bị hack)</p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle collapsed">
+              Giờ làm việc
+            </a>
+          </div>
+          <div class="accordion-body collapse ">
+            <div class="accordion-inner">
+              <p>Giao dịch: 24 giờ / 7 ngày
+Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tối (GMT +7)</p>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <h3>
+      <a href="" class="bitex-support-link" target="_blank">
+        <i class="icon-envelope"></i> Hãy liên hệ với chúng tôi nếu bạn không tìm thấy câu trả lời tại đây</a>
+      </h3>
+    </div>
+  </div>
+
+  <!-- signup page-->
+  <div id="signup" class="page  row-fluid bitex-view" style="display: none">
+    <div class="page-header">
+      <h1 class="bitex-view-title">Đăng ký</h1>
+    </div>
+    <p>Bạn đã đăng ký? <a href="#" data-switch-view="signin">Đăng nhập</a>.</p>
+
+    <div class="bitex-view-content">
+      <form action="" accept-charset="UTF-8" class="form-horizontal" id="new_user" method="post">
+        <div class="control-group">
+          <label class="control-label">Tên đăng nhập</label>
+
+          <div class="controls">
+            <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Địa chỉ Email</label>
+
+          <div class="controls">
+            <input id="id_signup_email" name="Email" size="30" type="text" placeholder="Ví dụ: phuong@gmail.com">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Mật khẩu</label>
+
+          <div class="controls">
+            <input id="id_signup_password" name="Password" size="30" type="password">
+            <p class="help-block">Ít nhất 8 ký tự</p>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Xác nhận mật khẩu của bạn</label>
+          <div class="controls">
+            <input id="id_signup_password2" name="Password2" size="30" type="password">
+          </div>
+        </div>
+
+        <div class="control-group" style="">
+          <label class="control-label">Quốc gia</label>
+          <div class="controls">
+            <select id="id_signup_country" name="country"></select>
+          </div>
+        </div>
+
+        <div id="id_signup_state_group" class="control-group" style="display: none">
+          <label class="control-label">Tỉnh/Thành Phố</label>
+          <div class="controls">
+            <select id="id_signup_state" name="state"></select>
+          </div>
+        </div>
+
+        <div class="control-group" style="display: none;">
+          <label class="control-label">Broker</label>
+          <div class="controls">
+            <select id="id_signup_broker" name="broker"></select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"></label>
+          <div class="controls">
+            <div id="signup_broker_details"></div>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Điều Khoản Sử Dụng</label>
+          <div class="controls">
+            <label class="checkbox">
+              <input id="user_agreed_tos" name="" type="checkbox" checked>Tôi đồng ý với các điều khoản dịch vụ
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <div class="control-group">
+        <div class="controls">
+          <button id="id_btn_signup" class="btn btn-primary">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signin page-->
+  <div id="signin" class="page  row-fluid bitex-view" style="display: none">
+    <div class="page-header">
+      <h1 class="bitex-view-title">Đăng nhập</h1>
+    </div>
+    <p>Không có tài khoản? <a href="#" data-switch-view="signup">Đăng ký</a></p>
+
+    <div class="bitex-view-content">
+      <form accept-charset="UTF-8" action="" method="post">
+        <div class="clearfix">
+          <label for="id_username">Tên đăng nhập</label>
+
+          <div class="input">
+            <input autocapitalize="off" autocorrect="off" id="id_username" name="username" type="text" placeholder=""></div>
+        </div>
+        <div class="clearfix">
+          <label for="id_password">Mật khẩu</label>
+          <div class="input">
+            <input id="id_password" placeholder="" name="password" type="password">
+          </div>
+        </div>
+        <p><a href="#" data-switch-view="forgot_password">Bạn đã quên mật khẩu?</a></p>
+
+        <div class="actions">
+          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="Đăng nhập">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="forgot_password" class="page row bitex-view" style="display: none">
+    <div class="page-header">
+      <h1 class="bitex-view-title">Khôi phục mật khẩu</h1>
+    </div>
+    <div class="bitex-view-content">
+      <form accept-charset="UTF-8" action="" method="post">
+        <div class="clearfix">
+          <label for="id_forgot_password_email">Email</label>
+
+          <div class="input">
+            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="actions">
+          <input id="id_btn_forgot_password" class="btn btn-primary" name="commit" type="submit" value="Khôi phục">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="set_new_password" class="page  row bitex-view" style="display: none">
+    <div class="page-header">
+      <h1 class="bitex-view-title">Đặt mật khẩu mới</h1>
+    </div>
+    <div class="bitex-view-content">
+      <form accept-charset="UTF-8" class="form-horizontal" id="redefine_new_password_form" method="post">
+        <div class="control-group">
+          <label for="id_set_new_password_token"
+                 class="control-label">Mã bảo mật</label>
+          <div class="controls">
+            <input id="id_set_new_password_token" name="Email" size="30" type="text" placeholder="" />
+            <p class="help-block">Chúng tôi vừa gửi một mã bảo mật tới email của bạn.</p>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="id_set_new_password_password" class="control-label">Mật khẩu mới</label>
+          <div class="controls">
+            <input id="id_set_new_password_password" name="Password" size="30" type="password" />
+            <p class="help-block">Ít nhất 8 ký tự</p>
+          </div>
+        </div>
+
+        <div class="control-group">
+              <label for="id_set_new_password_password2" class="control-label">Xác nhận mật khẩu của bạn</label>
+          <div class="controls">
+            <input id="id_set_new_password_password2" name="Password2" size="30" type="password" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <input id="id_btn_set_new_password" class="btn btn-primary" name="commit" type="submit" value="Đặt lại mật khẩu">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="bitex-display-if-logged">
+    <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="verification"> Bạn chưa gửi tài liệu xác minh. Vui lòng xác minh tài khoản của bạn. </a>
+    </div>
+
+    <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="profile"> Bạn có thể tăng mức độ an ninh cho tài khoản của bạn bằng cách bật chức năng xác thực 2 lớp. </a>
+    </div>
+
+    <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <a href="" data-switch-view="faq"> Tài khoản của bạn đã bị khoá. Xin vui lòng liên hệ với bộ phận hỗ trợ khách hàng. </a>
+    </div>
+  </div>
+
+  <div class="page row-fluid bitex-display-if-logged">
+    <div class="span9">
+      <div id="profile" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Hồ sơ</h3>
+        </div>
+        <div id="profile_content" class="">
+          <div id="account_overview_user_id"></div>
+        </div>
+
+        <div class="content bitex-view-content">
+
+          <div class="well span6">
+            <div class="section-title">
+              <h3 class="bitex-view-title">Xác thực 2 lớp (2FA)</h3>
+            </div>
+
+            <div id="id_enable_two_factor_div" class="form-horizontal ">
+
+              <div class="control-group">
+                <label class="control-label">Khoá</label>
+
+                <div class="controls">
+                  <span id='secret' class="bitex-model" data-model-key="TwoFactorSecret"></span>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="controls">
+                  <img id="id_secret_qr" style="width: 100%; margin-top: -30px" src="">
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label">Mã xác thực</label>
+
+                <div class="controls">
+                  <input id="id_second_step_verification"
+                         type="text"
+                         class="input-block-level" pattern="\d+"
+                         title="Mã xác thực từ Google Authenticator"
+                         placeholder="Ví dụ: 123456" required>
+                </div>
+              </div>
+            </div>
+            <button id="id_btn_enable_two_factor" class="btn btn-primary">Bật</button>
+            <button id="id_btn_disable_two_factor" class="btn btn-danger">Tắt</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="trading" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Mua hoặc Bán</h3>
+        </div>
+        <div class="bitex-view-content">
+          <div id="trading_order_entry_content" class="row-fluid"></div>
+          <div id="id_trading_well"></div>
+        </div>
+      </div>
+
+      <div id="algotrading" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Thuật toán cho giao dịch</h3>
+        </div>
+        <div class="bitex-view-content"></div>
+      </div>
+
+
+      <div id="offerbook" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Sổ khớp lệnh</h3>
+        </div>
+        <div class="bitex-view-content">
+          <div id="offer_book_order_entry_content" class="row-fluid"></div>
+          <div class="well">
+            <div class="row-fluid">
+              <div class="btn-group pull-right">
+                <div class="btn btn-mini | btn-show-cum-qty">Lũy kế</div>
+                <div class="btn btn-mini | btn-show-fees ">Phí</div>
+              </div>
+            </div>
+            <div class="row-fluid">
+              <div id="id_order_book_bid_content" class="span6"></div>
+              <div id="id_order_book_ask_content" class="span6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="customers" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Khách hàng</h3>
+        </div>
+        <div id="id_customers_well"></div>
+      </div>
+
+      <div id="my_broker" class="bitex-view">
+        <div class="bitex-view-title"></div>
+        <div class="bitex-view-content"></div>
+      </div>
+
+      <div id="account_overview" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Tổng quan về tài khoản</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div class="row-fluid">
+            <div class="span6">
+              <div id="account_overview_header_id"></div>
+            </div>
+            <div class="span6">
+              <div id="account_overview_fees_id">
+                <div id="account_overview_fees_balances_id"></div>
+                <button id="id_btn_user_fees" class="btn btn-primary btn-small pull-right" style="margin-bottom: 10px;">Thiết lập phí dịch vụ</button>
+              </div>
+              <div id="account_overview_verify_data_id"></div>
+              <div id="account_overview_balances_id"></div>
+            </div>
+          </div>
+          <div class="bitex-account-overview-view-content"></div>
+        </div>
+      </div>
+
+      <div id="withdraw" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Các lệnh rút tiền</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_withdraw_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
+          <div id="id_user_balances_well"></div>
+
+          <div id="id_withdraw_list"></div>
+        </div>
+      </div>
+
+      <div id="withdraw_requests" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Lệnh rút tiền của khách</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_withdraw_request_list"></div>
+        </div>
+      </div>
+
+      <div id="deposit" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Các lệnh gửi tiền</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_deposit_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
+          <div id="id_deposit_balances_container"></div>
+
+          <div id="id_deposit_list"></div>
+        </div>
+      </div>
+
+      <div id="deposit_requests" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Lệnh gửi tiền của khách</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_deposit_request_list"></div>
+        </div>
+      </div>
+
+      <div id="ledger" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Sổ kế toán</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_ledger_balances_container"></div>
+          <div id="id_ledger_list"></div>
+        </div>
+      </div>
+
+
+      <div id="api" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Các Khoá API</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="id_api_button_group" class="row-fluid text-right" style="margin-bottom:20px">
+            <a id="id_btn_new_api_key" class="btn btn-primary"><i class="icon-plus "> Khoá API Mới</i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="settings" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Cài Đặt</h3>
+        </div>
+        <div class="bitex-view-content"></div>
+      </div>
+
+      <div id="verification" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Xác minh tài khoản</h3>
+        </div>
+        <div class="bitex-view-content">
+          <iframe id="JotFormIFrame"
+                  onload="window.parent.scrollTo(0,0)"
+                  allowtransparency="true"
+                  src=""
+                  frameborder="0"
+                  style="width:100%; height:1550px; border:none;"
+                  scrolling="no"></iframe>
+          <script type="text/javascript">
+            window.handleIFrameMessage = function (e) {
+              var args = e.data.split(":");
+              var iframe = document.getElementById("JotFormIFrame");
+              if (!iframe)
+                return;
+              switch (args[0]) {
+                case "scrollIntoView":
+                  iframe.scrollIntoView();
+                  break;
+                case "setHeight":
+                  if (args[1] > 0) {
+                    iframe.style.height = ( parseInt(args[1], 10) + 200 ) +
+                        "px";
+                  }
+                  break;
+              }
+            };
+            if (window.addEventListener) {
+              window.addEventListener("message", handleIFrameMessage, false);
+            } else if (window.attachEvent) {
+              window.attachEvent("onmessage", handleIFrameMessage);
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div id="id_sidebar" class="span3 sidebar bitex-view
+                                                bitex-view-profile
+                                                bitex-view-trading
+                                                bitex-view-offerbook
+                                                bitex-view-customers
+                                                bitex-view-account_overview
+                                                bitex-view-withdraw
+                                                bitex-view-withdraw_requests
+                                                bitex-view-deposit
+                                                bitex-view-deposit_requests
+                                                bitex-view-ledger
+                                                bitex-view-settings
+                                                bitex-view-algotrading
+                                                bitex-view-api
+                                                bitex-view-my_broker
+                                                bitex-view-verification">
+      <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3>
+
+      <div class="bitex-view-content">
+        <div id="account_balance" style="">
+
+          <form class="form-inline">
+            <label class="control-label" for="id_instrument_1">Thị trường:</label>
+            <select id="id_instrument_1">
+              <option></option>
+            </select>
+          </form>
+
+          <div id="id_account_summary_content" class=""></div>
+        </div>
+
+        <div id="id_remittance_box" class=""></div>
+
+        <h6>Menu</h6>
+        <ul class="nav nav-list">
+          <li style="">
+            <a href="" data-switch-view="profile">
+              <i data-switch-view="profile" class="icon-user"></i> Hồ sơ</a>
+          </li>
+          <li style="">
+            <a href="" data-switch-view="my_broker">
+              <i data-switch-view="my_broker" class="icon-search"></i> Về sàn giao dịch</a></li>
+
+          <li>
+            <a href="" data-switch-view="trading">
+              <i data-switch-view="trading" class="icon-random"></i> Mua và Bán</a>
+          </li>
+
+          <li>
+            <a href="" data-switch-view="offerbook">
+              <i data-switch-view="offerbook" class="icon-book"></i> Sổ khớp lệnh</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="algotrading">
+              <i data-switch-view="algotrading" class="icon-cog"></i> Thuật toán cho giao dịch</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="ledger">
+              <i data-switch-view="ledger" class="icon-list"></i> Sổ kế toán</a>
+          </li>
+
+          <li style="" class="bitex-display-if-broker">
+            <a href="" data-switch-view="customers">
+              <i data-switch-view="customers" class="icon-user"></i> Khách hàng</a>
+          </li>
+
+          <li style="" class="bitex-display-if-broker">
+            <a href="" data-switch-view="deposit_requests">
+              <i data-switch-view="deposit_requests" class="icon-plus"></i> Lệnh gửi tiền của khách</a>
+          </li>
+
+          <li style="" class="bitex-display-if-broker">
+            <a href="" data-switch-view="withdraw_requests">
+              <i data-switch-view="withdraw_requests" class="icon-minus"></i> Lệnh rút tiền của khách</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="deposit">
+              <i data-switch-view="deposit" class="icon-plus"></i> Các lệnh gửi tiền</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="withdraw">
+              <i data-switch-view="withdraw" class="icon-minus"></i> Các lệnh rút tiền</a>
+          </li>
+
+          <li style="" class="bitex-display-if-non-broker" id="verification_menu_id">
+            <a href="" data-switch-view="verification">
+              <i data-switch-view="verification" class="icon-check"></i> Xác minh tài khoản của bạn</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="faq">
+              <i data-switch-view="faq" class="icon-question"></i> Ý kiến & Hỗ trợ</a>
+          </li>
+
+          <li style="">
+            <a href="" data-switch-view="api">
+              <i data-switch-view="api" class="icon-globe"></i> API</a>
+          </li>
+
+          <li>
+            <a href="javascript:location.reload()">
+              <i class="icon-signout"></i> Thoát</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="market" class="page row bitex-view" style="display: none">
+    <div class="row-fluid">
+      <div class="page-header">
+        <h2 class="bitex-view-title">Thị trường</h2>
+      </div>
+    </div>
+    <div class="bitex-view-content">
+    </div>
+  </div>
+
+  <div id="themes" class="bitex-view container page" style="display: none">
+    <div class="page-header ls-title-4">
+        <h1 class="bitex-view-title">Themes</h1>
+    </div>
+    <p>Choose a Theme</p>
+    <hr>
+    <div class="bitex-view-content">
+        <div class="row" style="text-align:center">
+            <div class="span4">
+                <a href="https://foxbit.exchange/vi/themes/default/">
+                    <img src="https://foxbit.exchange/vi/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme">
+                    <h3>Default Theme</h3>
+                </a>
+            </div>
+            <div class="span4">
+                <a href="https://foxbit.exchange/vi/themes/ander/">
+                    <img src="https://foxbit.exchange/vi/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme">
+                    <h3>Ander</h3>
+                </a>
+            </div>
+            <div class="span4">
+                <a href="https://foxbit.exchange/vi/themes/whitedev/">
+                    <img src="https://foxbit.exchange/vi/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme">
+                    <h3>Whitedev</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- div.container -->
+</div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          
+          <a href="" data-switch-view="admin">admin</a> |
+          Độ trễ: <span class="bitex-model" data-model-key="latency">0</span> ms |
+          Phiên bản: d9ca5d0 |
+          
+		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
+          | <a href="#themes">Themes</a>
+          | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
+          | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a> 
+        </p>
+      </div>
+    </footer>
+
+    
+    <script data-cfasync="false" type="text/javascript">
+      var _app;  // global application object
+      (function(){
+        var broker_id = 4;
+        var country_code = "BR";
+        var blinktrade_api = "api.blinktrade.com";
+
+        _app = new BlinkTradeApp(broker_id, country_code );
+        _app.run(blinktrade_api);
+      })();
+    </script>
+    
+
+    
+    <script data-cfasync="false" type="text/javascript">
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', '_gat');
+
+      _gat('create', 'UA-57478613-1', 'auto');
+      _gat('send', 'pageview');
+
+    </script>
+    
+
+    
+    <!--Start of Zopim Live Chat Script-->
+    <script data-cfasync="false" type="text/javascript">
+      window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+          d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+          _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='https://v2.zopim.com/?2ZQbAVSILzBFbO31Z6EletdDQaW7H9xj';z.t=+new Date;$.
+            type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+    
+
+  </body>
+</html>
