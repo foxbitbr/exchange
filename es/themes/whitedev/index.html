@@ -43,7 +43,7 @@
 
   
 
-  <script data-cfasync="false" src="https://foxbit.exchange/es/assets/js/bitex_app_blink_trade.compiled.es.whitedev.js?v=d9ca5d0" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://foxbit.exchange/es/assets/js/bitex_app_blink_trade.compiled.es.whitedev.js?v=7ad0a23" type="text/javascript"></script>
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
 
@@ -92,12 +92,6 @@
             
               
                 
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/vi">VI</a></li>
-                
-              
-            
-              
-                
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/ro">RO</a></li>
                 
               
@@ -105,6 +99,12 @@
               
                 
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/zn_CN">ZN_CN</a></li>
+                
+              
+            
+              
+                
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/vi">VI</a></li>
                 
               
             
@@ -831,9 +831,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
 
 <p>1 - Esto evita manipulaciones en el mercado, como pueden ser el front running, Pump And Dump, u otras manipulaciones. Ante cualquier tentativa de manupulacion, los demas participantes pueden identificar al manipulador facilmente.</p>
 
-<p>2 - Ayuda a construir la reputación del usuario, recuerda, en caso de una prohibición gubernamental de bitcoins, giraremos surbitcoin a un mercado de P2P, por lo tanto, la reputación será muy importante.</p>
+<p>2 - Ayuda a construir la reputación del usuario, recuerda, en caso de una prohibición gubernamental de bitcoins, giraremos el exchange a un mercado de P2P, por lo tanto, la reputación será muy importante.</p>
 
-<p>3 - Permite a los usuarios auditar al operador del exchange. Esto ayudará a los operadores de SurBitcoin demostrar su solvencia al público ademas de no tener que contratar los servicios de un auditor que pueda manipular facilmente las cuentas.</p>
+<p>3 - Permite a los usuarios auditar al operador del exchange. Esto ayudará a los operadores del exchange demostrar su solvencia al público ademas de no tener que contratar los servicios de un auditor que pueda manipular facilmente las cuentas.</p>
 
 <p>Entendemos que la mayoría de las bolsas, a dia de hoy, no publican este tipo de contenido. Es por eso que constantemente estan surgiendo casos de manupulacion en el mercado y de estafadores cuyo unico interes es apoderarse de los bitcoins de sus clientes (en este caso no estamos hablando de los grandes exchanges, sino de una gran cantidad de pequeños exchanges que ya han cerrado sus puertas, declarando haber sido “hackeados”)</p>
 
@@ -1288,7 +1288,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: d9ca5d0</a>
+                      <a href="#">Version: 7ad0a23</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1323,7 +1323,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: d9ca5d0</a>
+                      <a href="#">Version: 7ad0a23</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1362,7 +1362,9 @@ También podrá revisar su historial de depósitos y retiros median</p>
         var country_code = "BR";
         var blinktrade_api = "api.blinktrade.com";
 
-        _app = new BlinkTradeApp(broker_id, country_code );
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);
       })();
     </script>

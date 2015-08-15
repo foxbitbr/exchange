@@ -36,13 +36,14 @@
     <!--Bootstrap-->
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/bootstrap-combined.min.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://foxbit.exchange/zn_CN/assets/css/flag-icon.css" rel="stylesheet">
 
     
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=d9ca5d0" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=d9ca5d0" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=7ad0a23" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=7ad0a23" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -71,39 +72,45 @@
             
 
             <li class="dropdown">
-              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">ZN_CN <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="flag-icon flag-icon-zn_CN"></span> <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1" style="min-width: 60px">
               
                 
                   
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/">PT_BR</a></li>
-                  
-                
-              
-                
-                  
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/en_US">EN_US</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/">
+                      <span class="flag-icon flag-icon-pt_BR"></span></a></li>
                   
                 
               
                 
                   
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/es">ES</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/en_US">
+                      <span class="flag-icon flag-icon-en_US"></span></a></li>
                   
                 
               
                 
                   
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/vi">VI</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/es">
+                      <span class="flag-icon flag-icon-es"></span></a></li>
                   
                 
               
                 
                   
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/ro">RO</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/ro">
+                      <span class="flag-icon flag-icon-ro"></span></a></li>
                   
                 
               
+                
+              
+                
+                  
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/vi">
+                      <span class="flag-icon flag-icon-vi"></span></a></li>
+                  
                 
               
               </ul>
@@ -135,7 +142,7 @@
       <img src="/zn_CN/assets/exchange_logos/foxbit_landing_page_logo.png" style="">
       <p class="lead bitex-view-title bitex-view-title">
         
-            巴西的第一家比特币交易平台
+            购买和出售比特币在巴西
           
       </p>
     </header>
@@ -565,6 +572,14 @@
         <div class="bitex-view-content"></div>
       </div>
 
+
+      <div id="line_of_credit" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">信用额度</h3>
+        </div>
+        <div class="bitex-view-content"></div>
+      </div>
+
       <div id="verification" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">验证我的账户</h3>
@@ -619,6 +634,7 @@
                                                 bitex-view-settings
                                                 bitex-view-algotrading
                                                 bitex-view-api
+                                                bitex-view-line_of_credit 
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
       <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3>
@@ -698,6 +714,12 @@
               <i data-switch-view="verification" class="icon-check"></i> 验证我的账户</a>
           </li>
 
+
+          <li style="" class="bitex-display-if-non-broker bitex-model" style="display: none"  id="line_of_credit_menu_id" data-model-key="HasLineOfCredit" data-model-action="show_element">
+            <a href="" data-switch-view="line_of_credit">
+              <i data-switch-view="line_of_credit" class="icon-retweet"></i> 信用额度</a>
+          </li>
+
           <li style="">
             <a href="" data-switch-view="faq">
               <i data-switch-view="faq" class="icon-question"></i> 建议和问题</a>
@@ -767,7 +789,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: d9ca5d0 |
+          Version: 7ad0a23 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -785,7 +807,9 @@
         var country_code = "BR";
         var blinktrade_api = "api.blinktrade.com";
 
-        _app = new BlinkTradeApp(broker_id, country_code );
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);
       })();
     </script>

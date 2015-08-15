@@ -43,7 +43,7 @@
 
   
 
-  <script data-cfasync="false" src="https://foxbit.exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.whitedev.js?v=d9ca5d0" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://foxbit.exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.whitedev.js?v=7ad0a23" type="text/javascript"></script>
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
 
@@ -62,7 +62,7 @@
                         <ul>
                         <li><a href="" data-switch-view="profile" role="option">Hồ sơ</a></li>
                         <li><a href="" data-switch-view="trading" role="option">Mua và Bán</a></li>
-                        <li><a href="" data-switch-view="offerbook" role="option">Sổ khớp lệnh</a></li>
+                        <li><a href="" data-switch-view="offerbook" role="option">Sổ lệnh</a></li>
                         <li><a href="javascript:location.reload()" role="option">Thoát</a></li>
                         </ul>
                     </nav>
@@ -95,8 +95,6 @@
               
             
               
-            
-              
                 
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/ro">RO</a></li>
                 
@@ -106,6 +104,8 @@
                 
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="https://foxbit.exchange/zn_CN">ZN_CN</a></li>
                 
+              
+            
               
             
             </ul>
@@ -123,7 +123,7 @@
             <table style="display:inline-block">
                 <tr>
                     <td class="bitex-display-if-logged">
-                        <a href="" data-switch-view="trading" class="ls-tooltip-bottom" aria-label="Mua hoặc Bán"><i data-switch-view="trading" class="ls-ico-stats"> </i></a>
+                        <a href="" data-switch-view="trading" class="ls-tooltip-bottom" aria-label="Mua và Bán"><i data-switch-view="trading" class="ls-ico-stats"> </i></a>
                     </td>
                     <td>
                         <a href="" data-switch-view="market" class="ls-tooltip-bottom" aria-label="Thị trường"><i data-switch-view="market" class="ls-ico-chart-bar-up"> </i></a>
@@ -179,7 +179,7 @@
             <ul>
                 <li><a href="" data-switch-view="profile" role="option">Hồ sơ</a></li>
                 <li><a href="" data-switch-view="trading" role="option">Mua và Bán</a></li>
-                <li><a href="" data-switch-view="offerbook" role="option">Sổ khớp lệnh</a></li>
+                <li><a href="" data-switch-view="offerbook" role="option">Sổ lệnh</a></li>
             </ul>
             <a href="javascript:location.reload()" class="ls-btn-logout" role="combobox" aria-expanded="false">Sair</a>
         </nav>
@@ -221,7 +221,7 @@
             <li><a href="" data-switch-view="profile" class="ls-ico-user" role="menuitem" style="outline: none;">Hồ sơ</a></li>
             <li class=""><a href="" data-switch-view="my_broker" class="ls-ico-info" role="menuitem" style="outline: none;"> Về sàn giao dịch</a></li>
             <li><a href="" data-switch-view="trading" class="ls-ico-docs" role="menuitem">Mua và Bán</a></li>
-            <li><a href="" data-switch-view="offerbook" class="ls-ico-book" role="menuitem">Sổ khớp lệnh</a></li>
+            <li><a href="" data-switch-view="offerbook" class="ls-ico-book" role="menuitem">Sổ lệnh</a></li>
             <li><a href="" data-switch-view="algotrading" class="ls-ico-cog" role="menuitem">Thuật toán cho giao dịch</a></li>
             <li><a href="" data-switch-view="ledger" class="ls-ico-list" role="menuitem">Sổ kế toán</a></li>
 
@@ -408,15 +408,7 @@
           </div>
           <div id="Mối quan hệ giữa sàn giao dịch và Blinktrade là như thế nào?" class="accordion-body in collapse ">
             <div class="accordion-inner">
-              <p>Blinktrade is the technology provider.</p>
-
-<p>The exchange operator hire the service of blinktrade.</p>
-
-<p>Blinktrade only provides IT services for the exchange operator.</p>
-
-<p>The exchange operator is de facto the company operating the exchange. By operating we means: Accepting deposits, Processing withdrawals, verifiying customers identities and allowing customers to trade safely.</p>
-
-<p>Blinktrade là một nhà cung cấp công nghệ.</p>
+              <p>Blinktrade là một nhà cung cấp công nghệ.</p>
 
 <p>Nhà điều hành sàn giao dịch thuê các dịch vụ của Blinktrade.</p>
 
@@ -599,7 +591,7 @@
           </div>
           <div id="Tôi có phải trả phí không?" class="accordion-body in collapse ">
             <div class="accordion-inner">
-              <p>Có, lệ phí áp dụng đối với việc rút và gửi tiền VNĐ và giao dịch. Bạn không cần phải trả phí để gửi và rút BTC. Phí Bitcoin áp dụng đối với các blockchain là rất nhỏ.</p>
+              <p>Có, lệ phí áp dụng đối với việc rút và gửi tiền VNĐ (1%) và giao dịch (0.3%). Phí để gửi và rút BTC là 0,005 BTC. Bạn không phải trả sàn giao dịch để nạp BTC.</p>
 
             </div>
           </div>
@@ -723,7 +715,7 @@
           </div>
           <div id="Ai là người trả phí rút tiền?" class="accordion-body in collapse ">
             <div class="accordion-inner">
-              <p>Trong cả 2 trường hợp rút tiền (Bitcoin và VNĐ), người giao dịch phải trả phí. Phí rút VNĐ được tính bởi sàn giao dịch. Phí rút Bitcoin được tính bởi blockchain.</p>
+              <p>Trong cả 2 trường hợp rút tiền (Bitcoin và VNĐ), người giao dịch phải trả phí.</p>
 
             </div>
           </div>
@@ -784,8 +776,7 @@
           </div>
           <div id="Giờ làm việc" class="accordion-body in collapse ">
             <div class="accordion-inner">
-              <p>Giao dịch: 24 giờ / 7 ngày
-Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tối (GMT +7)</p>
+              <p>Giao dịch: 24 giờ / 7 ngày</p>
 
             </div>
           </div>
@@ -818,7 +809,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
             </li>
             <li>
               <label class="control-label">Địa chỉ Email</label>
-              <input id="id_signup_email" name="Email" size="30" type="text" placeholder="Ví dụ: phuong@gmail.com">
+              <input id="id_signup_email" name="Email" size="30" type="text" placeholder="Ví dụ: ngoctrinh@gmail.com">
             </li>
             <li>
               <label class="control-label">Mật khẩu</label>
@@ -826,7 +817,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
               <p class="help-block">Ít nhất 8 ký tự</p>
             </li>
             <li>
-              <label class="control-label">Xác nhận mật khẩu của bạn</label>
+              <label class="control-label">Xác nhận mật khẩu</label>
               <input id="id_signup_password2" name="Password2" size="30" type="password">
             </li>
             <li>
@@ -834,7 +825,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
               <select id="id_signup_country" name="country"></select>
             </li>
             <li id="id_signup_state_group" style="display:none">
-              <label class="control-label">Tỉnh/Thành Phố</label>
+              <label class="control-label">Tỉnh/Thành phố</label>
               <select id="id_signup_state" name="state"></select>
             </li>
             <li style="display: none;">
@@ -1048,7 +1039,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
 
       <div id="trading" class="bitex-view">
         <div class="container-fluid">
-          <h1 class="ls-title-intro ls-ico-info">Mua hoặc Bán</h1>
+          <h1 class="ls-title-intro ls-ico-info">Mua và Bán</h1>
         </div>
         <div class="bitex-view-content">
           <div id="trading_order_entry_content" class="row-fluid"></div>
@@ -1066,7 +1057,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
 
       <div id="offerbook" class="bitex-view">
         <div class="container-fluid">
-          <h1 class="ls-title-intro ls-ico-book">Sổ khớp lệnh</h1>
+          <h1 class="ls-title-intro ls-ico-book">Sổ lệnh</h1>
         </div>
         <div class="bitex-view-content">
           <div id="offer_book_order_entry_content" class="row-fluid"></div>
@@ -1171,7 +1162,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
 
       <div id="api" class="bitex-view">
         <div class="section-title">
-          <h3 class="ls-title-intro ls-ico-list">Các Khoá API</h3>
+          <h3 class="ls-title-intro ls-ico-list">Các khoá API</h3>
         </div>
         <div class="content bitex-view-content">
           <div id="id_api_button_group"></div>
@@ -1238,7 +1229,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: d9ca5d0</a>
+                      <a href="#">Version: 7ad0a23</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1273,7 +1264,7 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: d9ca5d0</a>
+                      <a href="#">Version: 7ad0a23</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1312,7 +1303,9 @@ Chăm sóc khách hàng: Thứ Hai tới thứ Sáu 9 giờ sáng - 6 giờ tố
         var country_code = "BR";
         var blinktrade_api = "api.blinktrade.com";
 
-        _app = new BlinkTradeApp(broker_id, country_code );
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);
       })();
     </script>
