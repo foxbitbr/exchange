@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     
-        <title>FoxBit - Buy or sell bitcoins in Brazil</title>
-      
+    
+    <title> FoxBit - Buy or sell bitcoins in Brazil </title>
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="BlinkTrade">
 
     
-        <meta name="description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
-        <meta name="keywords" content="Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil">
-        <meta property="og:title" content="FoxBit - Buy or sell bitcoins in Brazil">
-        <meta property="og:description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
-      
+    
+
+    <meta name="description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
+    <meta name="keywords" content="Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil">
+    <meta property="og:title" content="FoxBit - Buy or sell bitcoins in Brazil">
+    <meta property="og:description" content="Compre e venda bitcoins no Brasil de maneira segura através da FoxBit. Com o FoxBit você pode começar a comprar e vender bitcoins hoje. O processo de registro dura menos de um minuto.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://foxbit.exchange/en_US">
@@ -42,8 +43,8 @@
     <link href="https://foxbit.exchange/en_US/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/en_US/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/en_US/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/en_US/assets/themes/default/css/style.css?v=2af106f" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/en_US/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=2af106f" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/en_US/assets/themes/default/css/style.css?v=f71bff1" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/en_US/assets/js/bitex_app_blink_trade.compiled.en_US.default.js?v=f71bff1" type="text/javascript"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -142,8 +143,7 @@
       <img src="/en_US/assets/exchange_logos/foxbit_landing_page_logo.png" style="">
       <p class="lead bitex-view-title bitex-view-title">
         
-            Compre ou venda seus Bitcoins no Brasil
-          
+        Compre ou venda seus Bitcoins no Brasil
       </p>
     </header>
 
@@ -152,10 +152,10 @@
         <form action="" class="form-inline">
           <div class="row-fluid">
             <label for="id_landing_username">Username:</label>
-            <input class="focus" id="id_landing_username" placeholder="" size="30" type="text">
+            <input class="focus" id="id_landing_username" placeholder="" size="30" type="text" autofocus>
             <label for="id_landing_password">Password:</label>
             <input id="id_landing_password" placeholder="" size="30"  type="password">
-            <button id="id_landing_signin" class="btn btn-primary">login</button>
+            <button id="id_landing_signin" class="btn btn-primary">Login</button>
           </div>
           <div class="clearfix" style="height: 20px"></div>
           <div class="row-fluid">
@@ -789,7 +789,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
     <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <a href="" data-switch-view="profile"> You can increase the security of your account by enabling authentication in two steps </a>
+      <a href="" data-switch-view="twofactor"> You can increase the security of your account by enabling authentication in two steps </a>
     </div>
 
     <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
@@ -850,6 +850,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         </div>
       </div>
 
+      <div id="twofactor" class="bitex-view">
+        <div id="twofactor_content"></div>
+      </div>
+
       <div id="trading" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">Buy or Sell</h3>
@@ -889,6 +893,14 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         </div>
       </div>
 
+      <div id="history" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Orders history</h3>
+        </div>
+        <div class="content bitex-view-content">
+        </div>
+      </div>
+
       <div id="customers" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">My customers</h3>
@@ -924,10 +936,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
       </div>
 
       <div id="withdraw" class="bitex-view">
-        <div class="section-title">
+        <div class="section-title title-float">
           <h3 class="bitex-view-title">My Withdrawals</h3>
         </div>
-        <div class="content bitex-view-content">
+        <div class="content bitex-view-content content-padding">
           <div id="id_withdraw_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
           <div id="id_user_balances_well"></div>
 
@@ -945,10 +957,10 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
       </div>
 
       <div id="deposit" class="bitex-view">
-        <div class="section-title">
+        <div class="section-title title-float">
           <h3 class="bitex-view-title">My Deposits</h3>
         </div>
-        <div class="content bitex-view-content">
+        <div class="content bitex-view-content content-padding">
           <div id="id_deposit_button_group" class="row-fluid text-right" style="margin-bottom:20px" ></div>
           <div id="id_deposit_balances_container"></div>
 
@@ -963,6 +975,23 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         <div class="content bitex-view-content">
           <div id="id_deposit_request_list"></div>
         </div>
+      </div>
+
+      <div id="card" class="bitex-view">
+          <div class="section-title">
+              <h3 class="bitex-view-title">
+                  <i class="icon-tag"></i>
+                  <span>BlinkCard</span>
+              </h3>
+          </div>
+          <div class="content bitex-view-content">
+              <div id="id_card_button_group" class="row-fluid text-right">
+                  <a id="id_btn_new_card" class="btn btn-primary">
+                      <i class="icon-plus">New Card</i>
+                  </a>
+              </div>
+              <br>
+          </div>
       </div>
 
       <div id="ledger" class="bitex-view">
@@ -1045,12 +1074,15 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
     <div id="id_sidebar" class="span3 sidebar bitex-view
                                                 bitex-view-profile
+                                                bitex-view-twofactor
                                                 bitex-view-trading
                                                 bitex-view-offerbook
+                                                bitex-view-history
                                                 bitex-view-customers
                                                 bitex-view-account_overview
                                                 bitex-view-withdraw
                                                 bitex-view-withdraw_requests
+                                                bitex-view-card
                                                 bitex-view-deposit
                                                 bitex-view-deposit_requests
                                                 bitex-view-ledger
@@ -1060,8 +1092,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                                                 bitex-view-line_of_credit 
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
-      <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3>
-
+      <h3><span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span></h3> 
       <div class="bitex-view-content">
         <div id="account_balance" style="">
 
@@ -1079,57 +1110,67 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
 
         <h6>Menu</h6>
         <ul class="nav nav-list">
-          <li style="">
+          <li id="menu-profile">
             <a href="" data-switch-view="profile">
               <i data-switch-view="profile" class="icon-user"></i> My Profile</a>
           </li>
-          <li style="">
+          <li id="menu-broker">
             <a href="" data-switch-view="my_broker">
               <i data-switch-view="my_broker" class="icon-search"></i> About the exchange</a></li>
 
-          <li>
+          <li id="menu-trading">
             <a href="" data-switch-view="trading">
               <i data-switch-view="trading" class="icon-random"></i> Buy or Sell</a>
           </li>
 
-          <li>
+          <li id="menu-offerbook">
             <a href="" data-switch-view="offerbook">
               <i data-switch-view="offerbook" class="icon-book"></i> Order book</a>
           </li>
 
-          <li style="">
+          <li class="bitex-display-if-non-broker" id="menu-history">
+            <a href="" data-switch-view="history">
+              <i data-switch-view="history" class="icon-list-alt"></i> Orders history</a>
+          </li>
+
+          <li id="menu-algotrading">
             <a href="" data-switch-view="algotrading">
               <i data-switch-view="algotrading" class="icon-cog"></i> Algo Trading</a>
           </li>
 
-          <li style="">
+          <li id="menu-ledger">
             <a href="" data-switch-view="ledger">
               <i data-switch-view="ledger" class="icon-list"></i> Ledger</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker" id="menu-customers">
             <a href="" data-switch-view="customers">
               <i data-switch-view="customers" class="icon-user"></i> My customers</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker" id="menu-deposit_requests">
             <a href="" data-switch-view="deposit_requests">
               <i data-switch-view="deposit_requests" class="icon-plus"></i> Deposit requests</a>
           </li>
 
-          <li style="" class="bitex-display-if-broker">
+          <li class="bitex-display-if-broker" id="menu-withdraw_requests">
             <a href="" data-switch-view="withdraw_requests">
               <i data-switch-view="withdraw_requests" class="icon-minus"></i> Withdrawal requests</a>
           </li>
 
-          <li style="">
+          <li id="menu-deposit">
             <a href="" data-switch-view="deposit">
               <i data-switch-view="deposit" class="icon-plus"></i> My Deposits</a>
           </li>
 
-          <li style="">
+          <li id="menu-withdraw">
             <a href="" data-switch-view="withdraw">
               <i data-switch-view="withdraw" class="icon-minus"></i> My Withdrawals</a>
+          </li>
+
+          <li class="bitex-display-if-non-broker bitex-model" style="display: none" id="card_menu_id"  data-model-key="HasCardFeature" data-model-action="show_element" id="menu-card">
+              <a href="" data-switch-view="card">
+                  <i data-switch-view="card" class="icon-tag"></i> Blink Card</a>
           </li>
 
           <li style="" class="bitex-display-if-non-broker" id="verification_menu_id">
@@ -1138,7 +1179,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           </li>
 
 
-          <li style="" class="bitex-display-if-non-broker bitex-model" style="display: none"  id="line_of_credit_menu_id" data-model-key="HasLineOfCredit" data-model-action="show_element">
+          <li style="" class="bitex-display-if-non-broker bitex-model" style="display: none"  id="line_of_credit_menu_id" data-model-key="HasLineOfCredit" data-model-action="show_element" id="menu-line_of_credit">
             <a href="" data-switch-view="line_of_credit">
               <i data-switch-view="line_of_credit" class="icon-retweet"></i> Line of credit</a>
           </li>
@@ -1148,7 +1189,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
               <i data-switch-view="faq" class="icon-question"></i> Suggestions & Support</a>
           </li>
 
-          <li style="">
+          <li style="" id="menu-api">
             <a href="" data-switch-view="api">
               <i data-switch-view="api" class="icon-globe"></i> API</a>
           </li>
@@ -1181,21 +1222,29 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
     <hr>
     <div class="bitex-view-content">
         <div class="row" style="text-align:center">
+            <div class="span5" style="margin:auto;float:none">
+                <a href="https://foxbit.exchange/en_US/themes/coinage/">
+                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/foxbit-coinage-thumb.jpg" alt="Coinage Theme">
+                    <h3>Coinage Theme</h3>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="text-align:center">
             <div class="span4">
                 <a href="https://foxbit.exchange/en_US/themes/default/">
-                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/default-theme.jpg" alt="Default Theme">
+                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/foxbit-default-thumb.jpg" alt="Default Theme">
                     <h3>Default Theme</h3>
                 </a>
             </div>
             <div class="span4">
                 <a href="https://foxbit.exchange/en_US/themes/ander/">
-                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/ander-theme.jpg" alt="Ander Theme">
+                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/foxbit-ander-thumb.jpg" alt="Ander Theme">
                     <h3>Ander</h3>
                 </a>
             </div>
             <div class="span4">
                 <a href="https://foxbit.exchange/en_US/themes/whitedev/">
-                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/whitedev-theme.jpg" alt="Whitedev Theme">
+                    <img src="https://foxbit.exchange/en_US/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
                     <h3>Whitedev</h3>
                 </a>
             </div>
@@ -1212,7 +1261,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 2af106f |
+          Version: f71bff1 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -1230,7 +1279,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         var country_code = "BR";
         var blinktrade_api = "api.blinktrade.com";
 
-        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenEUR',          'EUR', 'KRAKEN_BTCEUR_BEST_BID / 100000000', 'KRAKEN_BTCEUR_BEST_ASK / 100000000'  ], ['Dollar Bitcoin',     'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Euro Bitcoin',       'BRL', 'BLINK_BTCBRL_BEST_BID /  KRAKEN_BTCEUR_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  KRAKEN_BTCEUR_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
         _app.run(blinktrade_api);

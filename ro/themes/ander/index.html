@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-      <title>FoxBit - //Cumpărați și vindeți Bitcoin în Brazilia</title>
-    
+  
+  <title> FoxBit - //Cumpărați și vindeți Bitcoin în Brazilia </title>
 
   <!-- Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="BlinkTrade">
 
   
-      <meta name="description" content="Cumpărați și vindeți Bitcoin în Brazilia">
-      <meta name="keywords" content="Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil">
-      <meta property="og:title" content="FoxBit - //Cumpărați și vindeți Bitcoin în Brazilia">
-      <meta property="og:description" content="Cumpărați și vindeți Bitcoin în Brazilia">
-    
+  
+
+  <meta name="description" content="Cumpărați și vindeți Bitcoin în Brazilia">
+  <meta name="keywords" content="Buy and sell bitcoin in Brazil, bitcoin exchange in Brazil, sell bitcoins in Brazil, buy bitcoins in Brazil, Bitcoin exchange in Brazil">
+  <meta property="og:title" content="FoxBit - //Cumpărați și vindeți Bitcoin în Brazilia">
+  <meta property="og:description" content="Cumpărați și vindeți Bitcoin în Brazilia">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://foxbit.exchange/ro/themes/ander/index.html">
@@ -38,9 +39,9 @@
   
   <!--link href="/assets/themes/default/css/Dialog.css" rel="stylesheet"-->
   <link href="https://foxbit.exchange/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
-  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=2af106f" rel="stylesheet">
-  <link href="https://foxbit.exchange/ro/assets/themes/ander/css/blinktrade.css?v=2af106f" rel="stylesheet">
-  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.ander.js?v=2af106f" type="text/javascript"></script>
+  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=f71bff1" rel="stylesheet">
+  <link href="https://foxbit.exchange/ro/assets/themes/ander/css/blinktrade.css?v=f71bff1" rel="stylesheet">
+  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.ander.js?v=f71bff1" type="text/javascript"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -56,11 +57,7 @@
         <!-- .logo -->
         
         <a href="#" class="logo brand-face" data-switch-view="offerbook" style="padding-top: 0px;">
-          <img data-switch-view="offerbook" class="logo__img" src="/ro/assets/exchange_logos/foxbit_toolbar_logo.png" style="
-                height: 30px;
-                margin-top: -10px;
-                margin-bottom: -10px;
-            ">
+          <img data-switch-view="offerbook" class="logo__img" src="/ro/assets/exchange_logos/foxbit_toolbar_logo.png" style="height:30px;margin-top:-10px;margin-bottom:-10px;">
         </a>
         
         <!-- /.logo -->
@@ -103,37 +100,37 @@
 
                   <!-- .head-dropdown -->
                   <ul class="head-dropdown">
-                    <li>
+                    <li id="menu-profile">
                       <a href="#profile" title="Profile" data-switch-view="profile">
                         Profilul meu
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-broker">
                       <a href="#my_broker" title="Broker info" data-switch-view="my_broker">
                         Despre exchange
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-customers">
                       <a href="#customers" title="Customers" data-switch-view="customers">
                         Clienți mei
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-deposit_requests">
                       <a href="deposit_requests" title="Deposit" data-switch-view="deposit_requests">
                         Cerere de depunere
                       </a>
                     </li>
-                    <li class="bitex-display-if-broker">
+                    <li class="bitex-display-if-broker" id="menu-withdraw_requests">
                       <a href="withdraw_requests" title="Withdraw" data-switch-view="withdraw_requests">
                         Cerere de retragere
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-deposit">
                       <a href="#deposit" title="Deposit" data-switch-view="deposit">
                         Depunerile mele
                       </a>
                     </li>
-                    <li>
+                    <li id="menu-withdraw">
                       <a href="#withdraw" title="Withdrawals" data-switch-view="withdraw">
                         Retragerile mele
                       </a>
@@ -273,8 +270,7 @@
         <!-- .home__title -->
         <h1 class="home__title">
           
-              Cumpărați și vindeți Bitcoin în Brazilia
-            
+          Cumpărați și vindeți Bitcoin în Brazilia
         </h1>
         <!-- /.home__title -->
 
@@ -291,7 +287,7 @@
               <!-- .layout__item -->
               <div class="layout__item one-whole desk--six-tenths">
                 <label for="id_landing_username" class="home-form__label">Nume utilizator:</label>
-                <input class="home-form__input input input--large input--full" id="id_landing_username" type="text" size="30">
+                <input class="home-form__input input input--large input--full" id="id_landing_username" type="text" size="30" autofocus>
               </div>
               <!-- /.layout__item -->
 
@@ -468,8 +464,42 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
   <!-- /#market -->
 
   <!-- /#themes -->
-  <div id="themes" class="bitex-view">
-  
+  <div id="themes" class="bitex-view container page bitex-view" style="display: none">
+    <div class="page__head">
+        <h1 class="page__title beta bitex-view-title">Themes</h1>
+        <p>Choose a Theme</p>
+    </div>
+    <hr>
+    <div class="bitex-view-content">
+        <div class="layout row" style="margin:auto;text-align:center">
+            <div class="layout__item">
+                <a href="https://foxbit.exchange/ro/themes/coinage/">
+                    <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-coinage-thumb.jpg" alt="Coinage Theme">
+                    <h3>Coinage Theme</h3>
+                </a>
+            </div>
+        </div>
+        <div class="layout row" style="text-align:center;margin:auto">
+            <div class="layout__item" style="width: 380px">
+                <a href="https://foxbit.exchange/ro/themes/default/">
+                    <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-default-thumb.jpg" alt="Default Theme">
+                    <h3>Default Theme</h3>
+                </a>
+            </div>
+            <div class="layout__item" style="width: 380px">
+                <a href="https://foxbit.exchange/ro/themes/ander/">
+                    <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-ander-thumb.jpg" alt="Ander Theme">
+                    <h3>Ander</h3>
+                </a>
+            </div>
+            <div class="layout__item" style="width: 380px">
+                <a href="https://foxbit.exchange/ro/themes/whitedev/">
+                    <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
+                    <h3>Whitedev</h3>
+                </a>
+            </div>
+        </div>
+    </div>
   </div>
   <!-- #themes -->
 
@@ -645,6 +675,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           <!-- .sidebar -->
           <div id="id_sidebar" class="sidebar bitex-view
                                               bitex-view-profile
+                                              bitex-view-twofactor
                                               bitex-view-trading
                                               bitex-view-offerbook
                                               bitex-view-customers
@@ -831,6 +862,9 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             <!-- /.page__body -->
           </div>
           <!-- /#my_broker -->
+          <div id="twofactor" class="bitex-view">
+            <div id="twofactor_content"></div>
+          </div>
 
           <!-- #trading -->
           <div id="trading" class="bitex-view">
@@ -1144,9 +1178,10 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
         
         <a href="" data-switch-view="admin">admin</a> |
         Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-        Version: 2af106f |
+        Version: f71bff1 |
         
         <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
+        | <a href="#themes">Themes</a>
         | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
         | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a>
       </p>
@@ -1165,7 +1200,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
       var country_code = "BR";
       var blinktrade_api = "api.blinktrade.com";
 
-      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenEUR',          'EUR', 'KRAKEN_BTCEUR_BEST_BID / 100000000', 'KRAKEN_BTCEUR_BEST_ASK / 100000000'  ], ['Dollar Bitcoin',     'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Euro Bitcoin',       'BRL', 'BLINK_BTCBRL_BEST_BID /  KRAKEN_BTCEUR_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  KRAKEN_BTCEUR_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
       _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
       _app.run(blinktrade_api);
