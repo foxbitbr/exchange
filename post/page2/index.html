@@ -43,8 +43,9 @@
     <link href="https://foxbit.exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=f71bff1" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=f71bff1" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=1048bc6" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=1048bc6" type="text/javascript"></script>
+    <script src="https://foxbit.exchange/assets/js/externs/qrcode.min.js"></script>
     
   </head>
   <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -158,6 +159,9 @@
             <button id="id_landing_signin" class="btn btn-primary">Entrar</button>
           </div>
           <div class="clearfix" style="height: 20px"></div>
+          <p>
+            <a href="#" data-switch-view="forgot_password">Esqueceu a sua senha?</a>
+          </p>
           <div class="row-fluid">
             <span class="text-center">
               <a href="" class="btn btn-success btn-large" data-switch-view="signup">Registrar</a>
@@ -205,7 +209,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
             <div class="accordion-inner">
               <p>Não. A Exchange não aceita depósitos de terceiros.</p>
 
-<p>Cada depósito deve vir do mesmo CPF ou CNPJ do usuário da conta. </p>
+<p>Cada depósito deve vir do mesmo CPF ou CNPJ do usuário da conta.</p>
 
             </div>
           </div>
@@ -233,7 +237,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>Sim, taxas são aplicadas em depósito em reais, saques em reais e transações de compra ou venda de Bitcoins. Você não precisa pagar para depositar ou sacar bitcoins. As taxas para depósitos ou saques de bitcoins são apenas aquelas cobradas pela própria rede Bitcoin (apenas 0.0001 BTC por saque ou depósito) e este valor não pertence à exchange. </p>
+              <p>Sim, taxas são aplicadas em depósito em reais, saques em reais e transações de compra ou venda de Bitcoins. Você não precisa pagar para depositar ou sacar bitcoins. As taxas para depósitos ou saques de bitcoins são apenas aquelas cobradas pela própria rede Bitcoin (apenas 0.0001 BTC por saque ou depósito) e este valor não pertence à exchange.</p>
 
             </div>
           </div>
@@ -251,7 +255,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
 
 <p>Tudo o que fazemos é oferecer um ambiente simples e seguro para você negociar bitcoins com outros usuários.</p>
 
-<p>Nós garantimos que compradores receberão os bitcoins e que os vendedores receberão o dinheiro no preço de venda que foi acordado entre as partes. </p>
+<p>Nós garantimos que compradores receberão os bitcoins e que os vendedores receberão o dinheiro no preço de venda que foi acordado entre as partes.</p>
 
             </div>
           </div>
@@ -271,7 +275,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
 
 <p>Lembrando que o processamento de saques e depósitos é realizado todos os dias, incluindo feriados, porém em dias não-comerciais o prazo de 30 minutos não deve ser considerado.</p>
 
-<p>Contate-nos caso não tenha encontrado resposta à sua pergunta. </p>
+<p>Contate-nos caso não tenha encontrado resposta à sua pergunta.</p>
 
             </div>
           </div>
@@ -327,7 +331,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>A plataforma autoriza compradores depositarem reais e vendedores depositarem Bitcoins, a partir daí, permite que compradores e vendedores negociem entre si por um livro de ofertas (orderbook). </p>
+              <p>A plataforma autoriza compradores depositarem reais e vendedores depositarem Bitcoins, a partir daí, permite que compradores e vendedores negociem entre si por um livro de ofertas (orderbook).</p>
 
             </div>
           </div>
@@ -341,7 +345,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>O tempo é o mesmo que o sistema leva para confirmar a transação. Normalmente, não mais de dez minutos. Para depósitos superiores a 10 bitcoins, são necessárias três confirmações, o que pode levar cerca de 30 minutos. </p>
+              <p>O tempo é o mesmo que o sistema leva para confirmar a transação. Normalmente, não mais de dez minutos. Para depósitos superiores a 10 bitcoins, são necessárias três confirmações, o que pode levar cerca de 30 minutos.</p>
 
             </div>
           </div>
@@ -399,7 +403,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
             <div class="accordion-inner">
               <p>Para cancelar um pedido, vá para “Comprar ou vender” no menu lateral. Selecione o pedido a ser cancelado da lista “Minhas ordens” e clique em “Cancelar” ao lado do pedido selecionado.</p>
 
-<p>Outra opção é clicar em “Livro de ofertas” e buscar o pedido marcado com o seu nome de usuário em cor vermelha. Clique no seu nome para cancelar esta ordem. </p>
+<p>Outra opção é clicar em “Livro de ofertas” e buscar o pedido marcado com o seu nome de usuário em cor vermelha. Clique no seu nome para cancelar esta ordem.</p>
 
             </div>
           </div>
@@ -416,7 +420,7 @@ Carteira fria (cold wallet): https://blockchain.info/pt/address/3KAuEYkuJQw1Ad2G
               <p>Após entrar na plataforma, use o menu lateral, e clique no link de texto “+ Depósitos”.</p>
 
 <p>No topo da página que irá carregar procure e clique no ícone grande com uma seta para baixo com a legenda (Depositar Bitcoin).
-A plataforma irá gerar um endereço único, novo e exclusivo que só será válido para essa transação específica. Escaneie o QR code (código QR: quadrado com formatos em preto e branco) ou utilize o endereço completo exibido e realize o depósito em bitcoins. </p>
+A plataforma irá gerar um endereço único, novo e exclusivo que só será válido para essa transação específica. Escaneie o QR code (código QR: quadrado com formatos em preto e branco) ou utilize o endereço completo exibido e realize o depósito em bitcoins.</p>
 
 <p>Se você tiver a sua conta verificada, você verá a quantidade de bitcoins creditada em  seu saldo instantaneamente, de forma que você pode vende-los, mas precisará esperar a confirmação da rede para poder sacar reais ou bitcoins.</p>
 
@@ -455,7 +459,7 @@ O valor é sempre determinado pelo preço de 1 bitcoin, como exemplo é o preço
 
 <p>Você deverá especificar a quantidade de bitcoins e fornecer a chave pública (endereço da sua carteira Bitcoin) na qual deseja receber os bitcoins.</p>
 
-<p>Por favor, fique atento ao fornecer o endereço de recebimento, já que as transações com bitcoin são irreversíveis. </p>
+<p>Por favor, fique atento ao fornecer o endereço de recebimento, já que as transações com bitcoin são irreversíveis.</p>
 
             </div>
           </div>
@@ -491,7 +495,7 @@ O valor é sempre determinado pelo preço de 1 bitcoin, como exemplo é o preço
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>A nossa principal preocupação é a de permitir que os usuários interajam dentro de um ambiente seguro. Os bitcoins são armazenados em uma carteira multi-assinada de armazenamento a frio (cold wallet) e longe dos servidores da FoxBit. Por isso, ainda que o servidor seja invadido, os bitcoins estão fora do alcance dos hackers. </p>
+              <p>A nossa principal preocupação é a de permitir que os usuários interajam dentro de um ambiente seguro. Os bitcoins são armazenados em uma carteira multi-assinada de armazenamento a frio (cold wallet) e longe dos servidores da FoxBit. Por isso, ainda que o servidor seja invadido, os bitcoins estão fora do alcance dos hackers.</p>
 
 <p>Nossa carteira multi-assinada requer 2 de 3 assinaturas para a movimentação de saldo. A Foxbit detém uma das chaves e as outras duas estão nas mãos da Blinktrade e da BitGO. 
 Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele também terá que comprometer o acesso da BlinkTrade, para então ser capaz de movimentar os bitcoins. Diante desse cenário, as probabilidades são extremamente baixas de que isso aconteça.</p>
@@ -550,7 +554,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>É simplesmente uma plataforma (um website), onde pessoas interessadas em comprar bitcoins encontram vendedores interessados em vender bitcoins e vice-e-versa. </p>
+              <p>É simplesmente uma plataforma (um website), onde pessoas interessadas em comprar bitcoins encontram vendedores interessados em vender bitcoins e vice-e-versa.</p>
 
             </div>
           </div>
@@ -598,7 +602,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
             <div class="accordion-inner">
               <p>Blinktrade é o provedor de tecnologia da plataforma. Nós contratamos os serviços da Blinktrade, e esta oferece os serviços de TI.</p>
 
-<p>A operadora de fato somos nós, que realizamos as operações diárias, ou seja, processa depósitos e saques, verifica a identidade dos clientes e permite que sejam realizadas transações seguras. </p>
+<p>A operadora de fato somos nós, que realizamos as operações diárias, ou seja, processa depósitos e saques, verifica a identidade dos clientes e permite que sejam realizadas transações seguras.</p>
 
             </div>
           </div>
@@ -612,7 +616,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>Para depositar fundos na FOXBIT, é necessário verificar sua conta e uma vez que esse processo já foi realizado, você poderá depositar valores. Todas os dados bancários necessários aparecerão em uma janela quando for solicitada uma ordem de depósito. </p>
+              <p>Para depositar fundos na FOXBIT, é necessário verificar sua conta e uma vez que esse processo já foi realizado, você poderá depositar valores. Todas os dados bancários necessários aparecerão em uma janela quando for solicitada uma ordem de depósito.</p>
 
             </div>
           </div>
@@ -660,7 +664,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           </div>
           <div class="accordion-body collapse ">
             <div class="accordion-inner">
-              <p>Nosso princípio é que as bitcoins depositadas na Foxbit estão lá para serem trocadas por Reais. Por isso, para garantir segurança e rapidez na negociação, a Foxbit mantém os depósitos, sejam em reais ou bitcoins. </p>
+              <p>Nosso princípio é que as bitcoins depositadas na Foxbit estão lá para serem trocadas por Reais. Por isso, para garantir segurança e rapidez na negociação, a Foxbit mantém os depósitos, sejam em reais ou bitcoins.</p>
 
             </div>
           </div>
@@ -881,36 +885,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
             <div class="section-title">
               <h3 class="bitex-view-title">Autenticação em 2 passos (2FA)</h3>
             </div>
-
-            <div id="id_enable_two_factor_div" class="form-horizontal ">
-
-              <div class="control-group">
-                <label class="control-label">Chave</label>
-
-                <div class="controls">
-                  <span id='secret' class="bitex-model" data-model-key="TwoFactorSecret"></span>
-                </div>
-              </div>
-
-              <div class="control-group">
-                <div class="controls">
-                  <img id="id_secret_qr" style="width: 100%; margin-top: -30px" src="">
-                </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label">Código de Autenticação</label>
-
-                <div class="controls">
-                  <input id="id_second_step_verification"
-                         type="text"
-                         class="input-block-level" pattern="\d+"
-                         title="Código gerado pelo Google Authenticator"
-                         placeholder="Ex. 555555" required>
-                </div>
-              </div>
-            </div>
-            <button id="id_btn_enable_two_factor" class="btn btn-primary">Habilitar</button>
+            <a id="id_btn_enable_two_factor" data-switch-view="twofactor" class="btn btn-primary">Habilitar</a>
             <button id="id_btn_disable_two_factor" class="btn btn-danger">Desabilitar</button>
           </div>
 
@@ -948,8 +923,6 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           <div class="well">
             <div class="row-fluid">
               <div class="btn-group pull-right">
-                <div class="btn btn-mini | btn-show-cum-qty">Acumulado</div>
-                <div class="btn btn-mini | btn-show-fees ">Taxas</div>
               </div>
             </div>
             <div class="row-fluid">
@@ -965,6 +938,51 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
           <h3 class="bitex-view-title">Histórico de ordens</h3>
         </div>
         <div class="content bitex-view-content">
+        </div>
+      </div>
+
+      <div id="admin_view" class="bitex-view">
+        <div class="section-title">
+          <h3 class="bitex-view-title">Admin</h3>
+        </div>
+        <div class="content bitex-view-content">
+          <div id="admin-tabs">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#TabCustomers" data-toggle="tab">Meus clientes</a>
+              </li>
+              <li>
+                <a href="#TabDepositRequests" data-toggle="tab">Pedidos de depósitos</a>
+              </li>
+              <li>
+                <a href="#TabWithdrawRequests" data-toggle="tab">Pedidos de saques</a>
+              </li>
+              <li>
+                <a href="#TabWithdrawMethods" data-toggle="tab">Withdraw methods</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade" id="TabCustomers">
+                <h2 class="bitex-view-title">Meus clientes</h2>
+                <div id="admin_customers"></div>
+              </div>
+              <div class="tab-pane fade" id="TabDepositRequests">
+                <h2 class="bitex-view-title">Pedidos de depósitos</h2>
+
+                <div id="admin_deposit_requests"></div>
+              </div>
+              <div class="tab-pane fade" id="TabWithdrawRequests">
+                <h2 class="bitex-view-title">Pedidos de saques</h2>
+
+                <div id="admin_withdraw_requests"></div>
+              </div>
+              <div class="tab-pane fade" id="TabWithdrawMethods">
+                <h2 class="bitex-view-title">Withdraw methods</h2>
+
+                <div id="admin_withdraw_methods"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1078,7 +1096,7 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         </div>
         <div class="content bitex-view-content">
           <div id="id_api_button_group" class="row-fluid text-right" style="margin-bottom:20px">
-            <a id="id_btn_new_api_key" class="btn btn-primary"><i class="icon-plus "> Nova API Key</i></a>
+            <a id="id_btn_new_api_key" class="btn btn-primary"><i class="icon-plus "></i> Nova API Key</a>
           </div>
 
         </div>
@@ -1145,6 +1163,8 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
                                                 bitex-view-trading
                                                 bitex-view-offerbook
                                                 bitex-view-history
+                                                bitex-view-admin_view
+                                                bitex-view-admin_customers
                                                 bitex-view-customers
                                                 bitex-view-account_overview
                                                 bitex-view-withdraw
@@ -1177,6 +1197,11 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
 
         <h6>Menu</h6>
         <ul class="nav nav-list">
+          <li class="bitex-display-if-broker" id="menu-admin_view">
+            <a href="" data-switch-view="admin_view">
+              <i data-switch-view="admin" class="icon-user"></i> Admin
+            </a>
+          </li>
           <li id="menu-profile">
             <a href="" data-switch-view="profile">
               <i data-switch-view="profile" class="icon-user"></i> Meu perfil</a>
@@ -1225,12 +1250,12 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
               <i data-switch-view="withdraw_requests" class="icon-minus"></i> Saques ( clientes )</a>
           </li>
 
-          <li id="menu-deposit">
+          <li id="menu-deposit" class="bitex-display-if-non-broker">
             <a href="" data-switch-view="deposit">
               <i data-switch-view="deposit" class="icon-plus"></i> Depósitos</a>
           </li>
 
-          <li id="menu-withdraw">
+          <li id="menu-withdraw" class="bitex-display-if-non-broker">
             <a href="" data-switch-view="withdraw">
               <i data-switch-view="withdraw" class="icon-minus"></i> Saques</a>
           </li>
@@ -1277,6 +1302,9 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         <h2 class="bitex-view-title">Mercado</h2>
       </div>
     </div>
+    
+      <div id="market_trading_view" data-symbol="FOXBIT:BTCBRL"></div>
+    
     <div class="bitex-view-content">
     </div>
   </div>
@@ -1289,24 +1317,16 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
     <hr>
     <div class="bitex-view-content">
         <div class="row" style="text-align:center">
-            <div class="span5" style="margin:auto;float:none">
+            <div class="span4">
                 <a href="https://foxbit.exchange/themes/coinage/">
                     <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/foxbit-coinage-thumb.jpg" alt="Coinage Theme">
                     <h3>Coinage Theme</h3>
                 </a>
             </div>
-        </div>
-        <div class="row" style="text-align:center">
             <div class="span4">
                 <a href="https://foxbit.exchange/themes/default/">
                     <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/foxbit-default-thumb.jpg" alt="Default Theme">
-                    <h3>Default Theme</h3>
-                </a>
-            </div>
-            <div class="span4">
-                <a href="https://foxbit.exchange/themes/ander/">
-                    <img src="https://foxbit.exchange/assets/exchange_logos/thumb-themes/foxbit-ander-thumb.jpg" alt="Ander Theme">
-                    <h3>Ander</h3>
+                    <h3>Simple Theme</h3>
                 </a>
             </div>
             <div class="span4">
@@ -1327,8 +1347,8 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         <p>
           
           <a href="" data-switch-view="admin">admin</a> |
-          Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: f71bff1 |
+          Latência: <span class="bitex-model" data-model-key="latency">0</span> ms |
+          Versão: 1048bc6 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -1345,10 +1365,11 @@ Ou seja, mesmo que um hacker comprometa a segurança da chave da FoxBit, ele tam
         var broker_id = 4;
         var country_code = "BR";
         var blinktrade_api = "api.blinktrade.com";
+        var symbol = "BTCBRL";
 
-        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
-        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code );
+        _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
         _app.run(blinktrade_api);
       })();
     </script>

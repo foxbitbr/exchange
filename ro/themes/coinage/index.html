@@ -38,17 +38,18 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=f71bff1" rel="stylesheet">
+  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=1048bc6" rel="stylesheet">
   <link href="https://foxbit.exchange/ro/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://foxbit.exchange/ro/assets/themes/coinage/sass/main.foxbit.css?v=f71bff1" rel="stylesheet">
+    <link href="https://foxbit.exchange/ro/assets/themes/coinage/sass/main.foxbit.css?v=1048bc6" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://foxbit.exchange/ro/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.coinage.js?v=f71bff1" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.coinage.js?v=1048bc6" type="text/javascript"></script>
   <script src="https://foxbit.exchange/ro/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
   <script src="https://foxbit.exchange/ro/assets/themes/coinage/javascript/bootstrap.min.js"></script>
+  <script src="https://foxbit.exchange/ro/assets/js/externs/qrcode.min.js"></script>
   
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -63,26 +64,50 @@
             <ul class="head-ticker">
                 <li>
                     <span class="head-ticker__title">
-                        <i class="glyphicon glyphicon-triangle-top"></i> LAST&nbsp;
+                        <i class="glyphicon glyphicon-triangle-right"></i> ULTIMUL&nbsp;
                     </span>
                     <span class="head-ticker__value">
-                        PHP 11,090.16
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCBRL_LAST_PX"
+                            data-model-formula="formatted_BLINK_BTCBRL_LAST_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
                     </span>
                 </li>
                 <li>
                     <span class="head-ticker__title">
-                        <i class="glyphicon glyphicon-triangle-top"></i> HIGHT&nbsp;
+                        <i class="glyphicon glyphicon-triangle-right"></i> SUS&nbsp;
                     </span>
                     <span class="head-ticker__value">
-                        PHP 13,441.61
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCBRL_HIGH_PX"
+                            data-model-formula="formatted_BLINK_BTCBRL_HIGH_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
                     </span>
                 </li>
                 <li>
                     <span class="head-ticker__title">
-                        <i class="glyphicon glyphicon-triangle-bottom"></i> LOW&nbsp;
+                        <i class="glyphicon glyphicon-triangle-right"></i> JOS&nbsp;
                     </span>
                     <span class="head-ticker__value">
-                        PHP 9,950.00
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCBRL_LOW_PX"
+                            data-model-formula="formatted_BLINK_BTCBRL_LOW_PX"
+                            data-blink-class="balance-info-blink"
+                        ></span>
+                    </span>
+                </li>
+                <li>
+                    <span class="head-ticker__title">
+                        <i class="glyphicon glyphicon-triangle-right"></i> VOLUM&nbsp;
+                    </span>
+                    <span class="head-ticker__value">
+                      <span class="bitex-model"
+                            data-model-key-list="formatted_BLINK_BTCBRL_VOLUME"
+                            data-model-formula="formatted_BLINK_BTCBRL_VOLUME"
+                            data-blink-class="balance-info-blink"
+                        ></span>
                     </span>
                 </li>
             </ul>
@@ -164,7 +189,7 @@
           
           <a class="navbar-brand" href="#" data-switch-view="offerbook">
               <img data-switch-view="offerbook" class="logo__img" 
-              src="/ro/assets/exchange_logos/foxbit_inverse_toolbar_logo.png"
+              src="https://foxbit.exchange/ro/assets/exchange_logos/foxbit_inverse_toolbar_logo.png"
               style=" height: 30px; margin-top: -5px; ">
           </a>
           
@@ -180,7 +205,7 @@
             </li>
             <li class="bitex-display-if-logged dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                <img class="thumb thumb-p" src="https://foxbit.exchange/ro/assets/themes/coinage/img/coinage-avatar.png" />
+                <img class="thumb thumb-p home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/coinage-avatar.png" />
                 <span class="bitex-model bitex-view-title" data-model-key="DisplayName"></span>
                 <span class="caret"></span>
               </a>
@@ -190,7 +215,7 @@
                       <a href="#">
                         <div class="row" data-switch-view="profile">
                           <div class="col-xs-4">
-                            <img class="thumb thumb-g" data-switch-view="profile" src="https://foxbit.exchange/ro/assets/themes/coinage/img/coinage-avatar.png" />
+                            <img class="thumb thumb-g home-img" data-switch-view="profile" src="https://foxbit.exchange/ro/assets/themes/coinage/img/coinage-avatar.png" />
                           </div>
                           <div class="col-xs-8" data-switch-view="profile">
                             <strong class="bitex-model bitex-view-title" data-switch-view="profile" data-model-key="DisplayName"></strong>
@@ -205,25 +230,15 @@
                          Despre exchange
                       </a>
                   </li>
-                  <li class="bitex-display-if-broker">
-                    <a href="#" data-switch-view="deposit_requests">
-                      Cerere de depunere
-                    </a>
-                  </li>
-                  <li class="bitex-display-if-broker">
-                    <a href="#" data-switch-view="withdraw_requests">
-                      Cerere de retragere
+                  <li>
+                    <a href="#" data-switch-view="deposit">
+                      Depunerile mele
                     </a>
                   </li>
                   <li>
-                      <a href="#" data-switch-view="deposit">
-                         Depunerile mele
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" data-switch-view="withdraw">
-                         Retragerile mele
-                      </a>
+                    <a href="#" data-switch-view="withdraw">
+                      Retragerile mele
+                    </a>
                   </li>
                 <li class="divider"></li>
                 <li>
@@ -254,28 +269,6 @@
         
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="alert-box bitex-display-if-logged">
-        <div class="alert | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
-            <div class="container">
-                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-                <a href="" class="alert-link" data-switch-view="verification"> You have not submitted your documents. Vă rugăm să confirmați indentitatea. </a>
-            </div>
-        </div>
-
-        <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
-            <div class="container">
-                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-                <a href="" class="alert-link" data-switch-view="profile"> Puteți crește securitatea contului dvs. prin activarea autentificare în doi pasi. </a>
-            </div>
-        </div>
-
-        <div class="alert alert-danger | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
-            <div class="container">
-                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-                <a href="" class="alert-link" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
-            </div>
-        </div>
-    </div>
     <!-- /.navbar -->
 </header>
 <!-- /.head -->
@@ -344,7 +337,7 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="/ro/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
+                                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-tradewithus.png" alt="" />
                             </div>
 
                             
@@ -379,7 +372,7 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="/ro/assets/themes/coinage/img/ico-secure.png" alt="" />
+                                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-secure.png" alt="" />
                             </div>
 
                             <h2 class="home-news-item__title h3">Pellentesque vestibulum lectus</h2>
@@ -399,7 +392,7 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="/ro/assets/themes/coinage/img/ico-liquidity.png" alt="" />
+                                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-liquidity.png" alt="" />
                             </div>
 
                             <h2 class="home-news-item__title h3">Maecenas vel magna</h2>
@@ -436,7 +429,7 @@
                     <!-- .order -->
                     <div class="order">
                         <!-- .order__cell -->
-                        <div class="order__cell">
+                        <div class="order__cell col-md-6 col-xs-12">
                             <!-- .orders -->
                             <div class="orders">
 
@@ -457,7 +450,7 @@
                         <!-- /.order__cell -->
 
                         <!-- .order__cell -->
-                        <div class="order__cell">
+                        <div class="order__cell col-md-6 col-xs-12">
                             <!-- .orders -->
                             <div class="orders">
 
@@ -488,7 +481,7 @@
         <!-- .home-contact -->
         <div class="home-contact">
             <div class="home-contact__icon">
-                <img class="home-img" src="/ro/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
+                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-requestbeta.png" alt="" />
             </div>
 
             
@@ -511,8 +504,833 @@
   </div>
   <!-- /#start -->
 
+
+  <!-- #signin -->
+  <div id="signin" class="page bitex-view" style="display:none">
+        <!-- .row -->
+        <br>
+        <div class="row">
+            <!-- .col-md-6 -->
+            <div class="page__content page__padding col-md-4 col-md-offset-4">
+                <!-- .page__head -->
+                <header class="page__head">
+                    <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
+                        <i class="glyphicon glyphicon-user"></i> Autentificare
+                    </h1>
+                    <p>
+                      Nu ai cont? <a href="signup" data-switch-view="signup">Crează cont nou</a>.
+                    </p>
+                </header>
+                <!-- /.page__head -->
+
+                <!-- .page__body -->
+                <div class="page__body bitex-view-content">
+                  <form accept-charset="UTF-8" action="" method="post">
+                    <div class="form-group">
+                      <label for="id_username">Nume utilizator:</label>
+                      <input class="form-control" autocapitalize="off" autocorrect="off" id="id_username" name="username" type="text">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="id_password">Parola:</label>
+                      <input class="form-control" id="id_password"  placeholder="" name="password" type="password">
+                      <p class="help-block">
+                        <a class="login__remember" href="forgot_password" data-switch-view="forgot_password">Ați uitat parola?</a>
+                      </p>
+                    </div>
+
+                    <input id="id_btn_login"  class="btn btn-primary btn-block" name="commit" type="submit" value="Autentificare">
+                  </form>
+                </div>
+                <!-- /.page__body -->
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+  </div>
+  <!-- /#signin -->
+
+  <!-- #signup -->
+  <div id="signup" class="page row-fluid bitex-view" style="display:none">
+        <!-- .row -->
+        <div class="row">
+            <!-- .col-md-6 -->
+            <div class="page__content page__padding col-md-6 col-md-offset-3">
+                <!-- .page__head -->
+                <header class="page__head">
+                    <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
+                        <i class="glyphicon glyphicon-log-in"></i> Creează cont nou
+                    </h1>
+                    <p>Deja ai cont? <a href="#" data-switch-view="signin">Autentificare</a>.</p>
+                </header>
+                <!-- /.page__head -->
+
+                <!-- .page__body -->
+                <div class="page__body bitex-view-content">
+                    <form action="" accept-charset="UTF-8" id="new_user" method="post">
+                        <div class="form-group">
+                          <label for="id_signup_username">Nume utilizator:</label>
+                          <input id="id_signup_username" class="form-control" name="Username" size="30" type="text" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="id_signup_email">Adresa Email:</label>
+                          <input id="id_signup_email" class="form-control" name="Email" size="30" type="text" placeholder="ex.: joe@doe.ro">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="id_signup_password">Parola:</label>
+                          <input id="id_signup_password" class="form-control" name="Password" size="30" type="password">
+                          <p class="help-block">Cel puțin 8 caractere</p>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="id_signup_password2">Confirmați parola:</label>
+                          <input id="id_signup_password2" class="form-control" name="Password2" size="30" type="password">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="id_signup_country">Țara:</label>
+                          <select id="id_signup_country" class="form-control" name="country"></select>
+                        </div>
+
+                        <div class="form-group" id="id_signup_state_group" style="display: none">
+                          <label for="id_signup_state">Județul:</label>
+                          <select id="id_signup_state" class="form-control" name="state"></select>
+                        </div>
+
+                        <div class="form-group" style="display: none;">
+                          <label for="id_signup_broker">Agent</label>
+                          <select id="id_signup_broker" class="form-control" name="broker"></select>
+                        </div>
+
+                        <div id="signup_broker_details"></div>
+
+                        <div class="form-group">
+                            <label for="">
+                              <input id="user_agreed_tos" name="" type="checkbox" checked> Sunt de acord cu termenii și condițiile serviciului
+                            </label>
+                        </div>
+
+                    </form>
+                    <button id="id_btn_signup" class="btn btn-primary btn-block">Crează cont nou</button>
+                </div>
+                <!-- /.page__body -->
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+  </div>
+  <!-- /#signup -->
+
+  <!-- #forgot_password -->
+  <div id="forgot_password" class="page row bitex-view" style="display:none">
+        <br>
+        <!-- .row -->
+        <div class="row">
+            <!-- .col-md-6 -->
+            <div class="page__content page__padding col-md-4 col-md-offset-4">
+                <!-- .page__head -->
+                <header class="page__head">
+                    <h1 class="page__title h2 bitex-view-title">
+                        <i class="glyphicon glyphicon-envelope"></i> Recuperare parolă
+                    </h1>
+                </header>
+                <!-- /.page__head -->
+
+                <!-- .page__body -->
+                <div class="page__body bitex-view-content">
+                  <form accept-charset="UTF-8" action="" method="post">
+                      <div class="form-group">
+                        <label for="id_forgot_password_email">Email:</label>
+                        <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" class="form-control" name="email" type="text" placeholder="">
+                      </div>
+
+                      <input id="id_btn_forgot_password" class="btn btn-primary btn-block" name="commit" type="submit" value="Recuperează parola">
+                  </form>
+                </div>
+                <!-- /.page__body -->
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+  </div>
+  <!-- /#forgot_password -->
+  <!-- #set_new_password -->
+  <div id="set_new_password" class="page bitex-view" style="display:none">
+    <div class="row">
+      <div class="page__content page__padding col-md-6 col-md-offset-3">
+        <!-- .page__head -->
+        <header class="page__head">
+          <h1 class="page__title h2 bitex-view-title">Setați parolă nouă</h1>
+        </header>
+        <!-- /.page__head -->
+
+        <!-- .page__body -->
+        <div class="page__body bitex-view-content">
+          <form accept-charset="UTF-8" id="redefine_new_password_form" method="post">
+
+            <div class="form-group">
+              <label for="id_set_new_password_token">Cod de securitate</label>
+              <input id="id_set_new_password_token" class="form-control" name="Email" size="30" type="text" placeholder="">
+              <p class="help-block">Codul de securitate a fost trimis pe adresa dumneavoastră de email.</p>
+            </div>
+
+            <div class="form-group">
+              <label for="id_set_new_password_password">Parolă nouă</label>
+              <input id="id_set_new_password_password" class="form-control" name="Password" size="30" type="password">
+              <p class="help-block">Cel puțin 8 caractere</p>
+            </div>
+
+            <div class="form-group">
+              <label for="id_set_new_password_password2">Confirmați parola</label>
+              <input id="id_set_new_password_password2" class="form-control" name="Password2" size="30" type="password">
+            </div>
+
+            <button id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit">
+              Resetați parola
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.page__body -->
+  </div>
+  <!-- /#set_new_password -->
+  <div class="page">
+
+    <div class="alert-box bitex-display-if-logged">
+        <div class="alert alert-info | bitex-model" style="display: none" data-model-key="IsMissingVerification" data-model-action="show_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="verification"> You have not submitted your documents. Vă rugăm să confirmați indentitatea. </a>
+            </div>
+        </div>
+
+        <div class="alert alert-success | bitex-model" style="display: none" data-model-key="TwoFactorEnabled" data-model-action="hide_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="twofactor"> Puteți crește securitatea contului dvs. prin activarea autentificare în doi pasi. </a>
+            </div>
+        </div>
+
+        <div class="alert alert-danger | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
+            <div class="container">
+                <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
+                <a href="" class="alert-link" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- .page bitex-display-if-logged -->
+    <div class="container bitex-display-if-logged">
+
+      <!-- .row -->
+      <div class="row page__content">
+          <!-- .col-md-2 -->
+          <div class="col-md-2 page__sidebar">
+            <!-- #id_sidebar -->
+            <div id="id_sidebar" class="bitex-view
+                                        bitex-view-profile
+                                        bitex-view-twofactor
+                                        bitex-view-trading
+                                        bitex-view-history
+                                        bitex-view-offerbook
+                                        bitex-view-admin_view
+                                        bitex-view-customers
+                                        bitex-view-account_overview
+                                        bitex-view-withdraw
+                                        bitex-view-withdraw_requests
+                                        bitex-view-deposit
+                                        bitex-view-deposit_requests
+                                        bitex-view-ledger
+                                        bitex-view-settings
+                                        bitex-view-algotrading
+                                        bitex-view-api
+                                        bitex-view-my_broker
+                                        bitex-view-verification">
+
+              <!-- .sidebar-box -->
+              <div class="sidebar-box">
+                  <h5 class="sidebar-box__title">Moneda de schimb :</h5>
+
+                  <div class="sidebar-box__body">
+                      <select class="form-control" id="id_instrument_1"></select>
+                  </div>
+              </div>
+              <!-- /.sidebar-box -->
+
+              <!-- .sidebar-box -->
+              <div class="sidebar-box">
+                  <h5 class="sidebar-box__title">NAVEGATION</h5>
+
+                  <div class="sidebar-box__body">
+                      <ul class="sidebar-box-nav nav">
+                          <li class="bitex-display-if-broker" id="menu-admin_view">
+                            <a href="" data-switch-view="admin_view">
+                              <i data-switch-view="admin" class="glyphicon glyphicon-user"></i> Admin
+                            </a>
+                          </li>
+                          <li role="presentation" id="menu-profile">
+                              <a href="#" data-switch-view="profile">
+                                  <i class="glyphicon glyphicon-user"></i> Profilul meu
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-trading">
+                              <a href="#" data-switch-view="trading">
+                                  <i class="glyphicon glyphicon-random"></i> Cumpără sau Vinde
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-offerbook">
+                              <a href="#" data-switch-view="offerbook">
+                                  <i class="glyphicon glyphicon-book"></i> Registrul de comenzi
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-history">
+                              <a href="#" data-switch-view="history">
+                                  <i class="fa fa-history"></i> Orders history
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-deposit" class="bitex-display-if-non-broker">
+                              <a href="#" data-switch-view="deposit">
+                                  <i class="fa fa-download"></i> Depunerile mele
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-withdraw" class="bitex-display-if-non-broker">
+                              <a href="#" data-switch-view="withdraw">
+                                  <i class="fa fa-upload"></i> Retragerile mele
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-algotrading">
+                              <a href="#" data-switch-view="algotrading">
+                                  <i class="glyphicon glyphicon-cog"></i> Algo Trading
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-ledger">
+                              <a href="#" data-switch-view="ledger">
+                                  <i class="glyphicon glyphicon-th-list"></i> Registru
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-market">
+                              <a href="#" data-switch-view="market">
+                                  <i class="glyphicon glyphicon-stats"></i> Piață
+                              </a>
+                          </li>
+                          <li id="verification_menu_id">
+                              <a href="verification" data-switch-view="verification">
+                                  <i class="glyphicon glyphicon-check"></i> Verificați-va contul
+                              </a>
+                          </li>
+                          <li>
+                              <a href="javascript:location.reload()">
+                                  <i class="glyphicon glyphicon-off"></i> Delogare
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- /.sidebar-box -->
+            </div>
+            <!-- /#id_sidebar -->
+          </div>
+          <!-- /.col-md-2 -->
+
+          <!-- .col-md-8 -->
+          <div id='sidebar_content' class="col-md-8 page__sidebar_content">
+              <!-- .page-dashboard -->
+              <div class="page-dashboard">
+                <!-- #offerbook -->
+                <div id="offerbook" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h3 class="page__title bitex-view-title">
+                          <i class="glyphicon glyphicon-book"></i> Registrul de comenzi
+                      </h3>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <!-- .order -->
+                    <div id="offer_book_order_entry_content" class="order"></div>
+                    <!-- /.order -->
+
+                    <!-- .order -->
+                    <div class="order">
+                      <!-- .order__cell -->
+                      <!-- <div class="btn btn-default btn-show-cum-qty"> -->
+                        <!-- A acumulat -->
+                      <!-- </div> -->
+                      <!-- <div class="btn btn-default btn-show-fees"> -->
+                        <!-- Taxe -->
+                      <!-- </div> -->
+                      <div id="id_order_book_bid_content" class="order__cell col-md-6 col-xs-12"></div>
+                      <!-- /.order__cell -->
+
+                      <!-- .order__cell -->
+                      <div id="id_order_book_ask_content" class="order__cell col-md-6 col-xs-12"></div>
+                      <!-- /.order__cell -->
+                    </div>
+                    <!-- /.order -->
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#offerbook -->
+
+                <!-- #profile -->
+                <div id="profile" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-user"></i> Profilul meu
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body">
+                    <div id="profile_content" class="bitex-view-content">
+                      <div id="account_overview_user_id"></div>
+                      <div id="change_password_place_holder"></div>
+                    </div>
+
+
+                    <!-- .profile-two-factor -->
+                    <div class="profile-two-factor col-xs-12 col-md-5 page__section_white page__padding">
+                        <!-- .profile-two-factor__title -->
+                        <h4 class="profile-two-factor__title">Autentificare cu doi factori (2FA)</h4>
+                        <!-- /.profile-two-factor__title -->
+
+                        <!-- .profile-two-factor__foot -->
+                        <div class="profile-two-factor__foot">
+                            <a data-switch-view="twofactor" id="id_btn_enable_two_factor" class="btn btn-success profile-two-factor__btn">Activați</a>
+                            <button id="id_btn_disable_two_factor" class="btn btn-danger profile-two-factor__btn">Dezactivați</button>
+                        </div>
+                        <!-- /.profile-two-factor__foot -->
+                    </div>
+                    <!-- /.profile-two-factor -->
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#profile -->
+
+                <!-- #api -->
+                <div id="api" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <div class="row" style="margin-right:0">
+                        <div class="col-xs-6">
+                          <h1 class="page__title h2 bitex-view-title">
+                              <i class="glyphicon glyphicon-dashboard"></i> API Keys
+                          </h1>
+                        </div>
+                        <div class="col-xs-6 pull-right">
+                          <ul id="id_api_button_group" class="page__nav">
+                              <li>
+                                  <a id="id_btn_new_api_key" class="btn btn-success">
+                                      <i class="glyphicon glyphicon-plus"></i> New API Key
+                                  </a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#api -->
+
+                <!-- #my_broker -->
+                <div id="my_broker" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title"></h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#my_broker -->
+                <div id="twofactor" class="bitex-view">
+                  <div id="twofactor_content"></div>
+                </div>
+
+                <!-- #trading -->
+                <div id="trading" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h3 class="page__title bitex-view-title">
+                          <i class="glyphicon glyphicon-random"></i> Cumpără sau Vinde
+                      </h3>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="trading_order_entry_content" class="row-fluid"></div>
+                    <div id="id_trading_well"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#trading -->
+                <div id="history" class="bitex-view">
+                    <div class="section-title">
+                        <h3 class="bitex-view-title">Orders history</h3>
+                    </div>
+                    <div class="content bitex-view-content">
+                    </div>
+                </div>
+
+                <!-- #algotrading -->
+                <div id="algotrading" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-cog"></i> Tranzacționarea algoritmică
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#algotrading -->
+
+
+                <!-- #ledger -->
+                <div id="ledger" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-th-list"></i> Registru
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_ledger_balances_container"></div>
+
+                    <div id="id_ledger_list"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#ledger -->
+
+                <!-- admin -->
+                <div id="admin_view" class="bitex-view">
+                  <header class="page__head section-title">
+                    <h3 class="page__title h2 bitex-view-title">Admin</h3>
+                  </header>
+                  <div class="page__body bitex-view-content">
+                    <div id="admin-tabs">
+                      <ul class="nav nav-tabs">
+                        <li class="active">
+                          <a href="#TabCustomers" data-toggle="tab">Clienții mei</a>
+                        </li>
+                        <li>
+                          <a href="#TabDepositRequests" data-toggle="tab">Solicitări de depunere</a>
+                        </li>
+                        <li>
+                          <a href="#TabWithdrawRequests" data-toggle="tab">Solicitări de retragere</a>
+                        </li>
+                        <li>
+                          <a href="#TabWithdrawMethods" data-toggle="tab">Withdraw methods</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade" id="TabCustomers">
+                          <h2 class="bitex-view-title">Clienții mei</h2>
+                          <div id="admin_customers"></div>
+                        </div>
+                        <div class="tab-pane fade" id="TabDepositRequests">
+                          <h2 class="bitex-view-title">Solicitări de depunere</h2>
+
+                          <div id="admin_deposit_requests"></div>
+                        </div>
+                        <div class="tab-pane fade" id="TabWithdrawRequests">
+                          <h2 class="bitex-view-title">Solicitări de retragere</h2>
+
+                          <div id="admin_withdraw_requests"></div>
+                        </div>
+                        <div class="tab-pane fade" id="TabWithdrawMethods">
+                          <h2 class="bitex-view-title">Withdraw methods</h2>
+
+                          <div id="admin_withdraw_methods"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /admin -->
+
+                <!-- #customers -->
+                <div id="customers" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title">Clienții mei</h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_customers_well"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#customers -->
+
+                <!-- #deposit_requests -->
+                <div id="deposit_requests" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-plus-sign"></i> Solicitări de depunere
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_deposit_request_list"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#deposit_requests -->
+
+
+                <!-- #withdraw_requests -->
+                <div id="withdraw_requests" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-minus-sign"></i> Solicitări de retragere
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_withdraw_request_list"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#withdraw_requests -->
+
+
+                <!-- #deposit -->
+                <div id="deposit" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title page__head-float">
+                      <h1 class="page__title h2 bitex-view-title page__title-float">
+                          <i class="glyphicon glyphicon-plus"></i> Depunerile mele
+                      </h1>
+                      <div id="id_deposit_button_group" class="row-fluid text-right" style="" ></div>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_deposit_balances_container"></div>
+
+                    <div id="id_deposit_list"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#deposit -->
+
+                <!-- #withdraw -->
+                <div id="withdraw" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title page__head-float">
+                      <h1 class="page__title h2 bitex-view-title page__title-float">
+                          <i class="glyphicon glyphicon-minus"></i> Retragerile mele
+                      </h1>
+                      <div id="id_withdraw_button_group" class="row-fluid text-right" style="" ></div>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div id="id_user_balances_well"></div>
+
+                    <div id="id_withdraw_list"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#withdraw -->
+
+                <!-- #account_overview -->
+                <div id="account_overview" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title">Prezentare generală a contului</h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <div class="row-fluid">
+                      <div class="span6">
+                        <div id="account_overview_header_id"></div>
+                      </div>
+                      <div class="span6">
+                        <div id="account_overview_balances_id"></div>
+                        <div id="account_overview_fees_id">
+
+                          <div id="account_overview_verify_data_id"></div>
+                          <div id="account_overview_fees_balances_id"></div>
+
+                          <button id="id_btn_user_fees" class="btn btn-primary">Setați taxele pentru utilizator</button>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bitex-account-overview-view-content"></div>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#account_overview -->
+
+
+                <!-- #settings -->
+                <div id="settings" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title">Setări</h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#settings -->
+
+                <!-- #verification -->
+                <div id="verification" class="bitex-view">
+                  <!-- .page__head -->
+                  <header class="page__head section-title">
+                      <h1 class="page__title h2 bitex-view-title">
+                          <i class="glyphicon glyphicon-check"></i> Verificare cont
+                      </h1>
+                  </header>
+                  <!-- /.page__head -->
+
+                  <!-- .page__body -->
+                  <div class="page__body bitex-view-content">
+                    <iframe id="JotFormIFrame"
+                            onload="window.parent.scrollTo(0,0)"
+                            allowtransparency="true"
+                            src=""
+                            frameborder="0"
+                            style="width:100%; height:1550px; border:none;"
+                            scrolling="no"></iframe>
+                    <script type="text/javascript">
+                      window.handleIFrameMessage = function(e) {
+                        var args = e.data.split(":");
+                        var iframe = document.getElementById("JotFormIFrame");
+                        if (!iframe)
+                          return;
+                        switch (args[0]) {
+                          case "scrollIntoView":
+                            iframe.scrollIntoView();
+                            break;
+                          case "setHeight":
+                            if (args[1] > 0 ) {
+                              iframe.style.height = ( parseInt(args[1], 10) + 200 ) + "px";
+                            }
+                            break;
+                        }
+                      };
+                      if (window.addEventListener) {
+                        window.addEventListener("message", handleIFrameMessage, false);
+                      } else if (window.attachEvent) {
+                        window.attachEvent("onmessage", handleIFrameMessage);
+                      }
+                    </script>
+                  </div>
+                  <!-- /.page__body -->
+                </div>
+                <!-- /#verification -->
+              </div>
+              <!-- /.page-dashboard -->
+          </div>
+          <!-- /.col-md-8 -->
+
+          <!-- .col-md-2 -->
+          <div id='sidebar_remittances' style="padding-left:2px;padding-right:4px;" class="col-md-2 bitex-view
+                              bitex-view-profile
+                              bitex-view-twofactor
+                              bitex-view-trading
+                              bitex-view-offerbook
+                              bitex-view-admin_view
+                              bitex-view-customers
+                              bitex-view-account_overview
+                              bitex-view-withdraw
+                              bitex-view-withdraw_requests
+                              bitex-view-deposit
+                              bitex-view-deposit_requests
+                              bitex-view-ledger
+                              bitex-view-settings
+                              bitex-view-algotrading
+                              bitex-view-api
+                              bitex-view-my_broker
+                              bitex-view-verification">
+              <!-- .sidebar-box -->
+              <div class="sidebar-box">
+                  <h5 class="sidebar-box__title">INTERNATIONAL RATES</h5>
+
+                  <div class="sidebar-box__body">
+                      <div id="id_remittance_box"></div>
+                      
+                      <a class="twitter-timeline" href="https://twitter.com/foxbitstatus" data-theme="light" data-link-color="#E8683E" data-widget-id="717629137503043584">Tweets by @foxbitstatus</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                      
+                  </div>
+              </div>
+              <!-- /.sidebar-box -->
+          </div>
+          <!-- /.col-md-2 -->
+      </div>
+      <!-- /.row -->
+    </div>
+  </div>
+  <!-- #market -->
+  <div id="market" class="bitex-view" style="margin:18px;padding-bottom:42px;display:none">
+    <!-- .page -->
+    <div class="page page__content page__padding container-fluid">
+      <!-- .page__head -->
+      <header class="page__head">
+          <h1 class="page__title h2 bitex-view-title">
+              <i class="glyphicon glyphicon-stats"></i> Market
+          </h1>
+      </header>
+      <!-- /.page__head -->
+
+      
+        <div id="market_trading_view" data-symbol="FOXBIT:BTCBRL"></div>
+      
+      <!-- .page__body -->
+      <div class="page__body bitex-view-content">
+      </div>
+      <!-- /.page__body -->
+    </div>
+    <!-- /.page -->
+  </div>
+  <!-- /#market -->
   <!-- #faq -->
-  <div id="faq" class="page container bitex-view">
+  <div id="faq" class="container bitex-view" style="padding-bottom:42px;display:none">
       <!-- .page__head -->
       <header class="page__head">
           <h1 class="page__title h2 bitex-view-title">
@@ -614,7 +1432,7 @@
  Cu alte cuvinte de fiecare data când Bitcoinii sunt mutați din portofelul cu semnături multiple rece(neconectat la internet) în portofelul cald(conectat la internet), efectuăm o verificare completă a sistemului.</p>
 
 <p>Portofelele calde sunt stocate pe serverele blockchain.info și păstrăm doar cantități mici de bitcoin pentru a efectuă operațiuni de zi cu zi. 
-Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info </p>
+Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info</p>
 
 <p>Nici un exchange din lume nu este 100% sigur. Cu toate măsurile noastre de siguranță nu vrem să creăm o comoară de bitcoin, care ar provoca hack-eri să încerce să compromită exchange-ul.</p>
 
@@ -651,29 +1469,10 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
   </div>
   <!-- /#faq -->
 
-  <!-- #market -->
-  <div id="market" class="bitex-view">
-    <!-- .page -->
-    <div class="page container-fluid">
-      <!-- .page__head -->
-      <header class="page__head">
-          <h1 class="page__title h2 bitex-view-title">
-              <i class="glyphicon glyphicon-stats"></i> Market
-          </h1>
-      </header>
-      <!-- /.page__head -->
-
-      <!-- .page__body -->
-      <div class="page__body bitex-view-content">
-      </div>
-      <!-- /.page__body -->
-    </div>
-    <!-- /.page -->
-  </div>
-  <!-- /#market -->
 
   <!-- /#themes -->
-  <div id="themes" class="page bitex-view">
+  <div id="themes" class="bitex-view" style="padding-bottom:42px;display:none">
+    <br>
     <div class="row">
         <!-- .col-md-6 -->
         <div class="page__content page__padding col-md-10 col-md-offset-1">
@@ -683,28 +1482,19 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             </header>
             <div class="bitex-view-content page__body">
                 <div class="row" style="text-align:center">
-                    <a href="https://foxbit.exchange/ro/themes/coinage/">
-                        <div class="col-md-5 thumb-theme" style="margin:auto;float:none">
-                            <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-coinage-thumb.jpg" alt="Coinage Theme">
-                            <h3>Coinage Theme</h3>
-                        </div>
-                    </a>
-                </div>
-                <hr>
-                <div class="row" style="text-align:center">
+                    <div class="col-xs-4">
+                      <a href="https://foxbit.exchange/ro/themes/coinage/">
+                          <div class="thumb-theme" style="margin:auto;float:none">
+                              <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-coinage-thumb.jpg" alt="Coinage Theme">
+                              <h3>Coinage Theme</h3>
+                          </div>
+                      </a>
+                    </div>
                     <div class="col-xs-4">
                         <a href="https://foxbit.exchange/ro/themes/default/">
                             <div class="thumb-theme">
                                 <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-default-thumb.jpg" alt="Default Theme">
-                                <h3 class="ls-title-4">Default Theme</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://foxbit.exchange/ro/themes/ander/">
-                            <div class="thumb-theme">
-                                <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-ander-thumb.jpg" alt="Ander Theme">
-                                <h3 class="ls-title-4">Ander</h3>
+                                <h3 class="ls-title-4">Simple Theme</h3>
                             </div>
                         </a>
                     </div>
@@ -722,737 +1512,6 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
     </div>
   </div>
   <!-- #themes -->
-
-  <!-- #signin -->
-  <div id="signin" class="page bitex-view">
-        <!-- .row -->
-        <div class="row">
-            <!-- .col-md-6 -->
-            <div class="page__content page__padding col-md-4 col-md-offset-4">
-                <!-- .page__head -->
-                <header class="page__head">
-                    <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
-                        <i class="glyphicon glyphicon-user"></i> Autentificare
-                    </h1>
-                    <p>
-                      Nu ai cont? <a href="signup" data-switch-view="signup">Crează cont nou</a>.
-                    </p>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <form accept-charset="UTF-8" action="" method="post">
-                    <div class="form-group">
-                      <label for="id_username">Nume utilizator:</label>
-                      <input class="form-control" autocapitalize="off" autocorrect="off" id="id_username" name="username" type="text">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="id_password">Parola:</label>
-                      <input class="form-control" id="id_password"  placeholder="" name="password" type="password">
-                      <p class="help-block">
-                        <a class="login__remember" href="forgot_password" data-switch-view="forgot_password">Ați uitat parola?</a>
-                      </p>
-                    </div>
-
-                    <input id="id_btn_login"  class="btn btn-primary btn-block" name="commit" type="submit" value="Autentificare">
-                  </form>
-                </div>
-                <!-- /.page__body -->
-            </div>
-            <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
-  </div>
-  <!-- /#signin -->
-
-  <!-- #signup -->
-  <div id="signup" class="page row-fluid bitex-view">
-        <!-- .row -->
-        <div class="row">
-            <!-- .col-md-6 -->
-            <div class="page__content page__padding col-md-6 col-md-offset-3">
-                <!-- .page__head -->
-                <header class="page__head">
-                    <h1 class="page__title h2 bitex-view-title" style="margin-bottom: 10px;">
-                        <i class="glyphicon glyphicon-log-in"></i> Creează cont nou
-                    </h1>
-                    <p>Deja ai cont? <a href="#" data-switch-view="signin">Autentificare</a>.</p>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                    <form accept-charset="UTF-8" id="new_user" method="post">
-                        <div class="form-group">
-                          <label for="id_signup_username">Nume utilizator:</label>
-                          <input id="id_signup_username" class="form-control" name="Username" size="30" type="text" placeholder="">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="id_signup_email">Adresa Email:</label>
-                          <input id="id_signup_email" class="form-control" name="Email" size="30" type="text" placeholder="ex.: joe@doe.ro">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="id_signup_password">Parola:</label>
-                          <input id="id_signup_password" class="form-control" name="Password" size="30" type="password">
-                          <p class="help-block">Cel puțin 8 caractere</p>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="id_signup_password2">Confirmați parola:</label>
-                          <input id="id_signup_password2" class="form-control" name="Password2" size="30" type="password">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="id_signup_country">Țara:</label>
-                          <select id="id_signup_country" class="form-control" name="country"></select>
-                        </div>
-
-                        <div class="form-group" id="id_signup_state_group" style="display: none">
-                          <label for="id_signup_state">Județul:</label>
-                          <select id="id_signup_state" class="form-control" name="state"></select>
-                        </div>
-
-                        <div class="form-group" style="display: none;">
-                          <label for="id_signup_broker">Agent</label>
-                          <select id="id_signup_broker" class="form-control" name="broker"></select>
-                        </div>
-
-                        <div id="signup_broker_details"></div>
-
-                        <div class="form-group">
-                            <label for="">
-                              <input id="user_agreed_tos" name="" type="checkbox" checked> Sunt de acord cu termenii și condițiile serviciului
-                            </label>
-                        </div>
-
-                        <button id="id_btn_signup" class="btn btn-primary btn-block">Crează cont nou</button>
-                    </form>
-                </div>
-                <!-- /.page__body -->
-            </div>
-            <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
-  </div>
-  <!-- /#signup -->
-
-  <!-- #forgot_password -->
-  <div id="forgot_password" class="page row bitex-view">
-        <!-- .row -->
-        <div class="row">
-            <!-- .col-md-6 -->
-            <div class="page__content page__padding col-md-4 col-md-offset-4">
-                <!-- .page__head -->
-                <header class="page__head">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-envelope"></i> Recuperare parolă
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <form accept-charset="UTF-8" action="" method="post">
-                      <div class="form-group">
-                        <label for="id_forgot_password_email">Email:</label>
-                        <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" class="form-control" name="email" type="text" placeholder="">
-                      </div>
-
-                      <input id="id_btn_forgot_password" class="btn btn-primary btn-block" name="commit" type="submit" value="Recuperează parola">
-                  </form>
-                </div>
-                <!-- /.page__body -->
-            </div>
-            <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
-  </div>
-  <!-- /#forgot_password -->
-
-  <!-- .page bitex-display-if-logged -->
-  <div class="page container bitex-display-if-logged">
-
-    <!-- .row -->
-    <div class="row page__content">
-        <!-- .col-md-2 -->
-        <div class="col-md-2 page__sidebar">
-          <!-- #id_sidebar -->
-          <div id="id_sidebar" class="bitex-view
-                                      bitex-view-profile
-                                      bitex-view-twofactor
-                                      bitex-view-trading
-                                      bitex-view-history
-                                      bitex-view-offerbook
-                                      bitex-view-customers
-                                      bitex-view-account_overview
-                                      bitex-view-withdraw
-                                      bitex-view-withdraw_requests
-                                      bitex-view-deposit
-                                      bitex-view-deposit_requests
-                                      bitex-view-ledger
-                                      bitex-view-settings
-                                      bitex-view-algotrading
-                                      bitex-view-api
-                                      bitex-view-my_broker
-                                      bitex-view-verification">
-
-            <!-- .sidebar-box -->
-            <div class="sidebar-box">
-                <h5 class="sidebar-box__title">Moneda de schimb :</h5>
-
-                <div class="sidebar-box__body">
-                    <select class="form-control" id="id_instrument_1"></select>
-                </div>
-            </div>
-            <!-- /.sidebar-box -->
-
-            <!-- .sidebar-box -->
-            <div class="sidebar-box">
-                <h5 class="sidebar-box__title">NAVEGATION</h5>
-
-                <div class="sidebar-box__body">
-                    <ul class="sidebar-box-nav nav">
-                        <li role="presentation" id="menu-trading">
-                            <a href="#" data-switch-view="trading">
-                                <i class="glyphicon glyphicon-random"></i> Cumpără sau Vinde
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-offerbook">
-                            <a href="#" data-switch-view="offerbook">
-                                <i class="glyphicon glyphicon-book"></i> Registrul de comenzi
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-history">
-                            <a href="#" data-switch-view="history">
-                                <i class="fa fa-history"></i> Orders history
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-deposit">
-                            <a href="#" data-switch-view="deposit">
-                                <i class="fa fa-download"></i> Depunerile mele
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-withdraw">
-                            <a href="#" data-switch-view="withdraw">
-                                <i class="fa fa-upload"></i> Retragerile mele
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-algotrading">
-                            <a href="#" data-switch-view="algotrading">
-                                <i class="glyphicon glyphicon-cog"></i> Algo Trading
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-ledger">
-                            <a href="#" data-switch-view="ledger">
-                                <i class="glyphicon glyphicon-th-list"></i> Registru
-                            </a>
-                        </li>
-                        <li role="presentation" id="menu-market">
-                            <a href="#" data-switch-view="market">
-                                <i class="glyphicon glyphicon-stats"></i> Piață
-                            </a>
-                        </li>
-                        <li id="verification_menu_id">
-                            <a href="verification" data-switch-view="verification">
-                                <i class="glyphicon glyphicon-check"></i> Verificați-va contul
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:location.reload()">
-                                <i class="glyphicon glyphicon-off"></i> Delogare
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.sidebar-box -->
-          </div>
-          <!-- /#id_sidebar -->
-        </div>
-        <!-- /.col-md-2 -->
-
-        <!-- .col-md-8 -->
-        <div class="col-md-8 page__sidebar_content">
-            <!-- .page-dashboard -->
-            <div class="page-dashboard">
-              <!-- #offerbook -->
-              <div id="offerbook" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h3 class="page__title bitex-view-title">
-                        <i class="glyphicon glyphicon-book"></i> Registrul de comenzi
-                    </h3>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <!-- .order -->
-                  <div id="offer_book_order_entry_content" class="order"></div>
-                  <!-- /.order -->
-
-                  <!-- .order -->
-                  <div class="order">
-                    <!-- .order__cell -->
-                    <div id="id_order_book_bid_content" class="order__cell"></div>
-                    <!-- /.order__cell -->
-
-                    <!-- .order__cell -->
-                    <div id="id_order_book_ask_content" class="order__cell"></div>
-                    <!-- /.order__cell -->
-                  </div>
-                  <!-- /.order -->
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#offerbook -->
-
-              <!-- #profile -->
-              <div id="profile" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-user"></i> Profilul meu
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body">
-                  <div id="profile_content" class="bitex-view-content">
-                    <div id="account_overview_user_id"></div>
-                    <div id="change_password_place_holder"></div>
-                  </div>
-
-
-                  <!-- .profile-two-factor -->
-                  <div class="profile-two-factor col-xs-12 col-md-5 page__section_white page__padding">
-                      <!-- .profile-two-factor__title -->
-                      <h4 class="profile-two-factor__title">Autentificare cu doi factori (2FA)</h4>
-                      <!-- /.profile-two-factor__title -->
-
-                      <!-- .profile-two-factor__body -->
-                      <div class="profile-two-factor__body bitex-view-content">
-                          <!-- .profile-two-factor__form -->
-                          <ul id="id_enable_two_factor_div" class="profile-two-factor__form nav">
-                              <li>
-                                  <label class="profile-two-factor__label">Cheie:</label>
-                                  <div id='secret' class="bitex-model" data-model-key="TwoFactorSecret"></div>
-
-                                  <img id="id_secret_qr" src="" />
-                              </li>
-
-                              <li>
-                                  <label class="profile-two-factor__label">Codul de autenficare:</label>
-                                  <input id="id_second_step_verification" type="text" class="form-control"
-                                       pattern="\d+" title="Cod generat de Google Authenticatior"
-                                       placeholder="Ex. 555555" required />
-                              </li>
-                          </ul>
-                          <!-- /.profile-two-factor__form -->
-                      </div>
-                      <!-- /.profile-two-factor__body -->
-
-                      <!-- .profile-two-factor__foot -->
-                      <div class="profile-two-factor__foot">
-                          <button id="id_btn_enable_two_factor" class="btn btn-success profile-two-factor__btn">Activați</button>
-                          <button id="id_btn_disable_two_factor" class="btn btn-danger profile-two-factor__btn">Dezactivați</button>
-                      </div>
-                      <!-- /.profile-two-factor__foot -->
-                  </div>
-                  <!-- /.profile-two-factor -->
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#profile -->
-
-              <!-- #api -->
-              <div id="api" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <h1 class="page__title h2 bitex-view-title">
-                            <i class="glyphicon glyphicon-dashboard"></i> API Keys
-                        </h1>
-                      </div>
-                      <div class="col-xs-6 pull-right">
-                        <ul id="id_api_button_group" class="page__nav">
-                            <li>
-                                <a id="id_btn_new_api_key" class="btn btn-success">
-                                    <i class="glyphicon glyphicon-plus"></i> New API Key
-                                </a>
-                            </li>
-                        </ul>
-                      </div>
-                    </div>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#api -->
-
-              <!-- #my_broker -->
-              <div id="my_broker" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title"></h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#my_broker -->
-              <div id="twofactor" class="bitex-view">
-                <div id="twofactor_content"></div>
-              </div>
-
-              <!-- #trading -->
-              <div id="trading" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h3 class="page__title bitex-view-title">
-                        <i class="glyphicon glyphicon-random"></i> Cumpără sau Vinde
-                    </h3>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="trading_order_entry_content" class="row-fluid"></div>
-                  <div id="id_trading_well"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#trading -->
-              <div id="history" class="bitex-view">
-                  <div class="section-title">
-                      <h3 class="bitex-view-title">Orders history</h3>
-                  </div>
-                  <div class="content bitex-view-content">
-                  </div>
-              </div>
-
-              <!-- #algotrading -->
-              <div id="algotrading" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-cog"></i> Tranzacționarea algoritmică
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#algotrading -->
-
-
-              <!-- #ledger -->
-              <div id="ledger" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-th-list"></i> Registru
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_ledger_balances_container"></div>
-
-                  <div id="id_ledger_list"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#ledger -->
-
-
-              <!-- #customers -->
-              <div id="customers" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">Clienții mei</h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_customers_well"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#customers -->
-
-              <!-- #deposit_requests -->
-              <div id="deposit_requests" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-plus-sign"></i> Solicitări de depunere
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_deposit_request_list"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#deposit_requests -->
-
-
-              <!-- #withdraw_requests -->
-              <div id="withdraw_requests" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-minus-sign"></i> Solicitări de retragere
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_withdraw_request_list"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#withdraw_requests -->
-
-
-              <!-- #deposit -->
-              <div id="deposit" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title page__head-float">
-                    <h1 class="page__title h2 bitex-view-title page__title-float">
-                        <i class="glyphicon glyphicon-plus"></i> Depunerile mele
-                    </h1>
-                    <div id="id_deposit_button_group" class="row-fluid text-right" style="" ></div>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_deposit_balances_container"></div>
-
-                  <div id="id_deposit_list"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#deposit -->
-
-              <!-- #withdraw -->
-              <div id="withdraw" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title page__head-float">
-                    <h1 class="page__title h2 bitex-view-title page__title-float">
-                        <i class="glyphicon glyphicon-minus"></i> Retragerile mele
-                    </h1>
-                    <div id="id_withdraw_button_group" class="row-fluid text-right" style="" ></div>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div id="id_user_balances_well"></div>
-
-                  <div id="id_withdraw_list"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#withdraw -->
-
-              <!-- #account_overview -->
-              <div id="account_overview" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">Prezentare generală a contului</h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <div class="row-fluid">
-                    <div class="span6">
-                      <div id="account_overview_header_id"></div>
-                    </div>
-                    <div class="span6">
-                      <div id="account_overview_balances_id"></div>
-                      <div id="account_overview_fees_id">
-
-                        <div id="account_overview_fees_balances_id"></div>
-
-                        <button id="id_btn_user_fees" class="btn btn-primary">Setați taxele pentru utilizator</button>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bitex-account-overview-view-content"></div>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#account_overview -->
-
-              <!-- #set_new_password -->
-              <div id="set_new_password" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">Setați parolă nouă</h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <form accept-charset="UTF-8" class="form-horizontal" id="redefine_new_password_form" method="post">
-
-                    <div class="control-group">
-                      <label class="control-label">Cod de securitate</label>
-                      <div class="controls">
-                        <input id="id_set_new_password_token" name="Email" size="30" type="text" placeholder="">
-                        <p class="help-block">Codul de securitate a fost trimis pe adresa dumneavoastră de email.</p>
-                      </div>
-
-                    </div>
-
-                    <div class="control-group">
-                      <label class="control-label">Parolă nouă</label>
-                      <div class="controls">
-                        <input id="id_set_new_password_password" name="Password" size="30" type="password">
-                        <p class="help-block">Cel puțin 8 caractere</p>
-                      </div>
-                    </div>
-
-                    <div class="control-group">
-                      <label class="control-label">Confirmați parola</label>
-                      <div class="controls">
-                        <input id="id_set_new_password_password2" name="Password2" size="30" type="password">
-                      </div>
-                    </div>
-
-                    <div class="actions">
-                      <input id="id_btn_set_new_password"  class="btn btn-primary" name="commit" type="submit" value="Resetați parola">
-                    </div>
-                  </form>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#set_new_password -->
-
-              <!-- #settings -->
-              <div id="settings" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                  <h1 class="page__title h2 bitex-view-title">Setări</h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#settings -->
-
-              <!-- #verification -->
-              <div id="verification" class="bitex-view">
-                <!-- .page__head -->
-                <header class="page__head section-title">
-                    <h1 class="page__title h2 bitex-view-title">
-                        <i class="glyphicon glyphicon-check"></i> Verificare cont
-                    </h1>
-                </header>
-                <!-- /.page__head -->
-
-                <!-- .page__body -->
-                <div class="page__body bitex-view-content">
-                  <iframe id="JotFormIFrame"
-                          onload="window.parent.scrollTo(0,0)"
-                          allowtransparency="true"
-                          src=""
-                          frameborder="0"
-                          style="width:100%; height:1550px; border:none;"
-                          scrolling="no"></iframe>
-                  <script type="text/javascript">
-                    window.handleIFrameMessage = function(e) {
-                      var args = e.data.split(":");
-                      var iframe = document.getElementById("JotFormIFrame");
-                      if (!iframe)
-                        return;
-                      switch (args[0]) {
-                        case "scrollIntoView":
-                          iframe.scrollIntoView();
-                          break;
-                        case "setHeight":
-                          if (args[1] > 0 ) {
-                            iframe.style.height = ( parseInt(args[1], 10) + 200 ) + "px";
-                          }
-                          break;
-                      }
-                    };
-                    if (window.addEventListener) {
-                      window.addEventListener("message", handleIFrameMessage, false);
-                    } else if (window.attachEvent) {
-                      window.attachEvent("onmessage", handleIFrameMessage);
-                    }
-                  </script>
-                </div>
-                <!-- /.page__body -->
-              </div>
-              <!-- /#verification -->
-            </div>
-            <!-- /.page-dashboard -->
-        </div>
-        <!-- /.col-md-8 -->
-
-        <!-- .col-md-2 -->
-        <div class="col-md-2 bitex-view
-                             bitex-view-profile
-                             bitex-view-twofactor
-                             bitex-view-trading
-                             bitex-view-offerbook
-                             bitex-view-customers
-                             bitex-view-account_overview
-                             bitex-view-withdraw
-                             bitex-view-withdraw_requests
-                             bitex-view-deposit
-                             bitex-view-deposit_requests
-                             bitex-view-ledger
-                             bitex-view-settings
-                             bitex-view-algotrading
-                             bitex-view-api
-                             bitex-view-my_broker
-                             bitex-view-verification">
-            <!-- .sidebar-box -->
-            <div class="sidebar-box">
-                <h5 class="sidebar-box__title">INTERNATIONAL RATES</h5>
-
-                <div class="sidebar-box__body">
-                    <div id="id_remittance_box"></div>
-                </div>
-            </div>
-            <!-- /.sidebar-box -->
-        </div>
-        <!-- /.col-md-2 -->
-    </div>
-    <!-- /.row -->
-  </div>
   <!-- /.bitex-display-if-logged -->
 </div>
 <!-- /.container-fluid -->
@@ -1477,10 +1536,6 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                         <a href="http://www.foxbit.com.br/blog/" target="_blank">Blog</a>
                     </li> 
                     
-                    <li>
-                        <a href="http://www.foxbit.com.br/grafico/" target="_blank">Chart</a>
-                    </li>
-                    
                 </ul>
             </div>
             <div class="col-sm-4">
@@ -1498,7 +1553,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                     </li>
                     
                     <li>
-                        Version: f71bff1
+                        Version: 1048bc6
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -1521,8 +1576,8 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             </div>
         </div>
         <div class="row center">
-            <hr>
             <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
+            <hr>
         </div>
         <div class="row foot-social">
             
@@ -1587,7 +1642,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
       var blinktrade_api = "api.blinktrade.com";
       var symbol = "BTCBRL";
 
-      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
+      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] ] };
 
       _app = new BlinkTradeApp(broker_id, remittance_box, country_code, symbol);
       _app.run(blinktrade_api);
