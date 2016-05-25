@@ -33,8 +33,8 @@
 
                  $.each(data, function( index, value ) {
                    var date = value.date*1000;
-                   prices.unshift([date, value.price]);
-                   volume.unshift([date, value.amount]);
+                   prices.push([date, value.price]);
+                   volume.push([date, value.amount]);
                  });
 
                  $('#container').highcharts('StockChart', {
