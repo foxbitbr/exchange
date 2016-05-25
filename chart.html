@@ -21,7 +21,8 @@
         var now = new Date();
         var twenty_fours_ago = now.getTime()/1000  - (60 * 60 * 24 * 1);
 
-        var url = '//api.blinktrade.com/api/v1/' + currency + '/trades?limit=500&crypto_currency=' + crypto_currency + '&since=' + twenty_fours_ago;
+        var limit = 500;
+        var url = '//api.blinktrade.com/api/v1/' + currency + '/trades?limit=' + limit  + '&crypto_currency=' + crypto_currency + '&since=' + twenty_fours_ago;
         
         var prices = [],volume = [];
         
@@ -31,6 +32,20 @@
             prices.push([date, value.price]);
             volume.push([date, value.amount]);
           });
+          
+          if (data.length == limit) {
+            var since = data[limit-1].tid;
+            var url = '//api.blinktrade.com/api/v1/' + currency + '/trades?limit=' + limit  + '&crypto_currency=' + crypto_currency + '&since=' + since;
+
+            $.ajax({url: url,
+                   type: 'GET',
+                   dataType: 'jsonp',
+                   error: function() { alert('Failed!'); },
+                   success: onFetchTrades });
+            
+            return;
+          }
+          
           $('#container').highcharts('StockChart', {
            rangeSelector : {
              selected : 1,
