@@ -38,15 +38,15 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://foxbit.exchange/es/assets/themes/default/css/style-new.css?v=25035fa" rel="stylesheet">
+  <link href="https://foxbit.exchange/es/assets/themes/default/css/style-new.css?v=264a4a4" rel="stylesheet">
   <link href="https://foxbit.exchange/es/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://foxbit.exchange/es/assets/themes/coinage/sass/main.foxbit.css?v=25035fa" rel="stylesheet">
+    <link href="https://foxbit.exchange/es/assets/themes/coinage/sass/main.foxbit.css?v=264a4a4" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://foxbit.exchange/es/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://foxbit.exchange/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=25035fa" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://foxbit.exchange/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=264a4a4" type="text/javascript"></script>
   <script src="https://foxbit.exchange/es/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
   <script src="https://foxbit.exchange/es/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   <script src="https://foxbit.exchange/es/assets/js/externs/qrcode.min.js"></script>
@@ -302,7 +302,30 @@
                 <!-- .home-banner__cell -->
                 <div class="home-banner__cell">
                     
-                    <h1 class="home-banner__title">Compra y venta de bitcoins en Brasil</h1>
+                    <h2 class="home-banner__title">Compra y venta de bitcoins en Brasil</h2>
+
+                   <div class="home-banner__ticker">
+                      <div class="row bitex-display-if-ws-connected">
+                          <div class="col-sm-6">
+                              <h3 class="home-banner__ticker_label">
+                                  Compra
+                              </h3>
+                              <h1 class="bitex-model home-banner__ticker_value"
+                                data-model-key-list="formatted_BLINK_BTCBRL_BEST_BID"
+                                data-model-formula="formatted_BLINK_BTCBRL_BEST_BID"
+                                data-blink-class="balance-info-blink"></h1>
+                          </div>
+                          <div class="col-sm-6">
+                              <h3 class="home-banner__ticker_label">
+                                  Venta
+                              </h3>
+                              <h1 class="bitex-model home-banner__ticker_value"
+                                data-model-key-list="formatted_BLINK_BTCBRL_BEST_ASK"
+                                data-model-formula="formatted_BLINK_BTCBRL_BEST_ASK"
+                                data-blink-class="balance-info-blink"></h1>
+                          </div>
+                      </div>
+                   </div>
 
                     <!-- .home-->
                     <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2">
@@ -744,6 +767,8 @@
                                         bitex-view-settings
                                         bitex-view-algotrading
                                         bitex-view-api
+                                        bitex-view-partners
+                                        bitex-view-purseio
                                         bitex-view-my_broker
                                         bitex-view-verification">
 
@@ -759,7 +784,7 @@
 
               <!-- .sidebar-box -->
               <div class="sidebar-box">
-                  <h5 class="sidebar-box__title">NAVEGATION</h5>
+                  <h5 class="sidebar-box__title">Navegación</h5>
 
                   <div class="sidebar-box__body">
                       <ul class="sidebar-box-nav nav">
@@ -781,6 +806,11 @@
                           <li role="presentation" id="menu-offerbook">
                               <a href="#" data-switch-view="offerbook">
                                   <i class="glyphicon glyphicon-book"></i> Libro de órdenes
+                              </a>
+                          </li>
+                          <li role="presentation" id="menu-partners">
+                              <a href="#" data-switch-view="partners">
+                                  <i class="glyphicon glyphicon-shopping-cart"></i> Usa tus bitcoins
                               </a>
                           </li>
                           <li role="presentation" id="menu-history">
@@ -1198,6 +1228,40 @@
                 </div>
                 <!-- /#account_overview -->
 
+                <!-- view partners -->
+                <div id="partners" class="bitex-view">
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title">Usa tus bitcoins</h1>
+                  </header>
+                  <div class="page__body bitex-view-content">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img src="https://foxbit.exchange/es/assets/exchange_logos/partners/purseio.png" alt="Purse.io">
+                          <div class="caption">
+                            <h3>Purse.io</h3>
+                            <p>Ahorra 15% en Amazon pagando con bitcoin</p>
+                            <p>
+                              <a href="https://purse.io/?_a=BLINKTRADE" target="_blank" class="btn btn-primary" role="button">
+                                Más
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /view partners -->
+
+                <div id="purseio" class="bitex-view">
+                  <header class="page__head section-title">
+                    <h1 class="page__title h2 bitex-view-title">Purse.io</h1>
+                  </header>
+                  <div class="page__body bitex-view-content">
+                  </div>
+                </div>
+
 
                 <!-- #settings -->
                 <div id="settings" class="bitex-view">
@@ -1282,6 +1346,8 @@
                               bitex-view-settings
                               bitex-view-algotrading
                               bitex-view-api
+                              bitex-view-partners
+                              bitex-view-purseio
                               bitex-view-my_broker
                               bitex-view-verification">
               <!-- .sidebar-box -->
@@ -1316,7 +1382,27 @@
       <!-- /.page__head -->
 
       
-        <div id="market_trading_view" data-symbol="FOXBIT:BTCBRL"></div>
+        <div id="market_trading_view" style="height: 600px;">
+          <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+          <script type="text/javascript">
+            new TradingView.widget({
+              "autosize": true,
+              "symbol": "FOXBIT:BTCBRL",
+              "interval": "240",
+              "timezone": "exchange",
+              "theme": "White",
+              "toolbar_bg": "#f4f7f9",
+              "hide_side_toolbar": false,
+              "watchlist": [
+                "BITFINEX:BTCUSD",
+                "OKCOIN:BTCCNY"
+              ],
+              "details": true,
+              "locale": "es",
+              "hideideas": true
+            });
+          </script>
+        </div>
       
       <!-- .page__body -->
       <div class="page__body bitex-view-content">
@@ -1973,7 +2059,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     </li>
                     
                     <li>
-                        Version: 25035fa
+                        Version: 264a4a4
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>

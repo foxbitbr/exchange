@@ -43,8 +43,8 @@
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=25035fa" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=25035fa" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=264a4a4" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=264a4a4" type="text/javascript"></script>
     <script src="https://foxbit.exchange/zn_CN/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -612,6 +612,38 @@
         </div>
       </div>
 
+      <div id="partners" class="bitex-view">
+        <header class="page__head section-title">
+          <h1 class="page__title h2 bitex-view-title">Partners</h1>
+        </header>
+        <div class="page__body bitex-view-content">
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="span4">
+                <div class="thumbnail">
+                  <img src="https://foxbit.exchange/zn_CN/assets/exchange_logos/partners/purseio.png" alt="Purse.io">
+                  <div class="caption">
+                    <h3>Purse.io</h3>
+                    <p>Save 15% Off Amazon with Bitcoin</p>
+                    <p><a href="https://purse.io/?_a=BLINKTRADE" target="_blank" class="btn btn-primary" role="button">
+                        更多
+                    </a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="purseio" class="bitex-view">
+        <header class="page__head section-title">
+        <h1 class="page__title h2 bitex-view-title">Purse.io</h1>
+        </header>
+        <div class="page__body bitex-view-content">
+        </div>
+      </div>
+
       <div id="settings" class="bitex-view">
         <div class="section-title">
           <h3 class="bitex-view-title">设置</h3>
@@ -686,6 +718,8 @@
                                                 bitex-view-settings
                                                 bitex-view-algotrading
                                                 bitex-view-api
+                                                bitex-view-partners
+                                                bitex-view-purseio
                                                 bitex-view-line_of_credit 
                                                 bitex-view-my_broker
                                                 bitex-view-verification">
@@ -728,6 +762,12 @@
           <li id="menu-offerbook">
             <a href="" data-switch-view="offerbook">
               <i data-switch-view="offerbook" class="icon-book"></i> 我的订单</a>
+          </li>
+
+          <li role="presentation" id="menu-partners">
+            <a href="#" data-switch-view="partners">
+              <i class="icon-shopping-cart"></i> Partners
+            </a>
           </li>
 
           <li class="bitex-display-if-non-broker" id="menu-history">
@@ -813,7 +853,27 @@
       </div>
     </div>
     
-      <div id="market_trading_view" data-symbol="FOXBIT:BTCBRL"></div>
+      <div id="market_trading_view" style="height: 600px;">
+        <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
+        <script type="text/javascript">
+          new TradingView.widget({
+            "autosize": true,
+            "symbol": "FOXBIT:BTCBRL",
+            "interval": "240",
+            "timezone": "exchange",
+            "theme": "White",
+            "toolbar_bg": "#f4f7f9",
+            "hide_side_toolbar": false,
+            "watchlist": [
+              "BITFINEX:BTCUSD",
+              "OKCOIN:BTCCNY"
+            ],
+            "details": true,
+            "locale": "zn_CN",
+            "hideideas": true
+          });
+        </script>
+      </div>
     
     <div class="bitex-view-content">
     </div>
@@ -858,7 +918,7 @@
           
           <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 25035fa |
+          Version: 264a4a4 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
