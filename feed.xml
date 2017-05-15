@@ -3,8 +3,8 @@
     <channel>
         <title></title>
         <description></description>
-        <link>https://foxbit.exchange//</link>
-        <atom:link href="https://foxbit.exchange//feed.xml" rel="self" type="application/rss+xml" />
+        <link>https://foxbit.exchange/</link>
+        <atom:link href="https://foxbit.exchange/feed.xml" rel="self" type="application/rss+xml" />
 
         
         <item>
@@ -12,8 +12,8 @@
             <description>&lt;p&gt;Nosso princípio é que as bitcoins depositadas na Foxbit estão lá para serem trocadas por Reais. Por isso, para garantir segurança e rapidez na negociação, a Foxbit mantém os depósitos, sejam em reais ou bitcoins.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</guid>
+            <link>https://foxbit.exchange/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</guid>
         </item>
         
         <item>
@@ -27,8 +27,8 @@
 &lt;p&gt;Sabemos que a maioria das empresas intermediadoras de Bitcoins não publicam estes dados, e é por isso que vemos muitas manipulações do mercado, e também alguns golpistas que só querem roubar bitcoins de seus clientes.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-why-are-the-user-names-shown-in-the-order-book/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-why-are-the-user-names-shown-in-the-order-book/</guid>
+            <link>https://foxbit.exchange/post/faq-why-are-the-user-names-shown-in-the-order-book/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-why-are-the-user-names-shown-in-the-order-book/</guid>
         </item>
         
         <item>
@@ -36,8 +36,8 @@
             <description>&lt;p&gt;Tanto para saques em reais como em bitcoins, a taxa é paga por quem realiza a solicitação. A taxa em Reais é estabelecida pela FOXBIT (http://www.foxbit.com.br/taxas), já a taxa em Bitcoins (0.0001 bitcoin) é estabelecida pelo mineradores da rede bitcoin.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-who-pays-the-withdrawal-fee/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-who-pays-the-withdrawal-fee/</guid>
+            <link>https://foxbit.exchange/post/faq-who-pays-the-withdrawal-fee/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-who-pays-the-withdrawal-fee/</guid>
         </item>
         
         <item>
@@ -45,8 +45,8 @@
             <description>&lt;p&gt;Para depositar fundos na FOXBIT, é necessário verificar sua conta e uma vez que esse processo já foi realizado, você poderá depositar valores. Todas os dados bancários necessários aparecerão em uma janela quando for solicitada uma ordem de depósito.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-where-is-your-bank-account-information/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-where-is-your-bank-account-information/</guid>
+            <link>https://foxbit.exchange/post/faq-where-is-your-bank-account-information/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-where-is-your-bank-account-information/</guid>
         </item>
         
         <item>
@@ -56,8 +56,8 @@
 &lt;p&gt;A operadora de fato somos nós, que realizamos as operações diárias, ou seja, processa depósitos e saques, verifica a identidade dos clientes e permite que sejam realizadas transações seguras.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</guid>
+            <link>https://foxbit.exchange/post/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-what-is-the-relationship-between-the-exchange-and-blinktrade/</guid>
         </item>
         
         <item>
@@ -69,8 +69,8 @@
 &lt;p&gt;Lembrando que enquanto sua transação não for confirmada, você não poderá sacar bitcoins ou reais.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-what-is-the-instant-deposit-mode/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-what-is-the-instant-deposit-mode/</guid>
+            <link>https://foxbit.exchange/post/faq-what-is-the-instant-deposit-mode/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-what-is-the-instant-deposit-mode/</guid>
         </item>
         
         <item>
@@ -78,8 +78,8 @@
             <description>&lt;p&gt;Bitcoin é uma rede P2P (rede de computadores que permite o compartilhamento de serviços e dados sem a necessidade de um servidor central) de código aberto criada em 2009 pelo autor de pseudônimo Satoshi Nakamoto. O protocolo desta rede permite ao usuário enviar, armazenar e receber valores com um baixíssimo custo e de forma muito rápida. O uso de Bitcoin evita a necessidade de autoridades financeiras centralizadoras (governos, bancos centrais, etc) e até de empresas operadoras (bancos privados, cartões de créditos, sites intermediadores de pagamento).&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-what-is-bitcoin/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-what-is-bitcoin/</guid>
+            <link>https://foxbit.exchange/post/faq-what-is-bitcoin/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-what-is-bitcoin/</guid>
         </item>
         
         <item>
@@ -87,8 +87,8 @@
             <description>&lt;p&gt;É simplesmente uma plataforma (um website), onde pessoas interessadas em comprar bitcoins encontram vendedores interessados em vender bitcoins e vice-e-versa.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-what-is-a-bitcoin-exchange/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-what-is-a-bitcoin-exchange/</guid>
+            <link>https://foxbit.exchange/post/faq-what-is-a-bitcoin-exchange/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-what-is-a-bitcoin-exchange/</guid>
         </item>
         
         <item>
@@ -100,8 +100,8 @@
 &lt;p&gt;Isso protege a privacidade do usuário, desde que ele não revele a ligação entre seu nome verdadeiro e o nome gerado aleatoriamente. É de responsabilidade do usuário proteger sua própria privacidade.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-o-que-sao-esses-nomes-livro-de-ofertas/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-o-que-sao-esses-nomes-livro-de-ofertas/</guid>
+            <link>https://foxbit.exchange/post/faq-o-que-sao-esses-nomes-livro-de-ofertas/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-o-que-sao-esses-nomes-livro-de-ofertas/</guid>
         </item>
         
         <item>
@@ -111,8 +111,8 @@
 &lt;p&gt;Acesse https://authy.com e faça o download para aumentar a segurança do acesso a sua conta.&lt;/p&gt;
 </description>
             <pubDate>Sun, 17 May 2015 22:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//post/faq-o-que-e-autenticacao-2-passos/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//post/faq-o-que-e-autenticacao-2-passos/</guid>
+            <link>https://foxbit.exchange/post/faq-o-que-e-autenticacao-2-passos/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/post/faq-o-que-e-autenticacao-2-passos/</guid>
         </item>
         
 

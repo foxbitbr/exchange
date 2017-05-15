@@ -3,8 +3,8 @@
     <channel>
         <title></title>
         <description></description>
-        <link>https://foxbit.exchange//ro/</link>
-        <atom:link href="https://foxbit.exchange//ro/feed.xml" rel="self" type="application/rss+xml" />
+        <link>https://foxbit.exchange/ro/</link>
+        <atom:link href="https://foxbit.exchange/ro/feed.xml" rel="self" type="application/rss+xml" />
 
         
         <item>
@@ -19,8 +19,8 @@
 &lt;p&gt;Este o funcție a exchange-ului care permite utilizatorilor verificați și de încredere să poate tranzacționa, chiar dacă depozitarea FIAT nu a fost încă confirmată de broker. Contului utilizatorului este creditat fără a fi nevoit să aștepte pentru confirmare.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-what-is-the-instant-deposit-mode/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-what-is-the-instant-deposit-mode/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-what-is-the-instant-deposit-mode/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-what-is-the-instant-deposit-mode/</guid>
         </item>
         
         <item>
@@ -35,8 +35,8 @@
 &lt;p&gt;Când doriți să primiți Bitcoin, tot ce trebuie să faceți este să cereți o retragere din meniul principal. Va trebui să specificați sumă și să furnizați cheia publică(adresa) unde vrei Bitcoinii trimiși. Atenție la introducerea adresei, tranzacțiile Bitcoin sunt ireversibile.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-how-to-withdraw-BTC/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-how-to-withdraw-BTC/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-how-to-withdraw-BTC/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-how-to-withdraw-BTC/</guid>
         </item>
         
         <item>
@@ -51,8 +51,8 @@
 &lt;p&gt;Trebuie să alegi cantitatea de Bitcoini pe care vrei să o cumperi și prețul pe care ești dispus să-l plătești. Cursul este mereu determinat de prețul unui Bitcoin.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-how-to-trade/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-how-to-trade/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-how-to-trade/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-how-to-trade/</guid>
         </item>
         
         <item>
@@ -66,8 +66,8 @@
 &lt;p&gt;Da. În meniul principal accesați “Registru” unde există un istoric al tuturor tranzacțiilor. Puteți de asemenea urmării istoricul depunerilor sau retragerilor accesând în meniul principat “Depunerile mele”, “Retragerile mele”.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-can-I-keep-track-of-all-my-past-activity-on-the-platform/</guid>
         </item>
         
         <item>
@@ -82,8 +82,8 @@
 &lt;p&gt;Da. Cheile publice pentru portofelele calde și reci sunt disponibile pentru verificare. Tot ce trebuie să faceți este să intrați pe blockchain.info și să înserați adresa pe care doriți să o verificați.&lt;/p&gt;
 </description>
             <pubDate>Fri, 07 Nov 2014 00:00:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-can-I-audit-the-balance-of-the-wallets-of-the-exchange/</guid>
         </item>
         
         <item>
@@ -91,8 +91,8 @@
             <description>&lt;p&gt;Principiul nostru este că Bitcoinii sunt depozitați în exchange pentru a fi schimbați în monedă locală. În consecință pentru a garanta siguranța și viteza tranzacționării, operatorul exchange-ului are posesia depozitărilor fie în Fiat sau BTC.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 22:13:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-why-don't-I-have-a-private-key-for-my-exchange-wallet/</guid>
         </item>
         
         <item>
@@ -114,8 +114,8 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
 &lt;p&gt;Încurajăm toți utilizatori să își depoziteze Bitcoinii doar când au de gând să îi schimbe, și să nu folosească exchange-ul că o bancă. Cea mai sigură metodă este să va țineți Bitcoini în portofelul personal până când aveți de gând să îi schimbați.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 22:12:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-is-your-bitcoin-safe/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-is-your-bitcoin-safe/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-is-your-bitcoin-safe/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-is-your-bitcoin-safe/</guid>
         </item>
         
         <item>
@@ -123,8 +123,8 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             <description>&lt;p&gt;În meniul principal, apăsați pe “Depozit monedă locală” și va apărea o fereastră nouă. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Va trebui să specificați cantitatea de FIAT pe care doriți să o depozitați, pentru a cumpără Bitcoin. Țineți cont că există taxă de depozitare. Pentru o depozitare de 800 lei cu o taxa de 1.5%, veți avea 788 lei creditați către contul dumneavoastră.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 22:08:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-how-do-I-deposit-local-currency-into-my-account/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-how-do-I-deposit-local-currency-into-my-account/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-how-do-I-deposit-local-currency-into-my-account/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-how-do-I-deposit-local-currency-into-my-account/</guid>
         </item>
         
         <item>
@@ -132,8 +132,8 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             <description>&lt;p&gt;Deschiderea unui cont de tranzactionare la Exchange este ușor, rapid și gratuit. Faceți clic pe “Înregistrează-te”, completați formularul și conectați-vă.  După ce vă conectați, operatorul Exchange-ul vă va cere numele, adresa și documente. După ce documentele au fost verificate de operator, veți putea cumpără/vinde Bitcoin.&lt;/p&gt;
 </description>
             <pubDate>Thu, 06 Nov 2014 22:07:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-how-do-I-become-a-trader/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-how-do-I-become-a-trader/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-how-do-I-become-a-trader/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-how-do-I-become-a-trader/</guid>
         </item>
         
         <item>
@@ -145,8 +145,8 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
 &lt;p&gt;Noi garantăm că cumpărătorul primește Bitcoini și vânzătorul banii, la prețul stabilit.&lt;/p&gt;
 </description>
             <pubDate>Fri, 31 Oct 2014 22:04:00 -0200</pubDate>
-            <link>https://foxbit.exchange//ro/post/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</link>
-            <guid isPermaLink="true">https://foxbit.exchange//ro/post/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</guid>
+            <link>https://foxbit.exchange/ro/post/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</link>
+            <guid isPermaLink="true">https://foxbit.exchange/ro/post/faq-does-the-exchange-buy-or-sell-bitcoins-directly/</guid>
         </item>
         
 
