@@ -43,8 +43,8 @@
     <link href="https://foxbit.exchange/vi/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/vi/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/vi/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/vi/assets/themes/default/css/style.css?v=3a21fec" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.default.js?v=3a21fec" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/vi/assets/themes/default/css/style.css?v=09f8011" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/vi/assets/js/bitex_app_blink_trade.compiled.vi.default.js?v=09f8011" type="text/javascript"></script>
     <script src="https://foxbit.exchange/vi/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -55,8 +55,8 @@
         <div class="container">
 
           
-          <a href="#" class="brand" data-switch-view="offerbook">
-            <img data-switch-view="offerbook" src="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_toolbar_logo.png" style="
+          <a href="#" class="brand" data-switch-view="trading">
+            <img data-switch-view="trading" src="https://foxbit.exchange/vi/assets/exchange_logos/foxbit_toolbar_logo.png" style="
                 height: 30px;
                 margin-top: -10px;
                 margin-bottom: -10px;
@@ -71,8 +71,8 @@
                 <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">Hỏi & Đáp</a>
               
             </li>
-            <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Giao dịch</a></li>
-            <li><a href="" data-switch-view="market">Thị trường</a></li>
+            <li class="bitex-display-if-logged"><a href="" data-switch-view="trading">Giao dịch</a></li>
+            <li class="bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element"><a href="" data-switch-view="market">Thị trường</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Đăng nhập</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Đăng ký</a></li>
             
@@ -160,7 +160,7 @@
             <input class="focus" id="id_landing_username" placeholder="" size="30" type="text" autofocus>
             <label for="id_landing_password">Mật khẩu:</label>
             <input id="id_landing_password" placeholder="" size="30"  type="password">
-            <button id="id_landing_signin" class="btn btn-primary">Đăng nhập</button>
+            <button id="id_landing_signin" class="btn btn-primary btn-login">Đăng nhập</button>
           </div>
           <div class="clearfix" style="height: 20px"></div>
           <p>
@@ -177,546 +177,7 @@
   </div>
 
   <div id="faq" class="page row-fluid bitex-view" style="display: none">
-    <div class="page-header">
-      <h1 class="bitex-view-title">Hỏi & Đáp - Những câu hỏi thường gặp</h1>
-    </div>
-
-    <div class="bitex-view-content">
-      <div class="accordion">
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Bitcoin là gì?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Bitcoin là một mạng lưới kỹ thuật số ngang hàng dựa trên phần mềm nguồn mở được tạo ra từ năm 2009 bởi một cá thể lấy biệt danh là Satoshi Nakamoto. Giao thức này cho phép người dùng gửi, lưu trữ, nhận Bitcoin nhanh với chi phí thấp. Bitcoin không cần sự tồn tại của các cơ quan trung ương và tổ chức phát hành.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Cách dễ dàng nhất để mua Bitcoin tại đây là gì?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nếu bạn là một người mới bắt đầu tìm hiểu về sàn Bitcoin này và muốn mua Bitcoin thì hãy thực hiện theo đúng các bước sau:</p>
-
-<ol>
-  <li>Đăng ký tài khoản tại sàn giao dịch này</li>
-  <li>Xác minh tài khoản bằng cách nhập thông tin về bản thân</li>
-  <li>Đợi chúng tôi xác minh tài khoản của bạn (trong vòng 1-24 giờ). Bạn sẽ nhận được email thông báo về việc hoàn tất xác minh.</li>
-  <li>Đăng nhập, vào mục “Các lệnh gửi tiền”, ấn vào “Nạp Đồng” và làm theo hướng dẫn.</li>
-  <li>Sau khi đã nhận được email thông báo về số dư tài khoản của bạn sau khi đã gửi tiền, bạn đăng nhập vào tài khoản và vào mục “Mua và Bán”</li>
-  <li>Nhập số Bitcoin bạn muốn mua và ấn nút “Mua”. Hệ thống sẽ tự tính toán ra số tiền VNĐ tương ứng bạn sẽ phải trả để mua Bitcoin dựa trên sổ lệnh.</li>
-  <li>Nếu bạn muốn chuyển số Bitcoin vừa mua được cho người khác, vào mục “Các lệnh rút tiền”, nhấn vào “Rút Bitcoin” và làm theo hướng dẫn.</li>
-</ol>
-
-<p>Các lần mua tiếp theo bạn chỉ cần làm từ bước 4 trở đi. Việc đăng ký tài khoản chỉ mất dưới 5 phút của bạn (ngoại trừ thời gian đợi xác minh), và thao tác cho việc mua/bán Bitcoin chỉ mất dưới 1 phút.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Sàn giao dịch Bitcoin là gì?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nó chỉ là một cái “chợ”, nơi mà mọi người quan tâm đến việc mua Bitcoin tìm người bán Bitcoin của họ và ngược lại.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Sàn giao dịch Bitcoin hoạt động thế nào?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Sàn giao dịch cho phép người mua gửi tiền Đồng và người bán gửi Bitcoin. Sau đó sàn giao dịch sẽ cho phép người mua giao dịch với người bán.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tôi có mua bán Bitcoin trực tiếp với nhà điều hành sàn giao dịch không?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Không, chúng tôi chỉ cung cấp một dịch vụ. Hãy suy nghĩ về một sàn giao dịch giống như eBay, chúng tôi chỉ cung cấp một dịch vụ mà bạn có thể tìm được người mua hoặc người bán.</p>
-
-<p>Tất cả những gì chúng tôi làm là cung cấp một môi trường an toàn và đơn giản để bạn có thể giao dịch với người khác.</p>
-
-<p>Chúng tôi đảm bảo rằng người mua có được Bitcoin của họ và người bán nhận được tiền của họ ở mức giá như đã thoả thuận.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Mối quan hệ giữa sàn giao dịch và Blinktrade là như thế nào?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Blinktrade là một nhà cung cấp công nghệ.</p>
-
-<p>Nhà điều hành sàn giao dịch thuê dịch vụ của Blinktrade.</p>
-
-<p>Blinktrade chỉ cung cấp dịch vụ CNTT cho nhà điều hành sàn giao dịch.</p>
-
-<p>Nhà điều hành sàn giao dịch là những người điều hành chính sàn giao dịch. Điều hành sàn giao dịch bao gồm: chấp nhận tiền gửi, xử lý rút tiền, xác nhận danh tính khách hàng và cho phép khách hàng giao dịch một cách an toàn.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để tôi trở thành đối tác với sàn?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Hãy liên lạc với bộ phận Hỗ Trợ Khách Hàng.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để tôi khóa được tài khoản giao dịch của mình?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Để khóa tài khoản giao dịch của bạn, vào “Tài khoản” và chọn “Cài đặt” từ menu rồi bấm “Khóa tài khoản”.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để tôi có thể bắt đầu giao dịch?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Mở một tài khoản giao dịch tại sàn giao dịch cực kỳ dễ dàng, nhanh chóng và miễn phí:</p>
-
-<p>Bạn nhấp vào “Đăng ký”, điền vào mẫu và đăng nhập. Sau khi đăng nhập, chúng tôi sẽ yêu cầu bạn cung cấp tên, địa chỉ và tài liệu xác minh.</p>
-
-<p>Sau khi tài liệu của bạn được xác minh bởi chúng tôi, tài khoản của bạn sẽ được tặng một khoản tiền thưởng nhỏ. Từ thời điểm đó bạn có thể bắt đầu đặt mua những Bitcoin đầu tiên cho mình!</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm thế nào để gửi tiền nội tệ vào tài khoản của tôi?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Trên menu chính, sau khi bấm vào “Các lệnh gửi tiền”, một cửa sổ mới sẽ xuất hiện.</p>
-
-<p>Bạn sẽ phải xác định số lượng tiền mặt bạn muốn gửi để mua Bitcoin.</p>
-
-<p>Lưu ý rằng chúng tôi sẽ thu phí mỗi lần bạn muốn thực hiện một khoản tiền gửi. Ví dụ: Nếu bạn gửi 1,000,000 VNĐ và phí gửi tiền là 1%, bạn sẽ thấy số dư 990,000 VNĐ trong tài khoản của bạn.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để nạp BTC?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Trên menu chính, bấm vào “Các lệnh gửi tiền” rồi bấm vào “Nạp Bitcoin” thì một cửa sổ mới sẽ xuất hiện.</p>
-
-<p>Hệ thống sẽ tạo ra một địa chỉ duy nhất mà sẽ chỉ có hiệu lực cho 1 giao dịch cụ thể để thực hiện lệnh gửi tiền.</p>
-
-<p>Quét mã QR và gửi BTC. Sau khi được Blockchain xác nhận, bạn sẽ thấy số Bitcoin của bạn gửi được ghi có vào tài khoản giao dịch của bạn.</p>
-
-<p>Không có phí nào khác cho việc gửi BTC trừ một khoản rất nhỏ của blockchain để xác nhận giao dịch.</p>
-
-<p>QUAN TRỌNG: Không bao giờ lưu lại địa chỉ tiền gửi, không bao giờ sử dụng lại cùng một địa chỉ hoặc tiền gửi của bạn sẽ không được xác nhận.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để rút VNĐ?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Việc rút tiền VNĐ cũng đơn giản như quá trình gửi tiền:</p>
-
-<p>Bạn đặt lệnh rút tiền trong menu chính và một cửa sổ mới sẽ xuất hiện hướng dẫn các bước tiếp theo.</p>
-
-<p>Sau khi nhập số lượng tiền và điền vào các thông tin cần thiết khác (Số tài khoản, thông tin ngân hàng, …) thì số tiền sẽ được gửi tới tài khoản của bạn.</p>
-
-<p>Xin lưu ý rằng chúng tôi có áp dụng phí rút tiền VNĐ cho mỗi lần rút.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để rút BTC?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Khi bạn muốn nhận Bitcoin, bạn chỉ cần đặt lệnh rút tiền trên menu chính.</p>
-
-<p>Bạn sẽ phải điền số lượng Bitcoin cần chuyển và cung cấp địa chỉ gửi Bitcoin gửi.</p>
-
-<p>Hãy dành thời gian của bạn để điền địa chỉ Bitcoin một cách chính xác vì các giao dịch Bitcoin là không thể đảo ngược.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Gửi Bitcoin tới sàn giao dịch này có an toàn không?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Chúng tôi muốn tạo ra một môi trường giao dịch an toàn nhất cho người dùng. Bitcoin được lưu trữ trong một chiếc Ví lạnh multi-signature. Vì vậy, kể cả trong trường hợp xấu nhất khi máy chủ bị tấn công, số Bitcoin này vẫn không bị rơi vào tay kẻ xấu.</p>
-
-<p>Các Ví multi-signature đòi hỏi 2 trong 3 khoá để có thể di chuyển các Bitcoin. Nhà điều hành sàn giao dịch lưu giữ một trong 3 khoá. Hai khoá khác được lưu giữ bởi BlinkTrade và một bên trung gian hòa giải mà sẽ tác động vào trong trường hợp có tranh chấp giữa nhà điều hành sàn giao dịch và BlinkTrade.</p>
-
-<p>Điều này có nghĩa rằng ngay cả khi một hacker lấy được quyền truy cập vào máy chủ của sàn, họ cũng sẽ phải tấn công được các máy chủ của BlinkTrade để có thể lấy Bitcoin. Khả năng này xảy ra cực kỳ thấp vì mỗi bên đều áp dụng rất nhiều cách để chống tấn công cho riêng mình, bao gồm cả việc xác thực 2 lớp.</p>
-
-<p>Mỗi lần Bitcoin phải di chuyển từ Ví lạnh qua Ví nóng (được kết nối với Internet để cho phép rút tiền nhanh), BlinkTrade trước đó sẽ xác minh hệ thống và thực hiện kiểm tra khả năng tính thanh khoản của sàn giao dịch. Nói cách khác, mỗi lần Bitcoin được chuyển từ lưu trữ lạnh multi-signature qua Ví nóng, chúng tôi thực hiện một lượt kiểm tra hệ thống hoàn chỉnh.</p>
-
-<p>Các Ví nóng được giữ trong các máy chủ của blockchain.info và chúng tôi chỉ giữ lại một số lượng nhỏ Bitcoin trong Ví này để có thể trang trải các hoạt động trong ngày. Ngoài ra, tất cả các biện pháp an ninh của chiếc Ví nóng được điều hành bởi blockchain.info.</p>
-
-<p>Không có hệ thống nào trên thế giới là 100% an toàn. Vì vậy, mặc dù chúng tôi thực hiện tất cả các biện pháp an ninh có thể, chúng tôi không muốn tạo ra một mỏ vàng Bitcoin để thách thức các hacker tấn công.</p>
-
-<p>Chúng tôi khuyến khích người sử dụng chỉ gửi Bitcoin của họ khi họ đang sắp bán, và không sử dụng sàn VBTC như một ngân hàng Bitcoin của họ. Cách an toàn nhất để giữ Bitcoin là giữ trong Ví riêng của bạn cho đến khi bạn muốn sử dụng chúng. Nếu bạn đang có rất nhiều Bitcoin, bạn nên thiết lập một ví multi-signature cho riêng mình hoặc dùng những thiết bị như Bitcoin Trezor hoặc Ledger Wallet (giống như két sắt của riêng bạn vậy) để lưu trữ Bitcoin.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tại sao tôi không có khóa riêng cho Ví của tôi tại sàn giao dịch?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nguyên tắc của chúng tôi là số Bitcoin được nạp vào sàn giao dịch là để trao đổi với đồng nội tệ. Vì vậy, để đảm bảo an toàn và tốc độ trong giao dịch, sàn giao dịch sẽ lưu giữ các khoản tiền gửi VNĐ và BTC.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm sao để giao dịch?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Bạn cần phải chọn số lượng Bitcoin bạn muốn mua và xác định tỷ giá bạn sẵn sàng trả tiền cho mỗi Bitcoin. Tỷ giá luôn luôn được tính bằng giá của 1 Bitcoin so với đồng nội tệ.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tôi có phải trả phí không?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Có, lệ phí áp dụng đối với việc rút và gửi tiền VNĐ và giao dịch. Phí để gửi và rút BTC là 0,0001 BTC. Bạn không phải trả tiền cho sàn giao dịch để nạp BTC.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Làm thế nào để hủy bỏ một đơn hàng?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Để hủy bỏ một đơn đặt hàng chưa thực thi, bạn vào “Mua và Bán” trên menu chính. Chọn đơn hàng cần hủy bỏ từ danh sách trong “Đơn hàng của tôi” và nhấn “Hủy” bên cạnh. Một lựa chọn khác là nhấp vào “Sổ lệnh” và tìm kiếm thứ tự được đánh dấu với tên truy cập của bạn và một chữ “x” màu đỏ bên cạnh nó. Click vào để hủy bỏ nó.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Mất bao lâu để sàn nhận được VNĐ sau khi tôi gửi?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nếu giao dịch bao gồm chuyển khoản liên ngân hàng thì thời gian để nhận tiền sẽ là từ 1-3 ngày làm việc.</p>
-
-<p>Ví dụ: Bạn gửi tiền từ thứ 5 thì có thể tới thứ 2 tuần sau ngân hàng chúng tôi mới ghi có. Ngược lại, nếu chúng tôi gửi tiền từ ngày 30 tháng 8, thì có thể tới ngày 4 tháng 9 bạn mới nhận được vì ngày 2 tháng 9 là ngày Lễ. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.</p>
-
-<p>Việc tốn 1-3 ngày cho chuyển khoản liên ngân hàng là do sự chậm trễ của hệ thống tài chính cổ điển, nằm ngoài sự kiểm soát của chúng tôi. Bạn có thể đẩy nhanh giao dịch bằng cách chuyển khoản trực tiếp tại ngân hàng của chúng tôi.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Bao lâu sau khi gửi Bitcoin thì sàn nhận được?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Chúng tôi sẽ cần đợi mạng lưới Blockchain xác nhận giao dịch. Thông thường quá trình này diễn ra dưới 10 phút.</p>
-
-<p>Đối với những khoản nạp có giá trị cao hơn 2 BTC, chúng tôi sẽ cần 3 lớp xác nhận và việc này có thể mất tới 30 phút. Nếu bạn nạp nhiều hơn 10 BTC, chúng tôi cần đợi 6 lớp xác nhận và có thể mất tới 60 phút.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Chế độ nạp tiền ngay tức thì hoạt động ra sao?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Đó là một tính năng của sàn giao dịch cho phép những người dùng đáng tin và đã được xác minh được phép giao dịch ngay cả khi khoản tiền gửi còn đang đợi xác minh. Tài khoản của người dùng được ghi số dư trước khi việc xác minh tiền gửi được hoàn tất.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tôi có thể gửi tiền từ tài khoản ngân hàng không phải của tôi không?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Có. Người dùng có thể gửi tiền từ tài khoản ngân hàng của bên thứ ba miễn là họ đã cung cấp tài liệu xác minh.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Mất bao lâu để rút tiền VNĐ?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nếu giao dịch bao gồm chuyển khoản liên ngân hàng thì thời gian để nhận tiền sẽ là từ 1-3 ngày làm việc. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.</p>
-
-<p>Ví dụ: Bạn gửi tiền từ thứ 5 thì có thể tới thứ 2 tuần sau ngân hàng chúng tôi mới ghi có. Ngược lại, nếu chúng tôi gửi tiền từ ngày 30 tháng 8, thì có thể tới ngày 4 tháng 9 bạn mới nhận được vì ngày 2 tháng 9 là ngày Lễ. Thông thường bạn sẽ nhận được tiền sớm trong 1 ngày làm việc.</p>
-
-<p>Việc tốn 1-3 ngày cho chuyển khoản liên ngân hàng là do sự chậm trễ của hệ thống tài chính cổ điển, nằm ngoài sự kiểm soát của chúng tôi. Bạn có thể đẩy nhanh giao dịch bằng cách chuyển khoản trực tiếp tại ngân hàng của chúng tôi.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Mất bao lâu để rút BTC ra khỏi tài khoản?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Cũng giống như trường hợp nạp BTC, thời gian rút tiền sẽ phụ thuộc vào tốt độ của mạng lưới blockchain để xác nhận giao dịch đó. Thông thường, bạn sẽ nhận được Bitcoin của mình trong vòng 10 phút.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Ai là người trả phí rút tiền?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Trong cả 2 trường hợp rút tiền (Bitcoin và VNĐ), người giao dịch phải trả phí.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Thông tin ngân hàng của sàn giao dịch nằm ở đâu?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Để có thể gửi tiền tới sàn giao dịch, nhóm vận hành phải xác minh tài khoản ngân hàng của bạn. Một khi quá trình đó hoàn thành, bạn có thể nạp tiền.</p>
-
-<p>Tất cả thông tin về tài khoản ngân hàng của chúng tôi sẽ nằm trong một cửa sổ mới khi bạn đặt lệnh nạp tiền trên menu chính.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tại sao tên người dùng lại xuất hiện trên sổ giao dịch?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Chúng tôi sẽ chỉ định một tên ngẫu nhiên cho mỗi tài khoản. Thay vì sử dụng tên thật của người dùng, chúng tôi sẽ đặt cho họ 1 tên ngẫu nhiên.Tên có thể đặt như: Rhino_899009.</p>
-
-<p>Tính bảo mật của người dùng sẽ được bảo đảm miễn là người dùng không tiết lộ mối liên quan giữa tên thật và tên được đặt ngẫu nhiên đó. Đây là trách nhiệm của người dùng để bảo vệ chính sự riêng tư của họ.</p>
-
-<p>Tại sao chúng tôi không giấu mọi thông tin của người dùng, bao gồm cả tên được đặt ngẫu nhiên?</p>
-
-<p>Có rất nhiều lý do giải thích cho việc này nhưng chúng tôi sẽ nêu ra những lý do quan trọng nhất:</p>
-
-<p>1 - Điều này tránh việc thao túng thị trường, như Chạy Trước (Front-running), Bơm và Đẩy (Pump And Dump), và các loại thao túng khác. Bạn có thể thử, nhưng mọi người sẽ biết ngay lập tức và sẽ không thực hiện theo việc thao túng đó. Về cơ bản, việc thao túng thị trường sẽ làm mất tiền của họ, vì vậy mọi người sẽ không để cho việc lũng đoạn thị trường xảy ra.</p>
-
-<p>2 - Điều này giúp cho việc xây dựng uy tín của người dùng. Trong trường hợp chính phủ cấm đoán Bitcoin, chúng tôi sẽ chuyển đổi VBTC thành một sàn giao dịch ngang hàng, vì vậy uy tín của người dùng sẽ vô cùng quan trọng.</p>
-
-<p>3 - Nó cho phép người dùng có thể kiểm tra sàn giao dịch. Điều này sẽ sẽ giúp cho VBTC chứng minh khả năng thanh toán của mình một cách công khai mà không cần đến một kiểm toán viên có thể dễ dàng bị mua chuộc.</p>
-
-<p>Chúng tôi hiểu rằng hầu hết các sàn giao dịch ngày nay không công bố điều này, đó là lý do tại sao chúng ta thấy rất nhiều hành vi lũng đoạn thị trường, và cũng có rất nhiều kẻ lừa đảo chỉ muốn cướp Bitcoin từ khách hàng của họ (Chúng tôi không nói về những sàn giao dịch lớn. Chúng tôi đang nói về rất nhiều sàn giao dịch Bitcoin nhỏ mà đã bị đóng cửa của sau khi tuyên bố họ đã bị hack).</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Giờ làm việc
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Giao dịch: 24 giờ / 7 ngày</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tôi có thể mang tiền mặt trực tiếp đến công ty để giao dịch không?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Do mô hình hoạt động của công ty và để đảm bảo an toàn hơn cho 2 bên, tất cả giao dịch phải được thực hiện thông qua trang web của công ty và qua chuyển khoản ngân hàng, nên chúng tôi rất tiếc không giao dịch với bạn bằng tiền mặt trực tiếp được.</p>
-
-<p>Chuyển khoản ngân hàng sẽ an toàn hơn vì giao dịch bằng tiền mặt thì không có lưu trữ về giao dịch rõ ràng trên hệ thống. Khi xảy ra tranh chấp rất khó để có bằng chứng thuyết phục về giao dịch. Khi bạn chuyển khoản ngân hàng cho chúng tôi, cả 2 bên đều nhìn thấy rõ được dòng tiền được chuyển từ A đến B không thể chối cãi.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tại sao sàn không có số điện thoại liên lạc?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Thực tế, việc trả lời thông qua email sẽ rõ ràng hơn, hiệu quả hơn, có tính pháp lý cao hơn, và cho phép cả khách hàng và chúng tôi có thời gian suy nghĩ kỹ trước khi gửi. Chúng tôi sử dụng hệ thống Zendesk để giúp cho việc hỗ trợ khách hàng đạt hiệu quả cao nhất, không bị bỏ sót, và không phải nhắc lại khi chuyển kiến nghị lên cấp cao hơn. Khi thực sự cần thiết, chúng tôi sẽ chủ động gọi điện thoại cho bạn theo số máy bạn đã đăng ký.</p>
-
-<p>Ngoài ra, các thành viên sáng lập sàn hiện đang nằm rải rác tại nhiều quốc gia khác nhau nên việc liên lạc qua điện thoại sẽ khó khăn và không hiệu quả bằng email. Chúng tôi quyết định dồn hết việc Hỗ Trợ Khách Hàng chỉ qua email để có thể hoạt động hiệu quả nhất. Đây là một văn hoá liên lạc tốt mà rất nhiều công ty đang áp dụng trên thế giới. Mong bạn thông cảm!</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Tôi bị mất thiết bị lấy mã xác thực 2 lớp
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Xin bạn vui lòng gửi ảnh chụp chứng minh thư hoặc hộ chiếu để xác nhận việc tắt chế độ xác thực 2 lớp cho tài khoản của bạn tới support@vbtc.vn. Chúng tôi sẽ mất 24 giờ để xác minh lại tài khoản của bạn.</p>
-
-<p>Sau khi tắt xong, bạn có thể kích hoạt lại chức năng này sau khi đăng nhập.</p>
-
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <h3>
-      <a href="" class="bitex-support-link" target="_blank">
-        <i class="icon-envelope"></i> Hãy liên hệ với chúng tôi nếu bạn không tìm thấy câu trả lời tại đây</a>
-      </h3>
-    </div>
+    
   </div>
 
   <!-- signup page-->
@@ -732,7 +193,7 @@
           <label class="control-label">Tên đăng nhập</label>
 
           <div class="controls">
-            <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_username" name="Username" size="30" type="text" placeholder="">
           </div>
         </div>
 
@@ -740,7 +201,7 @@
           <label class="control-label">Địa chỉ Email</label>
 
           <div class="controls">
-            <input id="id_signup_email" name="Email" size="30" type="text" placeholder="Ví dụ: ngoctrinh@gmail.com">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_email" name="Email" size="30" type="email" placeholder="Ví dụ: ngoctrinh@gmail.com">
           </div>
         </div>
 
@@ -826,10 +287,22 @@
             <input id="id_password" placeholder="" name="password" type="password">
           </div>
         </div>
+
+        <div class="clearfix" id="id_second_factor_group" style="display: none">
+          <label for="id_password">Two factor authentication:</label>
+          <div class="input">
+            <input id="id_second_factor"  placeholder="" name="secondfactor" type="text" autocomplete="off">
+          </div>
+        </div>
+
+        <p>
+          <a href="#" id="id_open_second_factor">Has two factor authentication?</a>
+        </p>
+        
         <p><a href="#" data-switch-view="forgot_password">Bạn đã quên mật khẩu?</a></p>
 
         <div class="actions">
-          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="Đăng nhập">
+          <input id="id_btn_login" class="btn btn-primary btn-login" name="commit" type="submit" value="Đăng nhập">
         </div>
       </form>
     </div>
@@ -845,7 +318,7 @@
           <label for="id_forgot_password_email">Email</label>
 
           <div class="input">
-            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="email" placeholder="">
           </div>
         </div>
         <div class="actions">
@@ -905,7 +378,9 @@
 
     <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <a href="" data-switch-view="faq"> Tài khoản của bạn đã bị khoá. Xin vui lòng liên hệ với bộ phận hỗ trợ khách hàng. </a>
+      
+        <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer"> Tài khoản của bạn đã bị khoá. Xin vui lòng liên hệ với bộ phận hỗ trợ khách hàng. </a>
+      
     </div>
   </div>
 
@@ -1289,7 +764,7 @@
               <i data-switch-view="trading" class="icon-random"></i> Mua và Bán</a>
           </li>
 
-          <li id="menu-offerbook">
+          <li id="menu-offerbook" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="offerbook">
               <i data-switch-view="offerbook" class="icon-book"></i> Sổ lệnh</a>
           </li>
@@ -1305,12 +780,12 @@
               <i data-switch-view="history" class="icon-list-alt"></i> Lịch sử giao dịch</a>
           </li>
 
-          <li id="menu-algotrading">
+          <li id="menu-algotrading" class="bitex-model" style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="algotrading">
               <i data-switch-view="algotrading" class="icon-cog"></i> Thuật toán cho giao dịch</a>
           </li>
 
-          <li id="menu-ledger">
+          <li id="menu-ledger" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="ledger">
               <i data-switch-view="ledger" class="icon-list"></i> Sổ kế toán</a>
           </li>
@@ -1340,6 +815,11 @@
               <i data-switch-view="withdraw" class="icon-minus"></i> Các lệnh rút tiền</a>
           </li>
 
+          <li id="menu-services" class="bitex-model bitex-display-if-non-broker"  style="display: none" data-model-key="HasServices" data-model-action="show_element">
+            <a href="" data-switch-view="services">
+              <i data-switch-view="services" class="icon-minus"></i> Services</a>
+          </li>
+
           <li class="bitex-display-if-non-broker bitex-model" style="display: none" id="card_menu_id"  data-model-key="HasCardFeature" data-model-action="show_element" id="menu-card">
               <a href="" data-switch-view="card">
                   <i data-switch-view="card" class="icon-tag"></i> Blink Card</a>
@@ -1356,12 +836,14 @@
               <i data-switch-view="line_of_credit" class="icon-retweet"></i> Hạn mức tín dụng</a>
           </li>
 
-          <li style="">
-            <a href="" data-switch-view="faq">
-              <i data-switch-view="faq" class="icon-question"></i> Ý kiến & Hỗ trợ</a>
+          <li style="" style="display: none">
+            
+              <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">
+                <i class="icon-question"></i> Ý kiến & Hỗ trợ</a>
+            
           </li>
 
-          <li style="" id="menu-api">
+          <li style="" id="menu-api" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="api">
               <i data-switch-view="api" class="icon-globe"></i> API</a>
           </li>
@@ -1407,12 +889,6 @@
                     <h3>Simple Theme</h3>
                 </a>
             </div>
-            <div class="span4">
-                <a href="https://foxbit.exchange/vi/themes/whitedev/">
-                    <img src="https://foxbit.exchange/vi/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
-                    <h3>Whitedev</h3>
-                </a>
-            </div>
         </div>
     </div>
   </div>
@@ -1424,14 +900,12 @@
       <div class="container">
         <p>
           
-          <a href="" data-switch-view="admin">admin</a> |
           Độ trễ: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Phiên bản: 3a21fec |
+          Phiên bản: 09f8011 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
-          | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
-          | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a> 
+          | <a href="https://github.com/blinktrade/" target="_blank">Follow us on GitHub<span class="bitex-model" data-model-key="JSVersion"></span></a>
         </p>
       </div>
     </footer>
@@ -1442,15 +916,14 @@
       (function(){
         var broker_id = 4;
         var country_code = "BR";
-        var blinktrade_api = "ws.blinktrade.com";
+        var blinktrade_api = "api.blinktrade.com";
         var symbol = "BTCBRL";
+        var required_level_to_be_a_pro_trader = 0;
 
-        var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
-
-        alert("ESTAMOS EM MANUTENÇÃO PROGRAMADA ATÉ MEIA NOITE DE DOMINGO");
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
-        _app.run(blinktrade_api);
+        _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
       })();
     </script>
     

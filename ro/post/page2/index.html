@@ -38,15 +38,15 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=3a21fec" rel="stylesheet">
+  <link href="https://foxbit.exchange/ro/assets/themes/default/css/style-new.css?v=09f8011" rel="stylesheet">
   <link href="https://foxbit.exchange/ro/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://foxbit.exchange/ro/assets/themes/coinage/sass/main.foxbit.css?v=3a21fec" rel="stylesheet">
+    <link href="https://foxbit.exchange/ro/assets/themes/coinage/sass/main.foxbit.css?v=09f8011" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://foxbit.exchange/ro/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.coinage.js?v=3a21fec" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.coinage.js?v=09f8011" type="text/javascript"></script>
   <script src="https://foxbit.exchange/ro/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
   <script src="https://foxbit.exchange/ro/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   <script src="https://foxbit.exchange/ro/assets/js/externs/qrcode.min.js"></script>
@@ -57,7 +57,7 @@
 <!-- .head -->
 <header class="head">
     <!-- .head-top -->
-    <div class="head-top">
+    <div class="head-top bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element">
         <!-- .container-fluid -->
         <div class="container">
             <!-- .head-ticker -->
@@ -180,7 +180,7 @@
     <!-- /.head-top -->
 
     <!-- .navbar -->
-    <nav id="id_toolbar" class="navbar navbar-default navbar-static-top">
+    <nav id="id_toolbar" class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -192,9 +192,9 @@
           </button>
 
           
-          <a class="navbar-brand" href="#" data-switch-view="offerbook">
-              <img data-switch-view="offerbook" class="logo__img" 
-              src="https://foxbit.exchange/ro/assets/exchange_logos/foxbit_inverse_toolbar_logo.png"
+          <a class="navbar-brand" href="#" data-switch-view="trading">
+              <img data-switch-view="trading" class="logo__img" 
+              src="https://foxbit.exchange/ro/assets/exchange_logos/foxbit_toolbar_logo.png"
               style=" height: 30px; margin-top: -5px; ">
           </a>
           
@@ -291,13 +291,6 @@
         <div class="home-banner" style="background-image: url(https://foxbit.exchange/ro/assets/themes/coinage/img/home-banner-foxbit.jpg)">
             <!-- .home-banner__table -->
             <div class="home-banner__table">
-                
-                <div class="home-overlay"></div>
-                <div class="home-media">
-                    <video autoplay loop muted="true" poster="https://foxbit.exchange/ro/assets/themes/coinage/img/foxbit-video-fallback.jpg">
-                        <source src="https://foxbit.exchange/ro/assets/themes/coinage/img/foxbit_video.webm"></source>
-                    </video>
-                </div>
                 
                 <!-- .home-banner__cell -->
                 <div class="home-banner__cell">
@@ -416,12 +409,12 @@
                         <!-- .home-news-item -->
                         <div class="home-news-item">
                             <div class="home-news-item__icon">
-                                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-decentralized.png" alt="" />
+                                <img class="home-img" src="https://foxbit.exchange/ro/assets/themes/coinage/img/ico-liquidity.png" alt="" />
                             </div>
 
-                            <h2 class="home-news-item__title h3">Member of BLINKTRADE</h2>
+                            <h2 class="home-news-item__title h3">Maecenas vel magna</h2>
 
-                            <p>We are a member of the global <a href="https://blinktrade.com" target="_BLANK">BlinkTrade network</a>, that includes <a href="https://foxbit.com.br" target="_BLANK">FoxBit</a> in Brazil, <a href="https://surbitcoin.com/themes/coinage/" target="_BLANK">SurBitcoin</a> in Venezuela, <a href="https://chilebit.net/" target="_BLANK">ChileBit.NET</a> in Chile, <a href="https://urdubit.com/" target="_BLANK">UrduBit</a> in Pakistan and <a href="https://vbtc.vn/" target="_BLANK">VBTC</a> in Vietnam among other companies, market makers, remittance agencies and payment processors. Through our platform you will have access to this global network of exchanges and will be able to navigate all of them in the language of your choice</p>
+                            <p>Donec ac tincidunt enim, quis porttitor massa. Sed vulputate ex at quam venenatis, non facilisis justo vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam nisl, congue vehicula maximus eget, tempor nec ipsum. Vestibulum feugiat consequat lacus et congue. Phasellus eu felis vel dui cursus pharetra quis non lectus. Curabitur porta ultrices magna sit amet ultrices. Nam cursus lorem mollis arcu dignissim congue. Praesent vitae venenatis lorem, sit amet efficitur ipsum.</p>
                         </div>
                         <!-- /.home-news-item -->
                     </div>
@@ -434,7 +427,7 @@
         <!-- /.home-news -->
 
         <!-- .home-orders -->
-        <div class="home-orders">
+        <div class="home-orders" style="display:none">
             <!-- .container -->
             <div class="container">
                 <!-- .home-orders__head -->
@@ -557,9 +550,17 @@
                       <p class="help-block">
                         <a class="login__remember" href="forgot_password" data-switch-view="forgot_password">Ați uitat parola?</a>
                       </p>
+                      <p class="help-block">
+                        <a class="login__remember" href="" id="id_open_second_factor">Has two factor authentication?</a>
+                      </p>
                     </div>
 
-                    <input id="id_btn_login"  class="btn btn-primary btn-block" name="commit" type="submit" value="Autentificare">
+                    <div class="form-group" id="id_second_factor_group" style="display: none">
+                      <label for="id_password">Two factor authentication:</label>
+                      <input class="form-control" id="id_second_factor"  placeholder="" name="secondfactor" type="text">
+                    </div>
+
+                    <input id="id_btn_login"  class="btn btn-primary btn-block btn-login" name="commit" type="submit" value="Autentificare">
                   </form>
                 </div>
                 <!-- /.page__body -->
@@ -590,12 +591,12 @@
                     <form action="" accept-charset="UTF-8" id="new_user" method="post">
                         <div class="form-group">
                           <label for="id_signup_username">Nume utilizator:</label>
-                          <input id="id_signup_username" class="form-control" name="Username" size="30" type="text" placeholder="">
+                          <input autocapitalize="off" autocorrect="off" id="id_signup_username" class="form-control" name="Username" size="30" type="text" placeholder="">
                         </div>
 
                         <div class="form-group">
                           <label for="id_signup_email">Adresa Email:</label>
-                          <input id="id_signup_email" class="form-control" name="Email" size="30" type="text" placeholder="ex.: joe@doe.ro">
+                          <input autocapitalize="off" autocorrect="off" id="id_signup_email" class="form-control" name="Email" size="30" type="email" placeholder="ex.: joe@doe.ro">
                         </div>
 
                         <div class="form-group">
@@ -663,7 +664,7 @@
                   <form accept-charset="UTF-8" action="" method="post">
                       <div class="form-group">
                         <label for="id_forgot_password_email">Email:</label>
-                        <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" class="form-control" name="email" type="text" placeholder="">
+                        <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" class="form-control" name="email" type="email" placeholder="">
                       </div>
 
                       <input id="id_btn_forgot_password" class="btn btn-primary btn-block" name="commit" type="submit" value="Recuperează parola">
@@ -737,7 +738,9 @@
         <div class="alert alert-danger | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
             <div class="container">
                 <button type="button" class="close pull-right" data-dismiss="alert">&times;</button>
-                <a href="" class="alert-link" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+                
+                  <a href="https://foxbit.zendesk.com/hc/pt-br" class="alert-link" target="_blank" rel="noopener noreferrer"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+                
             </div>
         </div>
     </div>
@@ -803,7 +806,7 @@
                                   <i class="glyphicon glyphicon-random"></i> Cumpără sau Vinde
                               </a>
                           </li>
-                          <li role="presentation" id="menu-offerbook">
+                          <li role="presentation" id="menu-offerbook" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
                               <a href="#" data-switch-view="offerbook">
                                   <i class="glyphicon glyphicon-book"></i> Registrul de comenzi
                               </a>
@@ -828,12 +831,19 @@
                                   <i class="fa fa-upload"></i> Retragerile mele
                               </a>
                           </li>
-                          <li role="presentation" id="menu-algotrading">
+
+                          <li role="presentation" id="menu-services" class="bitex-model bitex-display-if-non-broker"  style="display: none" data-model-key="HasServices" data-model-action="show_element">
+                              <a href="#" data-switch-view="services">
+                                  <i class="fa fa-upload"></i> Services
+                              </a>
+                          </li>
+
+                          <li role="presentation" id="menu-algotrading" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
                               <a href="#" data-switch-view="algotrading">
                                   <i class="glyphicon glyphicon-cog"></i> Algo Trading
                               </a>
                           </li>
-                          <li role="presentation" id="menu-ledger">
+                          <li role="presentation" id="menu-ledger" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
                               <a href="#" data-switch-view="ledger">
                                   <i class="glyphicon glyphicon-th-list"></i> Registru
                               </a>
@@ -1392,141 +1402,7 @@
   <!-- /#market -->
   <!-- #faq -->
   <div id="faq" class="container bitex-view" style="padding-bottom:42px;display:none">
-      <!-- .page__head -->
-      <header class="page__head">
-          <h1 class="page__title h2 bitex-view-title">
-              <i class="glyphicon glyphicon-question-sign"></i> Întrebări frecvente
-          </h1>
-      </header>
-      <!-- /.page__head -->
-
-      <!-- .page__body -->
-      <div class="page__body bitex-view-content">
-          <!-- .panel-group -->
-          <div class="panel-group accordion" id="accordion">
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Ce este Bitcoin? ">
-                        Ce este Bitcoin?
-                    </a>
-                  </h4>
-                </div>
-                <div id="Ce este Bitcoin?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>Bitcoin este o rețea open source, peer2peer, digitală creată în 2009 de către autorul pseudoanonim Satoshi Nakamoto. Protocolul permite utilizatorilor să trimită, păstreze și primească valoare, la costuri semnificativ mai mici și într-un interval de timp scurt. Bitcoin elimină nevoia de o autoritate centrală.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Exchange-ul cumpără/vinde Bitcoin direct? ">
-                        Exchange-ul cumpără/vinde Bitcoin direct?
-                    </a>
-                  </h4>
-                </div>
-                <div id="Exchange-ul cumpără/vinde Bitcoin direct?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>Nu. Noi oferim un serviciu. Gândiți-va la exchange ca eBay, noi doar oferim un serviciu unde puteți găsii vânzători sau cumpărători.</p>
-
-<p>Tot ceea ce facem este să oferim un mediu sigur și simplu pentru a tranzacționa cu alți utilizatori.</p>
-
-<p>Noi garantăm că cumpărătorul primește Bitcoini și vânzătorul banii, la prețul stabilit.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Cum pot devenii trader? ">
-                        Cum pot devenii trader?
-                    </a>
-                  </h4>
-                </div>
-                <div id="Cum pot devenii trader?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>Deschiderea unui cont de tranzactionare la Exchange este ușor, rapid și gratuit. Faceți clic pe “Înregistrează-te”, completați formularul și conectați-vă.  După ce vă conectați, operatorul Exchange-ul vă va cere numele, adresa și documente. După ce documentele au fost verificate de operator, veți putea cumpără/vinde Bitcoin.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Cum depozitez bani(fiat) în contul meu? ">
-                        Cum depozitez bani(fiat) în contul meu?
-                    </a>
-                  </h4>
-                </div>
-                <div id="Cum depozitez bani(fiat) în contul meu?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>În meniul principal, apăsați pe “Depozit monedă locală” și va apărea o fereastră nouă. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Va trebui să specificați cantitatea de FIAT pe care doriți să o depozitați, pentru a cumpără Bitcoin. Țineți cont că există taxă de depozitare. Pentru o depozitare de 800 lei cu o taxa de 1.5%, veți avea 788 lei creditați către contul dumneavoastră.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#Sunt Bitcoinii mei în siguranță? ">
-                        Sunt Bitcoinii mei în siguranță?
-                    </a>
-                  </h4>
-                </div>
-                <div id="Sunt Bitcoinii mei în siguranță?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>Scopul nostru principal este de a oferii trader-ilor un mediu sigur în care să interacționeze. Bitcoinii sunt stocani într-un portofel rece cu semnături multiple (multisignature cold storage wallet). Chiar dacă server-ul sau exchange-ul ar fi compromise Bitcoinii nu pot ajunge la băieții răi.</p>
-
-<p>Portofelul cu semnături multiple(multisignature) necesită 2 din 3 semnături pentru a muta Bitcoinii. Operatorul exchange-ului deține una din cele 3 chei. Celelalte două sunt deținute de BlinkTrade și un mediator, care va lua parte la proces, în cazul în care ar exista o dispută între operator și BlinkTrade.</p>
-
-<p>Chiar dacă un hack-er ar compromite serverele exchange-ului, ar trebui să compromită și serverele BlinkTrade pentru a-și putea însuși Bitcoinii. Șansele ca așa ceva să se întâmple sunt infime.</p>
-
-<p>De ficare dată când Bitcoini sunt mutați din portofelul cu semnături multiple pe un portofel cald(care este conectat la internet pentru a procesa retrageri rapid) BlinkTrade verifică sistemul și efectuează o dovadă de solvabilitate a bitcoinilor. 
- Cu alte cuvinte de fiecare data când Bitcoinii sunt mutați din portofelul cu semnături multiple rece(neconectat la internet) în portofelul cald(conectat la internet), efectuăm o verificare completă a sistemului.</p>
-
-<p>Portofelele calde sunt stocate pe serverele blockchain.info și păstrăm doar cantități mici de bitcoin pentru a efectuă operațiuni de zi cu zi. 
-Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info</p>
-
-<p>Nici un exchange din lume nu este 100% sigur. Cu toate măsurile noastre de siguranță nu vrem să creăm o comoară de bitcoin, care ar provoca hack-eri să încerce să compromită exchange-ul.</p>
-
-<p>Încurajăm toți utilizatori să își depoziteze Bitcoinii doar când au de gând să îi schimbe, și să nu folosească exchange-ul că o bancă. Cea mai sigură metodă este să va țineți Bitcoini în portofelul personal până când aveți de gând să îi schimbați.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-              <div class="panel panel-default accordion-group">
-                <div class="panel-heading accordion-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#De ce nu am o cheie privată a portofelului meu din exchange? ">
-                        De ce nu am o cheie privată a portofelului meu din exchange?
-                    </a>
-                  </h4>
-                </div>
-                <div id="De ce nu am o cheie privată a portofelului meu din exchange?" class="panel-collapse accordion-body collapse">
-                  <div class="panel-body">
-                       <p>Principiul nostru este că Bitcoinii sunt depozitați în exchange pentru a fi schimbați în monedă locală. În consecință pentru a garanta siguranța și viteza tranzacționării, operatorul exchange-ului are posesia depozitărilor fie în Fiat sau BTC.</p>
-
-                  </div>
-                </div>
-              </div>
-              
-          </div>
-          <!-- /.panel-group -->
-
-          <a href="" class="bitex-support-link" target="_blank">
-              <i class="glyphicon glyphicon-envelope"></i> Contactati-ne în cazul în care nu ați găsit răspunsul la întrebările dumneavoastră.
-          </a>
-      </div>
-      <!-- /.page__body -->
+      
   </div>
   <!-- /#faq -->
 
@@ -1556,14 +1432,6 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                             <div class="thumb-theme">
                                 <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-default-thumb.jpg" alt="Default Theme">
                                 <h3 class="ls-title-4">Simple Theme</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-4">
-                        <a href="https://foxbit.exchange/ro/themes/whitedev/">
-                            <div class="thumb-theme">
-                                <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
-                                <h3 class="ls-title-4">Whitedev</h3>
                             </div>
                         </a>
                     </div>
@@ -1604,9 +1472,6 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                 <ul>
                     
                     <li>
-                        <a href="" data-switch-view="admin">admin</a>
-                    </li>
-                    <li>
                         <a href="" data-switch-view="themes">Themes</a>
                     </li>
                     <li>
@@ -1614,7 +1479,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                     </li>
                     
                     <li>
-                        Version: 3a21fec
+                        Version: 09f8011
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -1702,15 +1567,14 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
     (function(){
       var broker_id = 4;
       var country_code = "BR";
-      var blinktrade_api = "ws.blinktrade.com";
+      var blinktrade_api = "api.blinktrade.com";
       var symbol = "BTCBRL";
+      var required_level_to_be_a_pro_trader = 0;
 
-      var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
-
-      alert("ESTAMOS EM MANUTENÇÃO PROGRAMADA ATÉ MEIA NOITE DE DOMINGO");
+      var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
 
       _app = new BlinkTradeApp(broker_id, remittance_box, country_code, symbol);
-      _app.run(blinktrade_api);
+      _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
     })();
   </script>
   

@@ -43,8 +43,8 @@
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=3a21fec" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=3a21fec" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/zn_CN/assets/themes/default/css/style.css?v=09f8011" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/zn_CN/assets/js/bitex_app_blink_trade.compiled.zn_CN.default.js?v=09f8011" type="text/javascript"></script>
     <script src="https://foxbit.exchange/zn_CN/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -55,8 +55,8 @@
         <div class="container">
 
           
-          <a href="#" class="brand" data-switch-view="offerbook">
-            <img data-switch-view="offerbook" src="https://foxbit.exchange/zn_CN/assets/exchange_logos/foxbit_toolbar_logo.png" style="
+          <a href="#" class="brand" data-switch-view="trading">
+            <img data-switch-view="trading" src="https://foxbit.exchange/zn_CN/assets/exchange_logos/foxbit_toolbar_logo.png" style="
                 height: 30px;
                 margin-top: -10px;
                 margin-bottom: -10px;
@@ -71,8 +71,8 @@
                 <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">常见问题</a>
               
             </li>
-            <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">交易</a></li>
-            <li><a href="" data-switch-view="market">市场</a></li>
+            <li class="bitex-display-if-logged"><a href="" data-switch-view="trading">交易</a></li>
+            <li class="bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element"><a href="" data-switch-view="market">市场</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">登陆</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">注册</a></li>
             
@@ -160,7 +160,7 @@
             <input class="focus" id="id_landing_username" placeholder="" size="30" type="text" autofocus>
             <label for="id_landing_password">密码</label>
             <input id="id_landing_password" placeholder="" size="30"  type="password">
-            <button id="id_landing_signin" class="btn btn-primary">登陆</button>
+            <button id="id_landing_signin" class="btn btn-primary btn-login">登陆</button>
           </div>
           <div class="clearfix" style="height: 20px"></div>
           <p>
@@ -177,20 +177,7 @@
   </div>
 
   <div id="faq" class="page row-fluid bitex-view" style="display: none">
-    <div class="page-header">
-      <h1 class="bitex-view-title">FAQ - 常见问题</h1>
-    </div>
-
-    <div class="bitex-view-content">
-      <div class="accordion">
-        
-      </div>
-
-      <h3>
-      <a href="" class="bitex-support-link" target="_blank">
-        <i class="icon-envelope"></i> 如果您还有其他疑惑，请联系我们</a>
-      </h3>
-    </div>
+    
   </div>
 
   <!-- signup page-->
@@ -206,7 +193,7 @@
           <label class="control-label">用户名</label>
 
           <div class="controls">
-            <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_username" name="Username" size="30" type="text" placeholder="">
           </div>
         </div>
 
@@ -214,7 +201,7 @@
           <label class="control-label">邮箱地址</label>
 
           <div class="controls">
-            <input id="id_signup_email" name="Email" size="30" type="text" placeholder="例如.: 123456@qq.com">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_email" name="Email" size="30" type="email" placeholder="例如.: 123456@qq.com">
           </div>
         </div>
 
@@ -300,10 +287,22 @@
             <input id="id_password" placeholder="" name="password" type="password">
           </div>
         </div>
+
+        <div class="clearfix" id="id_second_factor_group" style="display: none">
+          <label for="id_password">Two factor authentication:</label>
+          <div class="input">
+            <input id="id_second_factor"  placeholder="" name="secondfactor" type="text" autocomplete="off">
+          </div>
+        </div>
+
+        <p>
+          <a href="#" id="id_open_second_factor">Has two factor authentication?</a>
+        </p>
+        
         <p><a href="#" data-switch-view="forgot_password">忘记了密码？</a></p>
 
         <div class="actions">
-          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="登陆">
+          <input id="id_btn_login" class="btn btn-primary btn-login" name="commit" type="submit" value="登陆">
         </div>
       </form>
     </div>
@@ -319,7 +318,7 @@
           <label for="id_forgot_password_email">邮箱地址</label>
 
           <div class="input">
-            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="email" placeholder="">
           </div>
         </div>
         <div class="actions">
@@ -379,7 +378,9 @@
 
     <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <a href="" data-switch-view="faq"> 你的账户已经被管理员冻结，请联系管理员。 </a>
+      
+        <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer"> 你的账户已经被管理员冻结，请联系管理员。 </a>
+      
     </div>
   </div>
 
@@ -763,7 +764,7 @@
               <i data-switch-view="trading" class="icon-random"></i> 买进和卖出</a>
           </li>
 
-          <li id="menu-offerbook">
+          <li id="menu-offerbook" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="offerbook">
               <i data-switch-view="offerbook" class="icon-book"></i> 我的订单</a>
           </li>
@@ -779,12 +780,12 @@
               <i data-switch-view="history" class="icon-list-alt"></i> 订单历史</a>
           </li>
 
-          <li id="menu-algotrading">
+          <li id="menu-algotrading" class="bitex-model" style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="algotrading">
               <i data-switch-view="algotrading" class="icon-cog"></i> 程序自动交易</a>
           </li>
 
-          <li id="menu-ledger">
+          <li id="menu-ledger" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="ledger">
               <i data-switch-view="ledger" class="icon-list"></i> 我的总账</a>
           </li>
@@ -814,6 +815,11 @@
               <i data-switch-view="withdraw" class="icon-minus"></i> 我的提现</a>
           </li>
 
+          <li id="menu-services" class="bitex-model bitex-display-if-non-broker"  style="display: none" data-model-key="HasServices" data-model-action="show_element">
+            <a href="" data-switch-view="services">
+              <i data-switch-view="services" class="icon-minus"></i> Services</a>
+          </li>
+
           <li class="bitex-display-if-non-broker bitex-model" style="display: none" id="card_menu_id"  data-model-key="HasCardFeature" data-model-action="show_element" id="menu-card">
               <a href="" data-switch-view="card">
                   <i data-switch-view="card" class="icon-tag"></i> Blink Card</a>
@@ -830,12 +836,14 @@
               <i data-switch-view="line_of_credit" class="icon-retweet"></i> 信用额度</a>
           </li>
 
-          <li style="">
-            <a href="" data-switch-view="faq">
-              <i data-switch-view="faq" class="icon-question"></i> 建议和问题</a>
+          <li style="" style="display: none">
+            
+              <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">
+                <i class="icon-question"></i> 建议和问题</a>
+            
           </li>
 
-          <li style="" id="menu-api">
+          <li style="" id="menu-api" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="api">
               <i data-switch-view="api" class="icon-globe"></i> API</a>
           </li>
@@ -881,12 +889,6 @@
                     <h3>Simple Theme</h3>
                 </a>
             </div>
-            <div class="span4">
-                <a href="https://foxbit.exchange/zn_CN/themes/whitedev/">
-                    <img src="https://foxbit.exchange/zn_CN/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
-                    <h3>Whitedev</h3>
-                </a>
-            </div>
         </div>
     </div>
   </div>
@@ -898,14 +900,12 @@
       <div class="container">
         <p>
           
-          <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 3a21fec |
+          Version: 09f8011 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
-          | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
-          | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a> 
+          | <a href="https://github.com/blinktrade/" target="_blank">Follow us on GitHub<span class="bitex-model" data-model-key="JSVersion"></span></a>
         </p>
       </div>
     </footer>
@@ -916,15 +916,14 @@
       (function(){
         var broker_id = 4;
         var country_code = "BR";
-        var blinktrade_api = "ws.blinktrade.com";
+        var blinktrade_api = "api.blinktrade.com";
         var symbol = "BTCBRL";
+        var required_level_to_be_a_pro_trader = 0;
 
-        var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
-
-        alert("ESTAMOS EM MANUTENÇÃO PROGRAMADA ATÉ MEIA NOITE DE DOMINGO");
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
-        _app.run(blinktrade_api);
+        _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
       })();
     </script>
     

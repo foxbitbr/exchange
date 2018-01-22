@@ -43,8 +43,8 @@
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/ro/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/ro/assets/themes/default/css/style.css?v=3a21fec" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=3a21fec" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/ro/assets/themes/default/css/style.css?v=09f8011" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=09f8011" type="text/javascript"></script>
     <script src="https://foxbit.exchange/ro/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -55,8 +55,8 @@
         <div class="container">
 
           
-          <a href="#" class="brand" data-switch-view="offerbook">
-            <img data-switch-view="offerbook" src="https://foxbit.exchange/ro/assets/exchange_logos/foxbit_toolbar_logo.png" style="
+          <a href="#" class="brand" data-switch-view="trading">
+            <img data-switch-view="trading" src="https://foxbit.exchange/ro/assets/exchange_logos/foxbit_toolbar_logo.png" style="
                 height: 30px;
                 margin-top: -10px;
                 margin-bottom: -10px;
@@ -71,8 +71,8 @@
                 <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">Întrebări frecvente</a>
               
             </li>
-            <li class="bitex-display-if-logged"><a href="" data-switch-view="offerbook">Tranzacționare</a></li>
-            <li><a href="" data-switch-view="market">Piață</a></li>
+            <li class="bitex-display-if-logged"><a href="" data-switch-view="trading">Tranzacționare</a></li>
+            <li class="bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element"><a href="" data-switch-view="market">Piață</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signin">Autentificare</a></li>
             <li class="bitex-hide-if-logged"><a href="" data-switch-view="signup">Cont nou</a></li>
             
@@ -160,7 +160,7 @@
             <input class="focus" id="id_landing_username" placeholder="" size="30" type="text" autofocus>
             <label for="id_landing_password">Parola:</label>
             <input id="id_landing_password" placeholder="" size="30"  type="password">
-            <button id="id_landing_signin" class="btn btn-primary">Autentificare</button>
+            <button id="id_landing_signin" class="btn btn-primary btn-login">Autentificare</button>
           </div>
           <div class="clearfix" style="height: 20px"></div>
           <p>
@@ -177,122 +177,7 @@
   </div>
 
   <div id="faq" class="page row-fluid bitex-view" style="display: none">
-    <div class="page-header">
-      <h1 class="bitex-view-title">Întrebări frecvente</h1>
-    </div>
-
-    <div class="bitex-view-content">
-      <div class="accordion">
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Ce este Bitcoin?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Bitcoin este o rețea open source, peer2peer, digitală creată în 2009 de către autorul pseudoanonim Satoshi Nakamoto. Protocolul permite utilizatorilor să trimită, păstreze și primească valoare, la costuri semnificativ mai mici și într-un interval de timp scurt. Bitcoin elimină nevoia de o autoritate centrală.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Exchange-ul cumpără/vinde Bitcoin direct?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Nu. Noi oferim un serviciu. Gândiți-va la exchange ca eBay, noi doar oferim un serviciu unde puteți găsii vânzători sau cumpărători.</p>
-
-<p>Tot ceea ce facem este să oferim un mediu sigur și simplu pentru a tranzacționa cu alți utilizatori.</p>
-
-<p>Noi garantăm că cumpărătorul primește Bitcoini și vânzătorul banii, la prețul stabilit.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Cum pot devenii trader?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Deschiderea unui cont de tranzactionare la Exchange este ușor, rapid și gratuit. Faceți clic pe “Înregistrează-te”, completați formularul și conectați-vă.  După ce vă conectați, operatorul Exchange-ul vă va cere numele, adresa și documente. După ce documentele au fost verificate de operator, veți putea cumpără/vinde Bitcoin.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Cum depozitez bani(fiat) în contul meu?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>În meniul principal, apăsați pe “Depozit monedă locală” și va apărea o fereastră nouă. You will have to specify the amount of FIAT you want to deposit in order to buy bitcoins. Va trebui să specificați cantitatea de FIAT pe care doriți să o depozitați, pentru a cumpără Bitcoin. Țineți cont că există taxă de depozitare. Pentru o depozitare de 800 lei cu o taxa de 1.5%, veți avea 788 lei creditați către contul dumneavoastră.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              Sunt Bitcoinii mei în siguranță?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Scopul nostru principal este de a oferii trader-ilor un mediu sigur în care să interacționeze. Bitcoinii sunt stocani într-un portofel rece cu semnături multiple (multisignature cold storage wallet). Chiar dacă server-ul sau exchange-ul ar fi compromise Bitcoinii nu pot ajunge la băieții răi.</p>
-
-<p>Portofelul cu semnături multiple(multisignature) necesită 2 din 3 semnături pentru a muta Bitcoinii. Operatorul exchange-ului deține una din cele 3 chei. Celelalte două sunt deținute de BlinkTrade și un mediator, care va lua parte la proces, în cazul în care ar exista o dispută între operator și BlinkTrade.</p>
-
-<p>Chiar dacă un hack-er ar compromite serverele exchange-ului, ar trebui să compromită și serverele BlinkTrade pentru a-și putea însuși Bitcoinii. Șansele ca așa ceva să se întâmple sunt infime.</p>
-
-<p>De ficare dată când Bitcoini sunt mutați din portofelul cu semnături multiple pe un portofel cald(care este conectat la internet pentru a procesa retrageri rapid) BlinkTrade verifică sistemul și efectuează o dovadă de solvabilitate a bitcoinilor. 
- Cu alte cuvinte de fiecare data când Bitcoinii sunt mutați din portofelul cu semnături multiple rece(neconectat la internet) în portofelul cald(conectat la internet), efectuăm o verificare completă a sistemului.</p>
-
-<p>Portofelele calde sunt stocate pe serverele blockchain.info și păstrăm doar cantități mici de bitcoin pentru a efectuă operațiuni de zi cu zi. 
-Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținute de blockchain.info</p>
-
-<p>Nici un exchange din lume nu este 100% sigur. Cu toate măsurile noastre de siguranță nu vrem să creăm o comoară de bitcoin, care ar provoca hack-eri să încerce să compromită exchange-ul.</p>
-
-<p>Încurajăm toți utilizatori să își depoziteze Bitcoinii doar când au de gând să îi schimbe, și să nu folosească exchange-ul că o bancă. Cea mai sigură metodă este să va țineți Bitcoini în portofelul personal până când aveți de gând să îi schimbați.</p>
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle collapsed">
-              De ce nu am o cheie privată a portofelului meu din exchange?
-            </a>
-          </div>
-          <div class="accordion-body collapse ">
-            <div class="accordion-inner">
-              <p>Principiul nostru este că Bitcoinii sunt depozitați în exchange pentru a fi schimbați în monedă locală. În consecință pentru a garanta siguranța și viteza tranzacționării, operatorul exchange-ului are posesia depozitărilor fie în Fiat sau BTC.</p>
-
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <h3>
-      <a href="" class="bitex-support-link" target="_blank">
-        <i class="icon-envelope"></i> Contactati-ne în cazul în care nu ați găsit răspunsul la întrebările dumneavoastră</a>
-      </h3>
-    </div>
+    
   </div>
 
   <!-- signup page-->
@@ -308,7 +193,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           <label class="control-label">Nume utilizator</label>
 
           <div class="controls">
-            <input id="id_signup_username" name="Username" size="30" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_username" name="Username" size="30" type="text" placeholder="">
           </div>
         </div>
 
@@ -316,7 +201,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           <label class="control-label">Adresa Email</label>
 
           <div class="controls">
-            <input id="id_signup_email" name="Email" size="30" type="text" placeholder="ex.: joe@doe.ro">
+            <input autocapitalize="off" autocorrect="off" id="id_signup_email" name="Email" size="30" type="email" placeholder="ex.: joe@doe.ro">
           </div>
         </div>
 
@@ -402,10 +287,22 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             <input id="id_password" placeholder="" name="password" type="password">
           </div>
         </div>
+
+        <div class="clearfix" id="id_second_factor_group" style="display: none">
+          <label for="id_password">Two factor authentication:</label>
+          <div class="input">
+            <input id="id_second_factor"  placeholder="" name="secondfactor" type="text" autocomplete="off">
+          </div>
+        </div>
+
+        <p>
+          <a href="#" id="id_open_second_factor">Has two factor authentication?</a>
+        </p>
+        
         <p><a href="#" data-switch-view="forgot_password">Ați uitat parola?</a></p>
 
         <div class="actions">
-          <input id="id_btn_login" class="btn btn-primary" name="commit" type="submit" value="Autentificare">
+          <input id="id_btn_login" class="btn btn-primary btn-login" name="commit" type="submit" value="Autentificare">
         </div>
       </form>
     </div>
@@ -421,7 +318,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
           <label for="id_forgot_password_email">Email</label>
 
           <div class="input">
-            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="text" placeholder="">
+            <input autocapitalize="off" autocorrect="off" id="id_forgot_password_email" name="email" type="email" placeholder="">
           </div>
         </div>
         <div class="actions">
@@ -481,7 +378,9 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
 
     <div class="alert alert-error | bitex-model" style="display: none" data-model-key="IsAccountBlocked" data-model-action="show_element">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
-      <a href="" data-switch-view="faq"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+      
+        <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer"> Contul nostru a fost oprit de către administrator, vă rugăm să contactați echipa de suport. </a>
+      
     </div>
   </div>
 
@@ -865,7 +764,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
               <i data-switch-view="trading" class="icon-random"></i> Cumpără sau Vinde</a>
           </li>
 
-          <li id="menu-offerbook">
+          <li id="menu-offerbook" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="offerbook">
               <i data-switch-view="offerbook" class="icon-book"></i> Registrul de comenzi</a>
           </li>
@@ -881,12 +780,12 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
               <i data-switch-view="history" class="icon-list-alt"></i> Orders history</a>
           </li>
 
-          <li id="menu-algotrading">
+          <li id="menu-algotrading" class="bitex-model" style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="algotrading">
               <i data-switch-view="algotrading" class="icon-cog"></i> Algo Trading</a>
           </li>
 
-          <li id="menu-ledger">
+          <li id="menu-ledger" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="ledger">
               <i data-switch-view="ledger" class="icon-list"></i> Registru</a>
           </li>
@@ -916,6 +815,11 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
               <i data-switch-view="withdraw" class="icon-minus"></i> Retragerile mele</a>
           </li>
 
+          <li id="menu-services" class="bitex-model bitex-display-if-non-broker"  style="display: none" data-model-key="HasServices" data-model-action="show_element">
+            <a href="" data-switch-view="services">
+              <i data-switch-view="services" class="icon-minus"></i> Services</a>
+          </li>
+
           <li class="bitex-display-if-non-broker bitex-model" style="display: none" id="card_menu_id"  data-model-key="HasCardFeature" data-model-action="show_element" id="menu-card">
               <a href="" data-switch-view="card">
                   <i data-switch-view="card" class="icon-tag"></i> Blink Card</a>
@@ -932,12 +836,14 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
               <i data-switch-view="line_of_credit" class="icon-retweet"></i> Linie de credit</a>
           </li>
 
-          <li style="">
-            <a href="" data-switch-view="faq">
-              <i data-switch-view="faq" class="icon-question"></i> Sugestii & Support</a>
+          <li style="" style="display: none">
+            
+              <a href="https://foxbit.zendesk.com/hc/pt-br" target="_blank" rel="noopener noreferrer">
+                <i class="icon-question"></i> Sugestii & Support</a>
+            
           </li>
 
-          <li style="" id="menu-api">
+          <li style="" id="menu-api" class="bitex-model"  style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
             <a href="" data-switch-view="api">
               <i data-switch-view="api" class="icon-globe"></i> API</a>
           </li>
@@ -983,12 +889,6 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
                     <h3>Simple Theme</h3>
                 </a>
             </div>
-            <div class="span4">
-                <a href="https://foxbit.exchange/ro/themes/whitedev/">
-                    <img src="https://foxbit.exchange/ro/assets/exchange_logos/thumb-themes/foxbit-whitedev-thumb.jpg" alt="Whitedev Theme">
-                    <h3>Whitedev</h3>
-                </a>
-            </div>
         </div>
     </div>
   </div>
@@ -1000,14 +900,12 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
       <div class="container">
         <p>
           
-          <a href="" data-switch-view="admin">admin</a> |
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 3a21fec |
+          Version: 09f8011 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
-          | <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
-          | <a href="http://nytm.org/made-in-nyc/" target="_blank">Made with <span style="color: #d11f0d;font-size: 19px;">♥</span> in NYC</a> 
+          | <a href="https://github.com/blinktrade/" target="_blank">Follow us on GitHub<span class="bitex-model" data-model-key="JSVersion"></span></a>
         </p>
       </div>
     </footer>
@@ -1018,15 +916,14 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
       (function(){
         var broker_id = 4;
         var country_code = "BR";
-        var blinktrade_api = "ws.blinktrade.com";
+        var blinktrade_api = "api.blinktrade.com";
         var symbol = "BTCBRL";
+        var required_level_to_be_a_pro_trader = 0;
 
-        var remittance_box = { 'BRL':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
-
-        alert("ESTAMOS EM MANUTENÇÃO PROGRAMADA ATÉ MEIA NOITE DE DOMINGO");
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ], ['Dólar Comercial',    'BRL', 'UOL_USDBRL_BEST_BID / 100000000', 'UOL_USDBRL_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'VND':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VND',  'VND', 'BLINK_BTCVND_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCVND_BEST_BID' ] ], 'PKR':[ ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITSTAMP_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITSTAMP_BTCUSD_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
-        _app.run(blinktrade_api);
+        _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
       })();
     </script>
     
