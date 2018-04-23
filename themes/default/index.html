@@ -43,8 +43,8 @@
     <link href="https://foxbit.exchange/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://foxbit.exchange/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=2ceb717" rel="stylesheet">
-    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=2ceb717" type="text/javascript"></script>
+    <link href="https://foxbit.exchange/assets/themes/default/css/style.css?v=6415aa0" rel="stylesheet">
+    <script data-cfasync="false" src="https://foxbit.exchange/assets/js/bitex_app_blink_trade.compiled.pt_BR.default.js?v=6415aa0" type="text/javascript"></script>
     <script src="https://foxbit.exchange/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -294,6 +294,11 @@
             <input id="id_second_factor"  placeholder="" name="secondfactor" type="text" autocomplete="off">
           </div>
         </div>
+
+        <p class="bitex-model" style="display: none" data-model-key="HasToken" data-model-action="show_element">
+          <input type="checkbox" id="id_trusted_device" />
+          <label for="id_trusted_device" style="display: inline-block">Confiar neste dispositivo por 30 dias</label>
+        </p>
 
         <p>
           <a href="#" id="id_open_second_factor">Possui segundo passo de autenticação?</a>
@@ -901,7 +906,7 @@
         <p>
           
           Latência: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Versão: 2ceb717 |
+          Versão: 6415aa0 |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
@@ -952,6 +957,8 @@
 
     
       <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="foxbit.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();/*]]>*/</script>
+    
+
     
 
   </body>
